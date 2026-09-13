@@ -1,10 +1,31 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Yuhe Tian",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
     "section": "",
-    "text": "Yuhe Tian\nUniversity of Pennsylvaina\nWelcome to my personal website.\n\nQuick Links"
+    "text": "Download my resume here:"
+  },
+  {
+    "objectID": "resume.html#resume-pdf",
+    "href": "resume.html#resume-pdf",
+    "title": "Resume",
+    "section": "Resume PDF",
+    "text": "Resume PDF"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "My First Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "bio.html",
@@ -35,18 +56,11 @@
     "text": "Contact"
   },
   {
-    "objectID": "bio.html#studentemail.edu",
-    "href": "bio.html#studentemail.edu",
+    "objectID": "bio.html#yuhetsas.upenn.edu",
+    "href": "bio.html#yuhetsas.upenn.edu",
     "title": "About Me",
-    "section": "student@email.edu",
-    "text": "student@email.edu"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "My First Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "section": "yuhet@sas.upenn.edu",
+    "text": "yuhet@sas.upenn.edu"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -56,31 +70,10 @@
     "text": "This is my first blog post. Example \\(\\LaTeX\\) equation: \\(\\frac{1}{2}\\sum_{i=1}^nx_i\\)"
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yuhe Tian",
     "section": "",
-    "text": "Download my resume here:"
-  },
-  {
-    "objectID": "resume.html#resume-pdf",
-    "href": "resume.html#resume-pdf",
-    "title": "Resume",
-    "section": "Resume PDF",
-    "text": "Resume PDF"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "bio.html#yuhetsas.upenn.edu",
-    "href": "bio.html#yuhetsas.upenn.edu",
-    "title": "About Me",
-    "section": "yuhet@sas.upenn.edu",
-    "text": "yuhet@sas.upenn.edu"
+    "text": "Yuhe Tian\nUniversity of Pennsylvaina\nWelcome to my personal website.\n\nQuick Links"
   }
 ]
