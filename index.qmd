@@ -3,7 +3,7 @@ title: ""
 ---
 
 ::::: columns
-::: {.column width="35%"}
+::: {.column width="35%" style="padding-right: 30px;"}
 ![](images/微信图片_20250808112552.jpg){width="100%"}
 :::
 
