@@ -22,7 +22,7 @@ Welcome to my personal website.
   <a href="https://github.com/UPennMia"><i class="bi bi-github fs-3"></i></a>
   <a href="https://linkedin.com/in/YuHe-Tian-316934432"><i class="bi bi-linkedin fs-3"></i></a>
   <a href="resume.qmd"><i class="bi bi-file-earmark-person-fill fs-3"></i></a>
-  <a href="mailto:tianyuhe2026@outlook.com"><i class="bi bi-envelope-fill fs-3"></i></a>
+  <a href="mailto:yuhet@sas.upenn.edu"><i class="bi bi-envelope-fill fs-3"></i></a>
 </div>
 :::
 :::::
