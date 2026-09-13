@@ -1,12 +1,12 @@
 ---
-title: "My First Blog Post"
+title: "Monty Hall Problem"
 date: 2026-09-13
 categories:
   - Probability
   - Statistics
 ---
 
-![](figure1.png){width="500px"}
+![](figure.png){width="500px"}
 
 ## Two Doors, but Not Equal Chances
 
@@ -90,3 +90,20 @@ Switching now feels much more attractive. The three-door version follows exactly
 The Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.
 
 Under the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds.
+
+
+<style>
+main p,
+main li,
+main td,
+main th {
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  line-height: 1.7;
+}
+
+main h2 {
+  letter-spacing: 0.5px;
+  word-spacing: 1.5px;
+}
+</style>
