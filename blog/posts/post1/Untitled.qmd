@@ -1,13 +1,92 @@
 ---
 title: "My First Blog Post"
-date: 2026-06-16
+date: 2026-09-13
 categories:
-  - personal
-  - data-science
+  - Probability
+  - Statistics
 ---
 
 ![](figure1.png){width="500px"}
 
-This is my first blog post. Example $\LaTeX$ equation: $\frac{1}{2}\sum_{i=1}^nx_i$
+## Two Doors, but Not Equal Chances
 
----
+Imagine you are on a game show. There are three closed doors: one hides a car, and the other two hide goats. You choose one door, hoping to win the car. Before revealing your choice, the host opens another door and shows you a goat. You now have a decision: keep your original choice or switch to the remaining closed door.
+
+At first, switching seems pointless. There are only two doors left, so shouldn't each have a 50% chance of hiding the car?
+
+Surprisingly, no. Keeping your original choice gives you a one-third chance of winning. Switching gives you a two-thirds chance. This is the Monty Hall problem, a classic example of how information can challenge our intuition.
+
+## The Host's Rules Matter
+
+To understand the result, we need to specify the rules:
+
+- The car is equally likely to be behind any of the three doors.
+- The host knows where the car is.
+- The host always opens a door you did not choose and reveals a goat.
+- The host always offers you the opportunity to switch.
+
+These rules matter because the host is not opening a door randomly. The host deliberately avoids revealing the car. If the host followed different rules, the probabilities could change.
+
+## When Does Switching Win?
+
+The easiest way to understand the problem is to focus on your initial choice.
+
+When you first choose a door, your probability of selecting the car is:
+
+$$
+P(\text{initial choice is the car}) = \frac{1}{3}.
+$$
+
+Your probability of selecting a goat is:
+
+$$
+P(\text{initial choice is a goat}) = \frac{2}{3}.
+$$
+
+Now consider what switching does.
+
+If you initially chose the car, the host reveals one of the goats. Switching takes you away from the car, so you lose.
+
+If you initially chose a goat, the host must reveal the other goat. The only remaining unchosen door therefore hides the car. Switching wins.
+
+In other words, switching wins exactly when your original choice was wrong.
+
+$$
+P(\text{winning by switching})
+=
+P(\text{initial choice is a goat})
+=
+\frac{2}{3}.
+$$
+
+Suppose you initially choose Door 1. The three equally likely possibilities are:
+
+| Car's location | Host opens | Staying | Switching |
+|:--|:--|:--|:--|
+| Door 1 | Door 2 or Door 3 | Win | Lose |
+| Door 2 | Door 3 | Lose | Win |
+| Door 3 | Door 2 | Lose | Win |
+
+Staying wins in one case. Switching wins in two.
+
+## Why Does It Feel Like Fifty-Fifty?
+
+The mistake is assuming that two remaining possibilities must be equally likely.
+
+However, the two doors have different histories. Your original door was selected without any information. The other door survived a deliberate selection process by someone who knew where the car was.
+
+Opening a goat door does not restart the game. Under the stated rules, a goat is guaranteed to be revealed whether your initial choice is right or wrong. Staying therefore still wins only when you selected the car at the beginning.
+
+## Imagine One Hundred Doors
+
+Now imagine 100 doors, with one car and 99 goats. You choose one door. The host then opens 98 other doors, revealing only goats, and offers you the chance to switch to the single remaining unchosen door.
+
+Your initial choice had only a 1% chance of being correct. If it was wrong, which happens 99% of the time, the host's rules force the car to be behind the remaining alternative.
+
+Switching now feels much more attractive. The three-door version follows exactly the same logic.
+
+## Takeaway
+
+The Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.
+
+Under the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds.

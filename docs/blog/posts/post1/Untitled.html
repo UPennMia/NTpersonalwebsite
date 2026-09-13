@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-06-16">
+<meta name="dcterms.date" content="2026-09-13">
 
 <title>My First Blog Post – Yuhe Tian</title>
 <style>
@@ -157,8 +157,8 @@ window.Quarto = {
 <div class="quarto-title">
 <h1 class="title">My First Blog Post</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">personal</div>
-    <div class="quarto-category">data-science</div>
+    <div class="quarto-category">Probability</div>
+    <div class="quarto-category">Statistics</div>
   </div>
   </div>
 
@@ -170,7 +170,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 16, 2026</p>
+      <p class="date">September 13, 2026</p>
     </div>
   </div>
   
@@ -183,10 +183,97 @@ window.Quarto = {
 
 
 <p><img src="figure1.png" class="img-fluid" width="500"></p>
-<p>This is my first blog post. Example <span class="math inline">\(\LaTeX\)</span> equation: <span class="math inline">\(\frac{1}{2}\sum_{i=1}^nx_i\)</span></p>
-<hr>
+<section id="two-doors-but-not-equal-chances" class="level2">
+<h2 class="anchored" data-anchor-id="two-doors-but-not-equal-chances">Two Doors, but Not Equal Chances</h2>
+<p>Imagine you are on a game show. There are three closed doors: one hides a car, and the other two hide goats. You choose one door, hoping to win the car. Before revealing your choice, the host opens another door and shows you a goat. You now have a decision: keep your original choice or switch to the remaining closed door.</p>
+<p>At first, switching seems pointless. There are only two doors left, so shouldn’t each have a 50% chance of hiding the car?</p>
+<p>Surprisingly, no. Keeping your original choice gives you a one-third chance of winning. Switching gives you a two-thirds chance. This is the Monty Hall problem, a classic example of how information can challenge our intuition.</p>
+</section>
+<section id="the-hosts-rules-matter" class="level2">
+<h2 class="anchored" data-anchor-id="the-hosts-rules-matter">The Host’s Rules Matter</h2>
+<p>To understand the result, we need to specify the rules:</p>
+<ul>
+<li>The car is equally likely to be behind any of the three doors.</li>
+<li>The host knows where the car is.</li>
+<li>The host always opens a door you did not choose and reveals a goat.</li>
+<li>The host always offers you the opportunity to switch.</li>
+</ul>
+<p>These rules matter because the host is not opening a door randomly. The host deliberately avoids revealing the car. If the host followed different rules, the probabilities could change.</p>
+</section>
+<section id="when-does-switching-win" class="level2">
+<h2 class="anchored" data-anchor-id="when-does-switching-win">When Does Switching Win?</h2>
+<p>The easiest way to understand the problem is to focus on your initial choice.</p>
+<p>When you first choose a door, your probability of selecting the car is:</p>
+<p><span class="math display">\[
+P(\text{initial choice is the car}) = \frac{1}{3}.
+\]</span></p>
+<p>Your probability of selecting a goat is:</p>
+<p><span class="math display">\[
+P(\text{initial choice is a goat}) = \frac{2}{3}.
+\]</span></p>
+<p>Now consider what switching does.</p>
+<p>If you initially chose the car, the host reveals one of the goats. Switching takes you away from the car, so you lose.</p>
+<p>If you initially chose a goat, the host must reveal the other goat. The only remaining unchosen door therefore hides the car. Switching wins.</p>
+<p>In other words, switching wins exactly when your original choice was wrong.</p>
+<p><span class="math display">\[
+P(\text{winning by switching})
+=
+P(\text{initial choice is a goat})
+=
+\frac{2}{3}.
+\]</span></p>
+<p>Suppose you initially choose Door 1. The three equally likely possibilities are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Car’s location</th>
+<th style="text-align: left;">Host opens</th>
+<th style="text-align: left;">Staying</th>
+<th style="text-align: left;">Switching</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Door 1</td>
+<td style="text-align: left;">Door 2 or Door 3</td>
+<td style="text-align: left;">Win</td>
+<td style="text-align: left;">Lose</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Door 2</td>
+<td style="text-align: left;">Door 3</td>
+<td style="text-align: left;">Lose</td>
+<td style="text-align: left;">Win</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Door 3</td>
+<td style="text-align: left;">Door 2</td>
+<td style="text-align: left;">Lose</td>
+<td style="text-align: left;">Win</td>
+</tr>
+</tbody>
+</table>
+<p>Staying wins in one case. Switching wins in two.</p>
+</section>
+<section id="why-does-it-feel-like-fifty-fifty" class="level2">
+<h2 class="anchored" data-anchor-id="why-does-it-feel-like-fifty-fifty">Why Does It Feel Like Fifty-Fifty?</h2>
+<p>The mistake is assuming that two remaining possibilities must be equally likely.</p>
+<p>However, the two doors have different histories. Your original door was selected without any information. The other door survived a deliberate selection process by someone who knew where the car was.</p>
+<p>Opening a goat door does not restart the game. Under the stated rules, a goat is guaranteed to be revealed whether your initial choice is right or wrong. Staying therefore still wins only when you selected the car at the beginning.</p>
+</section>
+<section id="imagine-one-hundred-doors" class="level2">
+<h2 class="anchored" data-anchor-id="imagine-one-hundred-doors">Imagine One Hundred Doors</h2>
+<p>Now imagine 100 doors, with one car and 99 goats. You choose one door. The host then opens 98 other doors, revealing only goats, and offers you the chance to switch to the single remaining unchosen door.</p>
+<p>Your initial choice had only a 1% chance of being correct. If it was wrong, which happens 99% of the time, the host’s rules force the car to be behind the remaining alternative.</p>
+<p>Switching now feels much more attractive. The three-door version follows exactly the same logic.</p>
+</section>
+<section id="takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
+<p>The Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.</p>
+<p>Under the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

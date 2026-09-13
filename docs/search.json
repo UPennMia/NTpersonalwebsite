@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "My First Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "text": "My First Blog Post\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -75,5 +75,47 @@
     "title": "Yuhe Tian",
     "section": "",
     "text": "Yuhe Tian\nUniversity of Pennsylvaina\nWelcome to my personal website.\n\nQuick Links"
+  },
+  {
+    "objectID": "blog/posts/post1/Untitled.html#two-doors-but-not-equal-chances",
+    "href": "blog/posts/post1/Untitled.html#two-doors-but-not-equal-chances",
+    "title": "My First Blog Post",
+    "section": "Two Doors, but Not Equal Chances",
+    "text": "Two Doors, but Not Equal Chances\nImagine you are on a game show. There are three closed doors: one hides a car, and the other two hide goats. You choose one door, hoping to win the car. Before revealing your choice, the host opens another door and shows you a goat. You now have a decision: keep your original choice or switch to the remaining closed door.\nAt first, switching seems pointless. There are only two doors left, so shouldn’t each have a 50% chance of hiding the car?\nSurprisingly, no. Keeping your original choice gives you a one-third chance of winning. Switching gives you a two-thirds chance. This is the Monty Hall problem, a classic example of how information can challenge our intuition."
+  },
+  {
+    "objectID": "blog/posts/post1/Untitled.html#the-hosts-rules-matter",
+    "href": "blog/posts/post1/Untitled.html#the-hosts-rules-matter",
+    "title": "My First Blog Post",
+    "section": "The Host’s Rules Matter",
+    "text": "The Host’s Rules Matter\nTo understand the result, we need to specify the rules:\n\nThe car is equally likely to be behind any of the three doors.\nThe host knows where the car is.\nThe host always opens a door you did not choose and reveals a goat.\nThe host always offers you the opportunity to switch.\n\nThese rules matter because the host is not opening a door randomly. The host deliberately avoids revealing the car. If the host followed different rules, the probabilities could change."
+  },
+  {
+    "objectID": "blog/posts/post1/Untitled.html#when-does-switching-win",
+    "href": "blog/posts/post1/Untitled.html#when-does-switching-win",
+    "title": "My First Blog Post",
+    "section": "When Does Switching Win?",
+    "text": "When Does Switching Win?\nThe easiest way to understand the problem is to focus on your initial choice.\nWhen you first choose a door, your probability of selecting the car is:\n\\[\nP(\\text{initial choice is the car}) = \\frac{1}{3}.\n\\]\nYour probability of selecting a goat is:\n\\[\nP(\\text{initial choice is a goat}) = \\frac{2}{3}.\n\\]\nNow consider what switching does.\nIf you initially chose the car, the host reveals one of the goats. Switching takes you away from the car, so you lose.\nIf you initially chose a goat, the host must reveal the other goat. The only remaining unchosen door therefore hides the car. Switching wins.\nIn other words, switching wins exactly when your original choice was wrong.\n\\[\nP(\\text{winning by switching})\n=\nP(\\text{initial choice is a goat})\n=\n\\frac{2}{3}.\n\\]\nSuppose you initially choose Door 1. The three equally likely possibilities are:\n\n\n\nCar’s location\nHost opens\nStaying\nSwitching\n\n\n\n\nDoor 1\nDoor 2 or Door 3\nWin\nLose\n\n\nDoor 2\nDoor 3\nLose\nWin\n\n\nDoor 3\nDoor 2\nLose\nWin\n\n\n\nStaying wins in one case. Switching wins in two."
+  },
+  {
+    "objectID": "blog/posts/post1/Untitled.html#why-does-it-feel-like-fifty-fifty",
+    "href": "blog/posts/post1/Untitled.html#why-does-it-feel-like-fifty-fifty",
+    "title": "My First Blog Post",
+    "section": "Why Does It Feel Like Fifty-Fifty?",
+    "text": "Why Does It Feel Like Fifty-Fifty?\nThe mistake is assuming that two remaining possibilities must be equally likely.\nHowever, the two doors have different histories. Your original door was selected without any information. The other door survived a deliberate selection process by someone who knew where the car was.\nOpening a goat door does not restart the game. Under the stated rules, a goat is guaranteed to be revealed whether your initial choice is right or wrong. Staying therefore still wins only when you selected the car at the beginning."
+  },
+  {
+    "objectID": "blog/posts/post1/Untitled.html#imagine-one-hundred-doors",
+    "href": "blog/posts/post1/Untitled.html#imagine-one-hundred-doors",
+    "title": "My First Blog Post",
+    "section": "Imagine One Hundred Doors",
+    "text": "Imagine One Hundred Doors\nNow imagine 100 doors, with one car and 99 goats. You choose one door. The host then opens 98 other doors, revealing only goats, and offers you the chance to switch to the single remaining unchosen door.\nYour initial choice had only a 1% chance of being correct. If it was wrong, which happens 99% of the time, the host’s rules force the car to be behind the remaining alternative.\nSwitching now feels much more attractive. The three-door version follows exactly the same logic."
+  },
+  {
+    "objectID": "blog/posts/post1/Untitled.html#takeaway",
+    "href": "blog/posts/post1/Untitled.html#takeaway",
+    "title": "My First Blog Post",
+    "section": "Takeaway",
+    "text": "Takeaway\nThe Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.\nUnder the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds."
   }
 ]
