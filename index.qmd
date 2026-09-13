@@ -7,7 +7,7 @@ title: ""
 ![](images/微信图片_20250808112552.jpg){width="100%"}
 :::
 
-::: {.column width="65%"}
+::: {.column width="65%" style="transform: translateX(25px);"}
 ![](images/UniversityofPennsylvania_FullLogo_RGB.png){width="250px"}
 
 # Yuhe Tian
