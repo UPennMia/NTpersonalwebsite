@@ -11,21 +11,21 @@
     "href": "bio.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a short biography here.\nInclude:"
+    "text": "Hi, I’m Yuhe Tian. I earned my bachelor’s degree in Finance from the University of International Business and Economics and am currently pursuing a master’s degree in Applied Economics and Data Science at the University of Pennsylvania.\nMy academic interests include finance, econometrics, and economics. I have a basic working knowledge of Microsoft Office, Python, Stata, EViews, and SPSS. After graduation, I hope to pursue a career in investment banking."
   },
   {
     "objectID": "bio.html#education",
     "href": "bio.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\nMaster of Applied Economics and Data Science, University of Pennsylvania (expaceted 2027) Batelor of Science, University Name 2026"
+    "text": "Education\nMaster of Applied Economics and Data Science, University of Pennsylvania (expaceted 2027) Bachelor of Finance, University of International Business and Economics 2022-2026"
   },
   {
     "objectID": "bio.html#interests",
     "href": "bio.html#interests",
     "title": "About Me",
     "section": "Interests",
-    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis"
+    "text": "Interests\n\nFinance\nEconometrics\nEconomics"
   },
   {
     "objectID": "bio.html#contact",
@@ -75,5 +75,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "bio.html#yuhetsas.upenn.edu",
+    "href": "bio.html#yuhetsas.upenn.edu",
+    "title": "About Me",
+    "section": "yuhet@sas.upenn.edu",
+    "text": "yuhet@sas.upenn.edu"
   }
 ]
