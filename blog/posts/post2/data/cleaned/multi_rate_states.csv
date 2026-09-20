@@ -1,0 +1,5 @@
+"state","category","raw_cell","abbr","multi_rate","wage_low","wage_high","wage","effective_date","cost_index","cost_period","adjusted_low","adjusted_high","adjusted"
+"New Jersey","above_federal","NJ $15.92 or $15.23","NJ",TRUE,15.23,15.92,,"July 1, 2026",119.2,"Second Quarter 2026",12.7768456375839,13.3557046979866,
+"New York","above_federal","NY $17.00 or $16.00","NY",TRUE,16,17,,"July 1, 2026",132.6,"Second Quarter 2026",12.0663650075415,12.8205128205128,
+"Ohio","above_federal","OH $11.00 or $7.25","OH",TRUE,7.25,11,,"July 1, 2026",93,"Second Quarter 2026",7.79569892473118,11.8279569892473,
+"Oregon","above_federal","OR $16.80 or $15.55 or $14.55","OR",TRUE,14.55,16.8,,"July 1, 2026",110.4,"Second Quarter 2026",13.179347826087,15.2173913043478,

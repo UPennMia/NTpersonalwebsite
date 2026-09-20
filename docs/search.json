@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "The Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Where Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -117,5 +117,68 @@
     "title": "The Monty Hall Problem",
     "section": "Takeaway",
     "text": "Takeaway\nThe Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.\nUnder the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html",
+    "href": "blog/posts/post2/index.html",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "",
+    "text": "If two jobs offer different hourly wages, the higher offer initially looks better. But rent, groceries, and other expenses vary across places. For workers considering jobs near the wage floor, a useful question is: where does the minimum wage buy more after accounting for local prices? I combine two public websites to build a simple comparison. The goal is a practical screening tool for comparing locations, rather than a claim that one state is best for every worker."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#a-higher-wage-but-a-better-deal",
+    "href": "blog/posts/post2/index.html#a-higher-wage-but-a-better-deal",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "",
+    "text": "If two jobs offer different hourly wages, the higher offer initially looks better. But rent, groceries, and other expenses vary across places. For workers considering jobs near the wage floor, a useful question is: where does the minimum wage buy more after accounting for local prices? I combine two public websites to build a simple comparison. The goal is a practical screening tool for comparing locations, rather than a claim that one state is best for every worker."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#two-websites-one-comparison",
+    "href": "blog/posts/post2/index.html#two-websites-one-comparison",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "Two Websites, One Comparison",
+    "text": "Two Websites, One Comparison\nUsing R’s rvest package, I extracted the U.S. Department of Labor’s minimum-wage table, effective July 1, 2026, and MERIC’s cost-of-living table for Second Quarter 2026. MERIC averages indices from participating cities and metropolitan areas within each state. The national benchmark is 100. The wage schedule and price index cover different periods, so this comparison uses the published cost period as a benchmark rather than an exact contemporaneous price measure. Saved HTML snapshots preserve the observations used here.\nI removed currency symbols, whitespace, and footnote markers, expanded state abbreviations, and matched all 50 states plus Washington, DC. For employment covered by the federal Fair Labor Standards Act, states with no higher floor receive the federal floor, not zero. States listing multiple general rates are retained separately rather than assigned an arbitrary single rate. This leaves 47 jurisdictions in the main comparison. Special local, industry, youth, and tipped-worker rates are outside its scope.\nThe calculation is:\n\\[\n\\text{Cost-adjusted hourly wage}\n=\n\\frac{\\text{Hourly minimum wage}}\n{\\text{Cost-of-living index}/100}\n\\]\nAn index of 120 reduces the nominal wage to its equivalent at the national price benchmark; an index of 90 increases it. This measure is a purchasing-power proxy, not a new legal wage, take-home pay, or a complete living-wage estimate."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#prices-change-the-ranking",
+    "href": "blog/posts/post2/index.html#prices-change-the-ranking",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "Prices Change the Ranking",
+    "text": "Prices Change the Ranking\nMissouri leads the main sample after adjustment at approximately $17.01 per hour. District of Columbia has the highest nominal floor in the sample, $18.40, equivalent to $13.75 after adjustment. California’s $16.90 floor becomes about $12.05. Missouri’s $15.00 becomes $17.01. Massachusetts has a $15.00 floor, equivalent to $10.13. The comparison shows why a wage’s dollar value alone is not enough to assess purchasing power.\n\n\n\n\n\n\n\n\nFigure 1: The ten highest cost-adjusted minimum wages in the main sample. Connected points compare nominal and adjusted hourly amounts.\n\n\n\n\n\nThe full-sample scatterplot shows how the adjustment works beyond a few examples. Points above the diagonal have cost indices below 100; those below it have higher indices. The descriptive pattern does not establish that wage laws cause prices, employment, or migration. It shows why comparing dollar amounts alone can miss an important part of a worker’s budget.\n\n\n\n\n\n\n\n\nFigure 2: Nominal versus cost-adjusted minimum wages in the main sample. The dashed line indicates equal nominal and adjusted values."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#what-should-a-job-seeker-do",
+    "href": "blog/posts/post2/index.html#what-should-a-job-seeker-do",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "What Should a Job Seeker Do?",
+    "text": "What Should a Job Seeker Do?\nA worker comparing otherwise similar minimum-wage opportunities could use the adjusted ranking to shortlist locations, then check actual offers and local housing costs. Matching Missouri’s minimum-wage purchasing-power proxy in California would require approximately $23.86 per hour at these indices. This is a benchmark calculation, not a forecast or salary recommendation. The practical lesson is to compare the actual offered wage relative to relevant local costs, then consider hours, benefits, job availability, and moving expenses."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#important-limitations",
+    "href": "blog/posts/post2/index.html#important-limitations",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "Important Limitations",
+    "text": "Important Limitations\nState averages hide substantial differences between cities, and MERIC’s participating areas need not represent every worker’s spending. The proxy omits taxes, benefits, job-finding chances, and personal household needs. Wage coverage also varies, and the excluded multi-rate states may suit particular workers better than the main ranking suggests. These limitations make the results a starting point for research, not a complete relocation recommendation."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#top-ten-the-numbers",
+    "href": "blog/posts/post2/index.html#top-ten-the-numbers",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "Top Ten: The Numbers",
+    "text": "Top Ten: The Numbers\n\n\n\nHighest adjusted hourly amounts in the 47-jurisdiction sample.\n\n\nState\nMinimum wage\nCost index\nAdjusted wage\n\n\n\n\nMissouri\n$15.00\n88.2\n$17.01\n\n\nNebraska\n$15.00\n90.1\n$16.65\n\n\nConnecticut\n$16.94\n103.6\n$16.35\n\n\nIllinois\n$15.00\n94.5\n$15.87\n\n\nDelaware\n$15.00\n100.6\n$14.91\n\n\nMichigan\n$13.73\n92.1\n$14.91\n\n\nWashington\n$17.13\n115.1\n$14.88\n\n\nColorado\n$15.16\n102.7\n$14.76\n\n\nRhode Island\n$16.00\n110.9\n$14.43\n\n\nArizona\n$15.15\n108.6\n$13.95"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#appendix-states-with-multiple-rates",
+    "href": "blog/posts/post2/index.html#appendix-states-with-multiple-rates",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "Appendix: States with Multiple Rates",
+    "text": "Appendix: States with Multiple Rates\nThe states excluded from the single-rate comparison are: New Jersey, New York, Ohio, and Oregon. The endpoints below apply the same state cost index to the lowest and highest listed general wage rates. They are scenarios, not confidence intervals; geographic and employer-specific coverage still matter.\n\n\n\nMultiple-rate states retained outside the main ranking.\n\n\nState\nNominal range\nAdjusted range\n\n\n\n\nNew Jersey\n$15.23 to $15.92\n$12.78 to $13.36\n\n\nNew York\n$16.00 to $17.00\n$12.07 to $12.82\n\n\nOhio\n$7.25 to $11.00\n$7.80 to $11.83\n\n\nOregon\n$14.55 to $16.80\n$13.18 to $15.22"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#sources-and-code",
+    "href": "blog/posts/post2/index.html#sources-and-code",
+    "title": "Where Does the Minimum Wage Go Furthest?",
+    "section": "Sources and Code",
+    "text": "Sources and Code\n\nU.S. Department of Labor: Consolidated State Minimum Wage Update Table. Effective July 1, 2026. Retrieved 2026-09-20 (UTC).\nMERIC: Cost of Living Data Series. Second Quarter 2026; underlying survey by C2ER. Retrieved 2026-09-20 (UTC).\n\nThe accompanying project contains the scraping script in code/01_scrape.R, saved source webpages in data/raw/, cleaned observations in data/cleaned/, and generated results in results/. The README.md explains how to reproduce the analysis. Subsequent renders reuse saved HTML unless a data refresh is explicitly requested.\n\n\nMissouri source-data notice\n\nThe data made available here has been modified for use from its original source, which is the State of Missouri. THE STATE OF MISSOURI MAKES NO REPRESENTATIONS OR WARRANTY AS TO THE COMPLETENESS, ACCURACY, TIMELINESS, OR CONTENT OF ANY DATA MADE AVAILABLE THROUGH THIS SITE. THE STATE OF MISSOURI EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.\nThe data is subject to change as modifications and updates are complete. It is understood that the information contained in the Web feed is being used at one’s own risk.\nState of Missouri Data Policy"
   }
 ]

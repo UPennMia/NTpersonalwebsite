@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-06-16">
+<meta name="dcterms.date" content="2026-09-20">
 
-<title>My Second Blog Post – Yuhe Tian</title>
+<title>Where Does the Minimum Wage Go Furthest? – Yuhe Tian</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -126,10 +155,11 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Second Blog Post</h1>
+<h1 class="title">Where Does the Minimum Wage Go Furthest?</h1>
   <div class="quarto-categories">
     <div class="quarto-category">opinion</div>
     <div class="quarto-category">labor market</div>
+    <div class="quarto-category">cost of living</div>
   </div>
   </div>
 
@@ -141,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 16, 2026</p>
+      <p class="date">September 20, 2026</p>
     </div>
   </div>
   
@@ -153,8 +183,226 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="this-is-my-second-blog-post." class="level2">
-<h2 class="anchored" data-anchor-id="this-is-my-second-blog-post.">This is my second blog post.</h2>
+<style>
+main.content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+h1.title {
+  font-size: 2.2rem;
+  line-height: 1.25;
+}
+main.content h2 {
+  font-size: 1.55rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+main.content p {
+  margin-bottom: 1.1rem;
+}
+.quarto-figure {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+figcaption {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+</style>
+<section id="a-higher-wage-but-a-better-deal" class="level2">
+<h2 class="anchored" data-anchor-id="a-higher-wage-but-a-better-deal">A Higher Wage, but a Better Deal?</h2>
+<p>If two jobs offer different hourly wages, the higher offer initially looks better. But rent, groceries, and other expenses vary across places. For workers considering jobs near the wage floor, a useful question is: <strong>where does the minimum wage buy more after accounting for local prices?</strong> I combine two public websites to build a simple comparison. The goal is a practical screening tool for comparing locations, rather than a claim that one state is best for every worker.</p>
+</section>
+<section id="two-websites-one-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="two-websites-one-comparison">Two Websites, One Comparison</h2>
+<p>Using R’s <code>rvest</code> package, I extracted the <a href="https://www.dol.gov/agencies/whd/mw-consolidated">U.S. Department of Labor’s minimum-wage table</a>, effective July 1, 2026, and <a href="https://meric.mo.gov/data/cost-living-data-series">MERIC’s cost-of-living table</a> for Second Quarter 2026. MERIC averages indices from participating cities and metropolitan areas within each state. The national benchmark is 100. The wage schedule and price index cover different periods, so this comparison uses the published cost period as a benchmark rather than an exact contemporaneous price measure. Saved HTML snapshots preserve the observations used here.</p>
+<p>I removed currency symbols, whitespace, and footnote markers, expanded state abbreviations, and matched all 50 states plus Washington, DC. For employment covered by the federal Fair Labor Standards Act, states with no higher floor receive the federal floor, not zero. States listing multiple general rates are retained separately rather than assigned an arbitrary single rate. This leaves <strong>47 jurisdictions</strong> in the main comparison. Special local, industry, youth, and tipped-worker rates are outside its scope.</p>
+<p>The calculation is:</p>
+<p><span class="math display">\[
+\text{Cost-adjusted hourly wage}
+=
+\frac{\text{Hourly minimum wage}}
+{\text{Cost-of-living index}/100}
+\]</span></p>
+<p>An index of 120 reduces the nominal wage to its equivalent at the national price benchmark; an index of 90 increases it. This measure is a purchasing-power proxy, not a new legal wage, take-home pay, or a complete living-wage estimate.</p>
+</section>
+<section id="prices-change-the-ranking" class="level2">
+<h2 class="anchored" data-anchor-id="prices-change-the-ranking">Prices Change the Ranking</h2>
+<p>Missouri leads the main sample after adjustment at approximately <strong>$17.01 per hour</strong>. District of Columbia has the highest nominal floor in the sample, $18.40, equivalent to $13.75 after adjustment. California’s $16.90 floor becomes about $12.05. Missouri’s $15.00 becomes $17.01. Massachusetts has a $15.00 floor, equivalent to $10.13. The comparison shows why a wage’s dollar value alone is not enough to assess purchasing power.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-top-ten" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-top-ten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="results/figures/fig-top-ten-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-top-ten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The ten highest cost-adjusted minimum wages in the main sample. Connected points compare nominal and adjusted hourly amounts.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The full-sample scatterplot shows how the adjustment works beyond a few examples. Points above the diagonal have cost indices below 100; those below it have higher indices. The descriptive pattern does not establish that wage laws cause prices, employment, or migration. It shows why comparing dollar amounts alone can miss an important part of a worker’s budget.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-all-states" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-all-states-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="results/figures/fig-all-states-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-all-states-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Nominal versus cost-adjusted minimum wages in the main sample. The dashed line indicates equal nominal and adjusted values.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="what-should-a-job-seeker-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-should-a-job-seeker-do">What Should a Job Seeker Do?</h2>
+<p>A worker comparing otherwise similar minimum-wage opportunities could use the adjusted ranking to shortlist locations, then check actual offers and local housing costs. Matching Missouri’s minimum-wage purchasing-power proxy in California would require approximately <strong>$23.86 per hour</strong> at these indices. This is a benchmark calculation, not a forecast or salary recommendation. The practical lesson is to compare <strong>the actual offered wage relative to relevant local costs</strong>, then consider hours, benefits, job availability, and moving expenses.</p>
+</section>
+<section id="important-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="important-limitations">Important Limitations</h2>
+<p>State averages hide substantial differences between cities, and MERIC’s participating areas need not represent every worker’s spending. The proxy omits taxes, benefits, job-finding chances, and personal household needs. Wage coverage also varies, and the excluded multi-rate states may suit particular workers better than the main ranking suggests. These limitations make the results a starting point for research, not a complete relocation recommendation.</p>
+</section>
+<section id="top-ten-the-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="top-ten-the-numbers">Top Ten: The Numbers</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Highest adjusted hourly amounts in the 47-jurisdiction sample.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">State</th>
+<th style="text-align: right;">Minimum wage</th>
+<th style="text-align: right;">Cost index</th>
+<th style="text-align: right;">Adjusted wage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: right;">$15.00</td>
+<td style="text-align: right;">88.2</td>
+<td style="text-align: right;">$17.01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nebraska</td>
+<td style="text-align: right;">$15.00</td>
+<td style="text-align: right;">90.1</td>
+<td style="text-align: right;">$16.65</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: right;">$16.94</td>
+<td style="text-align: right;">103.6</td>
+<td style="text-align: right;">$16.35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Illinois</td>
+<td style="text-align: right;">$15.00</td>
+<td style="text-align: right;">94.5</td>
+<td style="text-align: right;">$15.87</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Delaware</td>
+<td style="text-align: right;">$15.00</td>
+<td style="text-align: right;">100.6</td>
+<td style="text-align: right;">$14.91</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Michigan</td>
+<td style="text-align: right;">$13.73</td>
+<td style="text-align: right;">92.1</td>
+<td style="text-align: right;">$14.91</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Washington</td>
+<td style="text-align: right;">$17.13</td>
+<td style="text-align: right;">115.1</td>
+<td style="text-align: right;">$14.88</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: right;">$15.16</td>
+<td style="text-align: right;">102.7</td>
+<td style="text-align: right;">$14.76</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rhode Island</td>
+<td style="text-align: right;">$16.00</td>
+<td style="text-align: right;">110.9</td>
+<td style="text-align: right;">$14.43</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arizona</td>
+<td style="text-align: right;">$15.15</td>
+<td style="text-align: right;">108.6</td>
+<td style="text-align: right;">$13.95</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="appendix-states-with-multiple-rates" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-states-with-multiple-rates">Appendix: States with Multiple Rates</h2>
+<p>The states excluded from the single-rate comparison are: <strong>New Jersey, New York, Ohio, and Oregon</strong>. The endpoints below apply the same state cost index to the lowest and highest listed general wage rates. They are scenarios, not confidence intervals; geographic and employer-specific coverage still matter.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Multiple-rate states retained outside the main ranking.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">State</th>
+<th style="text-align: right;">Nominal range</th>
+<th style="text-align: right;">Adjusted range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">New Jersey</td>
+<td style="text-align: right;">$15.23 to $15.92</td>
+<td style="text-align: right;">$12.78 to $13.36</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">New York</td>
+<td style="text-align: right;">$16.00 to $17.00</td>
+<td style="text-align: right;">$12.07 to $12.82</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ohio</td>
+<td style="text-align: right;">$7.25 to $11.00</td>
+<td style="text-align: right;">$7.80 to $11.83</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Oregon</td>
+<td style="text-align: right;">$14.55 to $16.80</td>
+<td style="text-align: right;">$13.18 to $15.22</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="sources-and-code" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-code">Sources and Code</h2>
+<ul>
+<li><a href="https://www.dol.gov/agencies/whd/mw-consolidated">U.S. Department of Labor: Consolidated State Minimum Wage Update Table</a>. Effective July 1, 2026. Retrieved 2026-09-20 (UTC).</li>
+<li><a href="https://meric.mo.gov/data/cost-living-data-series">MERIC: Cost of Living Data Series</a>. Second Quarter 2026; underlying survey by C2ER. Retrieved 2026-09-20 (UTC).</li>
+</ul>
+<p>The accompanying project contains the scraping script in <code>code/01_scrape.R</code>, saved source webpages in <code>data/raw/</code>, cleaned observations in <code>data/cleaned/</code>, and generated results in <code>results/</code>. The <code>README.md</code> explains how to reproduce the analysis. Subsequent renders reuse saved HTML unless a data refresh is explicitly requested.</p>
+<details>
+<summary>
+Missouri source-data notice
+</summary>
+<p>The data made available here has been modified for use from its original source, which is the State of Missouri. THE STATE OF MISSOURI MAKES NO REPRESENTATIONS OR WARRANTY AS TO THE COMPLETENESS, ACCURACY, TIMELINESS, OR CONTENT OF ANY DATA MADE AVAILABLE THROUGH THIS SITE. THE STATE OF MISSOURI EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>The data is subject to change as modifications and updates are complete. It is understood that the information contained in the Web feed is being used at one’s own risk.</p>
+<p><a href="https://mo.gov/data-policy">State of Missouri Data Policy</a></p>
+</details>
 
 
 </section>
