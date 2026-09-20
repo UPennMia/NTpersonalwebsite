@@ -214,10 +214,10 @@ figcaption {
 <h2 class="anchored" data-anchor-id="a-higher-wage-but-a-better-deal">A Higher Wage, but a Better Deal?</h2>
 <p>If two jobs offer different hourly wages, the higher offer initially looks better. But rent, groceries, and other expenses vary across places. For workers considering jobs near the wage floor, a useful question is: <strong>where does the minimum wage buy more after accounting for local prices?</strong> I combine two public websites to build a simple comparison. The goal is a practical screening tool for comparing locations, rather than a claim that one state is best for every worker.</p>
 </section>
-<section id="two-websites-one-comparison" class="level2">
-<h2 class="anchored" data-anchor-id="two-websites-one-comparison">Two Websites, One Comparison</h2>
-<p>Using R’s <code>rvest</code> package, I extracted the <a href="https://www.dol.gov/agencies/whd/mw-consolidated">U.S. Department of Labor’s minimum-wage table</a>, effective July 1, 2026, and <a href="https://meric.mo.gov/data/cost-living-data-series">MERIC’s cost-of-living table</a> for Second Quarter 2026. MERIC averages indices from participating cities and metropolitan areas within each state. The national benchmark is 100. The wage schedule and price index cover different periods, so this comparison uses the published cost period as a benchmark rather than an exact contemporaneous price measure. Saved HTML snapshots preserve the observations used here.</p>
-<p>I removed currency symbols, whitespace, and footnote markers, expanded state abbreviations, and matched all 50 states plus Washington, DC. For employment covered by the federal Fair Labor Standards Act, states with no higher floor receive the federal floor, not zero. States listing multiple general rates are retained separately rather than assigned an arbitrary single rate. This leaves <strong>47 jurisdictions</strong> in the main comparison. Special local, industry, youth, and tipped-worker rates are outside its scope.</p>
+<section id="the-data-behind-the-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-behind-the-comparison">The Data Behind the Comparison</h2>
+<p>This analysis combines the <a href="https://www.dol.gov/agencies/whd/mw-consolidated">U.S. Department of Labor’s minimum-wage table</a>, effective July 1, 2026, with <a href="https://meric.mo.gov/data/cost-living-data-series">MERIC’s cost-of-living index</a> for Second Quarter 2026. MERIC averages indices from participating cities and metropolitan areas within each state, with the national benchmark set at 100. Because the wage schedule and cost index cover different periods, the published cost figures serve as a price benchmark rather than a precise measure of prices when the wage rates took effect.</p>
+<p>After cleaning, the two datasets were matched across all 50 states and Washington, DC. For employment covered by the federal Fair Labor Standards Act, states without a higher state minimum use the federal minimum wage—not zero. States listing multiple general rates are retained separately with all listed rates preserved, rather than assigned a single value. The main comparison therefore includes <strong>47 jurisdictions</strong>. Special local, industry-specific, youth, and tipped-worker wage rates are outside the scope of this analysis.</p>
 <p>The calculation is:</p>
 <p><span class="math display">\[
 \text{Cost-adjusted hourly wage}
@@ -388,13 +388,12 @@ Figure&nbsp;2: Nominal versus cost-adjusted minimum wages in the main sample. Th
 </div>
 </div>
 </section>
-<section id="sources-and-code" class="level2">
-<h2 class="anchored" data-anchor-id="sources-and-code">Sources and Code</h2>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
 <ul>
 <li><a href="https://www.dol.gov/agencies/whd/mw-consolidated">U.S. Department of Labor: Consolidated State Minimum Wage Update Table</a>. Effective July 1, 2026. Retrieved 2026-09-20 (UTC).</li>
 <li><a href="https://meric.mo.gov/data/cost-living-data-series">MERIC: Cost of Living Data Series</a>. Second Quarter 2026; underlying survey by C2ER. Retrieved 2026-09-20 (UTC).</li>
 </ul>
-<p>The accompanying project contains the scraping script in <code>code/01_scrape.R</code>, saved source webpages in <code>data/raw/</code>, cleaned observations in <code>data/cleaned/</code>, and generated results in <code>results/</code>. The <code>README.md</code> explains how to reproduce the analysis. Subsequent renders reuse saved HTML unless a data refresh is explicitly requested.</p>
 <details>
 <summary>
 Missouri source-data notice
