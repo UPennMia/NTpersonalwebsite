@@ -1,4 +1,4 @@
-# Run from the repository root with Rscript code/01_analyze.R.
+# Run from blog/posts/post3/ with Rscript code/01_analyze.R.
 # The downloaded IPUMS DDI and microdata belong in data/raw/ and are not committed.
 
 required_packages <- c("ipumsr", "ggplot2")
@@ -8,8 +8,8 @@ if (length(missing_packages)) {
        paste(sprintf('"%s"', missing_packages), collapse = ", "), "))", call. = FALSE)
 }
 
-root <- if (file.exists("blog/posts/post3/index.qmd")) "." else
-        stop("Run from the repository root (containing blog/ and code/).", call. = FALSE)
+root <- if (file.exists("index.qmd")) "." else
+        stop("Run from blog/posts/post3/ (containing index.qmd and code/).", call. = FALSE)
 root <- normalizePath(root)
 data_dir <- file.path(root, "data", "raw")
 figure_dir <- file.path(root, "results", "figures")

@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Where Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -194,5 +194,61 @@
     "title": "Where Does the Minimum Wage Go Furthest?",
     "section": "Data Sources",
     "text": "Data Sources\n\nU.S. Department of Labor: Consolidated State Minimum Wage Update Table. Effective July 1, 2026. Retrieved 2026-09-20 (UTC).\nMERIC: Cost of Living Data Series. Second Quarter 2026; underlying survey by C2ER. Retrieved 2026-09-20 (UTC).\n\n\n\nMissouri source-data notice\n\nThe data made available here has been modified for use from its original source, which is the State of Missouri. THE STATE OF MISSOURI MAKES NO REPRESENTATIONS OR WARRANTY AS TO THE COMPLETENESS, ACCURACY, TIMELINESS, OR CONTENT OF ANY DATA MADE AVAILABLE THROUGH THIS SITE. THE STATE OF MISSOURI EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.\nThe data is subject to change as modifications and updates are complete. It is understood that the information contained in the Web feed is being used at one’s own risk.\nState of Missouri Data Policy"
+  },
+  {
+    "objectID": "blog/posts/post3/index.html",
+    "href": "blog/posts/post3/index.html",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "",
+    "text": "In the aftermath of pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger, prime-age, and older adults. Participation means having a job or actively seeking one; it is broader than employment. This post compares two March snapshots of the U.S. civilian population, then asks whether the changes look the same for women and men. The central finding is that the prime-age gain was concentrated among women, while participation among adults 65 and older was slightly lower."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#a-changing-labor-market",
+    "href": "blog/posts/post3/index.html#a-changing-labor-market",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "",
+    "text": "In the aftermath of pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger, prime-age, and older adults. Participation means having a job or actively seeking one; it is broader than employment. This post compares two March snapshots of the U.S. civilian population, then asks whether the changes look the same for women and men. The central finding is that the prime-age gain was concentrated among women, while participation among adults 65 and older was slightly lower."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-and-method",
+    "href": "blog/posts/post3/index.html#data-and-method",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "Data and method",
+    "text": "Data and method\nI use person records from the IPUMS Current Population Survey, specifically the March 2019 and March 2024 Basic Monthly Survey samples. The analysis covers civilians ages 16 and older and divides them into four groups: 16–24, 25–54, 55–64, and 65+. The IPUMS labor-force-status field identifies people in the labor force. Each rate is the sum of the survey’s monthly person weights for participants divided by the sum of these weights for everyone in the relevant group. Both dates use the same calendar month to avoid a simple month-of-year comparison problem."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#participation-across-ages",
+    "href": "blog/posts/post3/index.html#participation-across-ages",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "1. Participation across ages",
+    "text": "1. Participation across ages\n\n\n\nWeighted labor-force participation by age, March 2019 and March 2024\n\n\nIn March 2019, participation among adults ages 25–54 was 82.6%; in March 2024 it was 83.7%. The rates for ages 16–24 and 55–64 also rose, but the rate for ages 65+ moved from 20.5% to 19.9%. The lower participation level for older adults largely reflects the different life stage of retirement; the small change between dates is a separate question. The age pattern cautions against treating every group as if it moved with a single national average."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#where-did-rates-move",
+    "href": "blog/posts/post3/index.html#where-did-rates-move",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "2. Where did rates move?",
+    "text": "2. Where did rates move?\n\n\n\nChange in weighted labor-force participation, percentage points, by age and sex\n\n\nThis chart subtracts each group’s 2019 rate from its 2024 rate. Positive bars indicate higher participation in 2024; negative bars indicate lower participation. The largest absolute change among the eight age-by-sex groups was for women ages 25–54, at +2.7 percentage points. Prime-age men’s rate, by contrast, fell by 0.5 points. Both sexes ages 65+ show small declines. The prime-age increase in the first chart therefore masks substantially different changes for women and men. These are percentage-point changes, not percent growth."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#the-gender-gap-within-each-age-group",
+    "href": "blog/posts/post3/index.html#the-gender-gap-within-each-age-group",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "3. The gender gap within each age group",
+    "text": "3. The gender gap within each age group\n\n\n\nMen’s minus women’s weighted participation rates by age, March 2019 and March 2024\n\n\nHere the gap equals the men’s rate minus the women’s rate within the same age group. A positive value therefore means higher participation among men. For ages 25–54, the gap narrowed from 14.3 points in 2019 to 11.1 points in 2024, a reduction of 3.2 points. The gap changed much less for ages 16–24 and 65+. The second chart explains the main narrowing: prime-age women’s participation rose while men’s edged down. This is a descriptive difference within age groups, not an estimate of unequal pay."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#what-the-three-views-tell-us",
+    "href": "blog/posts/post3/index.html#what-the-three-views-tell-us",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "What the three views tell us",
+    "text": "What the three views tell us\nThe first figure establishes participation levels by age, the second locates the changes within age and sex, and the third reveals the resulting gender gaps. Together they show that a +1.2-point prime-age gain coincided with a 3.2-point narrowing of the prime-age gender gap. The main takeaway is that the apparent prime-age recovery was disproportionately a women’s participation story; it was not uniform across ages or sexes. These are two cross-sections. They do not track the same individuals or establish whether the pandemic, policy, or other factors caused the changes."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-sources",
+    "href": "blog/posts/post3/index.html#data-sources",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nIPUMS Current Population Survey (CPS): March 2019 and March 2024 Basic Monthly samples, accessed through IPUMS CPS.\n\n\n\nIPUMS citation details\n\nSarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. IPUMS CPS: Version 13.0 [dataset]. Minneapolis, MN: IPUMS, 2025. https://doi.org/10.18128/D030.V13.0."
   }
 ]

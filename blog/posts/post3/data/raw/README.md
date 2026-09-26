@@ -1,1 +1,1 @@
-Place your matching IPUMS CPS extract files here: `cps_00001.dat.gz` and `cps_00001.xml`. Keep the raw person records private. See the root README for extraction and replication steps.
+Put one matching IPUMS CPS extract pair here: `cps_00001.dat.gz` and `cps_00001.xml` (or the corresponding extract number). Keep raw person records private. See `../../README.md` for the samples, variables, and replication steps.
