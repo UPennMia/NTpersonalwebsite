@@ -31,6 +31,8 @@ main.content h2 {
 }
 main.content p {
   margin-bottom: 1.1rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .quarto-figure {
   margin-top: 1.5rem;
