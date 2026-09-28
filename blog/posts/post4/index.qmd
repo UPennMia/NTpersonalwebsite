@@ -23,6 +23,8 @@ main.content {
 h1.title {
   font-size: 2.2rem;
   line-height: 1.25;
+  text-align: justify;
+  text-align-last: justify;
 }
 main.content h2 {
   font-size: 1.55rem;
@@ -94,4 +96,14 @@ The third chart recalculates the correlation using the preceding 36 calendar mon
 
 From 2015 through August 2026, inflation and unemployment often moved in opposite directions, but the relationship changed across episodes. In particular, the unemployment spike of 2020 preceded the inflation peak of 2022 by more than two years. The useful lesson is to examine **both timing and economic context** before drawing conclusions from their overall correlation. These figures are descriptive and do not establish a causal tradeoff or predict what will happen next.
 
-**Sources and reproduction:** U.S. Bureau of Labor Statistics, [Consumer Price Index for All Urban Consumers: All Items, seasonally adjusted (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL) and [Unemployment Rate, seasonally adjusted (UNRATE)](https://fred.stlouisfed.org/series/UNRATE), retrieved through FRED, Federal Reserve Bank of St. Louis, September 28, 2026. See the [BLS explanation of the October 2025 CPI gap](https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm) and [missing CPS estimates](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm).
+## Data Sources
+
+- [Consumer Price Index for All Urban Consumers: All Items (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL). U.S. Bureau of Labor Statistics; monthly, seasonally adjusted. Retrieved through FRED, Federal Reserve Bank of St. Louis, September 28, 2026.
+- [Unemployment Rate (UNRATE)](https://fred.stlouisfed.org/series/UNRATE). U.S. Bureau of Labor Statistics; monthly, seasonally adjusted. Retrieved through FRED, Federal Reserve Bank of St. Louis, September 28, 2026.
+
+<details markdown="1">
+<summary>October 2025 data notice</summary>
+
+The 2025 federal government shutdown interrupted data collection. BLS explains the [October 2025 CPI gap](https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm) and the [missing household-survey estimates](https://www.bls.gov/cps/methods/2025-federal-government-shutdown-impact-cps.htm). The analysis omits this month rather than filling in values.
+
+</details>
