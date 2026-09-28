@@ -1,0 +1,8 @@
+"metric","value","date"
+"latest_inflation",3.35301632275564,"2026-08-01"
+"latest_unemployment",4.1,"2026-08-01"
+"peak_inflation",8.9793611031058,"2022-06-01"
+"peak_unemployment",14.8,"2020-04-01"
+"overall_correlation",-0.378455059951039,"2015-01 to 2026-08"
+"latest_rolling_correlation",-0.366493096671101,"2026-08-01"
+"complete_months",139,"2015-01 to 2026-08"

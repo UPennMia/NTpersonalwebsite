@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -250,5 +250,61 @@
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "Data Sources",
     "text": "Data Sources\n\nIPUMS Current Population Survey (CPS): March 2019 and March 2024 Basic Monthly samples, accessed through IPUMS CPS.\n\n\n\nIPUMS citation details\n\nSarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. IPUMS CPS: Version 13.0 [dataset]. Minneapolis, MN: IPUMS, 2025. https://doi.org/10.18128/D030.V13.0."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html",
+    "href": "blog/posts/post4/index.html",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "",
+    "text": "Inflation makes everyday purchases more expensive; unemployment means people who want work cannot find it. A familiar economic idea suggests that the two can sometimes move in opposite directions. Did they actually do so in the United States during the past decade, including the pandemic and its aftermath? The answer matters because a single story about an inflation–unemployment tradeoff could miss very different episodes."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#one-economy-two-pressures",
+    "href": "blog/posts/post4/index.html#one-economy-two-pressures",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015–2026",
+    "section": "",
+    "text": "Inflation makes everyday purchases more expensive; unemployment means people who want work cannot find it. A familiar economic idea suggests that the two can sometimes move in opposite directions. Did they actually do so in the United States during the past decade, including the pandemic and its aftermath? The answer matters because a single story about an inflation–unemployment tradeoff could miss very different episodes."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#data-and-method",
+    "href": "blog/posts/post4/index.html#data-and-method",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "Data and method",
+    "text": "Data and method\nI use monthly U.S. unemployment rates and the Consumer Price Index (CPI) from January 2015 through August 2026. Both series are seasonally adjusted. The CPI is a price level, so let us calculate inflation as its percentage change from the same month one year earlier: (CPI this month / CPI 12 months ago − 1) × 100. The unemployment series is already a percentage rate. Observations are matched by month.\nObservations for October 2025 are missing for both series and are omitted from the analysis. (The U.S. Bureau of Labor Statistics (BLS) explains that the 2025 federal shutdown interrupted collection of these data.)"
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#what-changed-over-time",
+    "href": "blog/posts/post4/index.html#what-changed-over-time",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "1. What changed over time?",
+    "text": "1. What changed over time?\n\n\n\nU.S. year-over-year CPI inflation and unemployment, January 2015–August 2026; separate panels share the same time axis.\n\n\nThe timing matters. Unemployment jumped to 14.8% in April 2020, when CPI inflation was low. Inflation peaked much later, at 9.0% in June 2022, when unemployment had fallen. By August 2026, inflation was 3.4% and unemployment was 4.1%. The panels use separate vertical scales, so compare the dates and directions, not the visual height of one line against the other."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#what-did-individual-months-look-like",
+    "href": "blog/posts/post4/index.html#what-did-individual-months-look-like",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "2. What did individual months look like?",
+    "text": "2. What did individual months look like?\n\n\n\nScatter plot of monthly inflation against unemployment, colored for 2015–2019, 2020–2021, and 2022–2026.\n\n\nEach point is one month. Points toward the right had higher unemployment; points near the top had higher inflation. April 2020 sits far to the right, while June 2022 sits near the top. The colored clusters show that the post-2021 inflation episode occurred mostly at lower unemployment rates than the first pandemic shock. The full-sample correlation is -0.38, but that one number blends episodes with very different economic conditions. A negative correlation describes how these observed monthly pairs lined up; it does not show that reducing unemployment caused prices to rise."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#was-the-relationship-stable",
+    "href": "blog/posts/post4/index.html#was-the-relationship-stable",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "3. Was the relationship stable?",
+    "text": "3. Was the relationship stable?\n\n\n\nCorrelation between inflation and unemployment calculated for successive 36-calendar-month windows.\n\n\nThe third chart recalculates the correlation using the preceding 36 calendar months at each point. It was strongly negative in some windows, briefly positive around 2019, and negative again later. Windows covering October 2025 use the 35 available monthly pairs; no value is filled in. This movement warns against treating one historical correlation as a permanent economic rule. Inflation and unemployment can both respond to disruptions, policy, and other forces that require further exploration."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#takeaway",
+    "href": "blog/posts/post4/index.html#takeaway",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "Takeaway",
+    "text": "Takeaway\nFrom 2015 through August 2026, inflation and unemployment often moved in opposite directions, but the relationship changed across episodes. In particular, the unemployment spike of 2020 preceded the inflation peak of 2022 by more than two years. The useful lesson is to examine both timing and economic context before drawing conclusions from their overall correlation. These figures are descriptive and do not establish a causal tradeoff or predict what will happen next.\nSources and reproduction: U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers: All Items, seasonally adjusted (CPIAUCSL) and Unemployment Rate, seasonally adjusted (UNRATE), retrieved through FRED, Federal Reserve Bank of St. Louis, September 28, 2026. See the BLS explanation of the October 2025 CPI gap and missing CPS estimates."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#dual-pressures-at-work-in-the-u.s.-economy",
+    "href": "blog/posts/post4/index.html#dual-pressures-at-work-in-the-u.s.-economy",
+    "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
+    "section": "",
+    "text": "Inflation makes everyday purchases more expensive; unemployment means people who want work cannot find it. A familiar economic idea suggests that the two can sometimes move in opposite directions. Did they actually do so in the United States during the past decade, including the pandemic and its aftermath? The answer matters because a single story about an inflation–unemployment tradeoff could miss very different episodes."
   }
 ]
