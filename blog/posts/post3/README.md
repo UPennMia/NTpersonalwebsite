@@ -1,32 +1,53 @@
-# Blog 3: U.S. labor-force participation, 2019–2024
+# Blog 3: Where Did Labor-Force Participation Change?
 
-This post folder reproduces the Quarto article at `index.qmd`. The published article contains prose and three figures, with no displayed R code. Its results come from a real IPUMS CPS extract of the March 2019 and March 2024 **Basic Monthly** samples (extract #1, created September 26, 2026; 213,419 person records).
+## Research question
 
-## Folder map
+How did U.S. labor-force participation change across age groups and between women and men from March 2019 to March 2024?
 
-| Path | Contents |
-| --- | --- |
-| `code/00_request_extract.R` | Optional API request and download using your private IPUMS API key. |
-| `code/01_analyze.R` | Import, checks, weighted estimates, tables, and figures. |
-| `data/raw/` | Matching IPUMS DDI XML and compressed person records; **exclude these files from Git**. |
-| `data/cleaned/` | Two generated weighted group summaries in CSV format. |
-| `results/tables/` | Two generated comparisons in CSV format. |
-| `results/figures/` | Three generated PNG charts. |
-| `index.qmd` | Article with hidden calculations and linked figures. |
+## Sources
 
-## Data and replication
+- [IPUMS Current Population Survey (CPS)](https://cps.ipums.org/cps/): March 2019 and March 2024 Basic Monthly samples.
+- [LABFORCE](https://cps.ipums.org/cps-action/variables/LABFORCE) identifies labor-force status; [WTFINL](https://cps.ipums.org/cps-action/variables/WTFINL) provides the monthly person weights.
 
-1. Log in to [IPUMS CPS](https://cps.ipums.org/cps/). Select Basic Monthly samples `cps2019_03b` and `cps2024_03b` (not March ASEC). Request `YEAR`, `MONTH`, `AGE`, `SEX`, `LABFORCE`, `WTFINL`; some are automatically included. Download the fixed-width `.dat.gz` **and** matching DDI `.xml` files. Put one matching pair, such as `cps_00001.dat.gz` and `cps_00001.xml`, in `data/raw/`. The sample must not be restricted to employed people or one sex.
-2. Install R, Quarto, and R packages with `install.packages(c("ipumsr", "ggplot2"))`.
-3. From the website project, set the RStudio Console working directory to `blog/posts/post3/` (for example, navigate to it in Files and choose More > Set As Working Directory). Then run `source("code/01_analyze.R")`. This replaces the two files in `data/cleaned/`, two files in `results/tables/`, and three PNGs in `results/figures/`.
-4. Render `index.qmd` (or your whole Quarto website). Verify the article has three charts, dynamically calculated figures in its sentences, and no visible R code. Commit and push the QMD, code, README, summary CSVs and figures; do not commit the raw IPUMS files. Submit the published post URL and the repository URL.
+The analysis uses civilians ages 16 and older. Both samples are from March so that the comparison uses the same calendar month.
 
-As an alternative to step 1, create your own IPUMS API key, put it in the `IPUMS_API_KEY` environment variable **outside Git**, then run `source("code/00_request_extract.R")` from `blog/posts/post3/`. The script submits the precise request, waits, and downloads to `data/raw/`. Do not paste your key into the script. In the website repository root `.gitignore`, add `blog/posts/post3/data/raw/cps_*.dat.gz` and `blog/posts/post3/data/raw/cps_*.xml` before placing any private extract there.
+## Files
 
-The numerator for each labor-force participation rate is the sum of `WTFINL` for records with `LABFORCE == 2`; the denominator is the sum for `LABFORCE` 1 or 2. The population is civilian people age 16 and over with positive weights. The four age groups are 16–24, 25–54, 55–64, and 65+. The 2019 and 2024 observations are separate cross-sections and do not identify a causal effect. Raw IPUMS person records require an account; committed cleaned aggregates and charts let the article render without a private extract.
+- `code/00_request_extract.R`: optionally requests and downloads the IPUMS extract using an API key.
+- `code/01_analyze.R`: reads the extract, calculates weighted participation rates, and generates tables and figures.
+- `data/raw/`: the downloaded IPUMS `.dat.gz` file and its matching `.xml` file. These files are not included in the repository.
+- `data/cleaned/`: weighted participation rates by age, and by age and sex.
+- `results/tables/`: changes in participation and gender gaps.
+- `results/figures/`: three figures used in the article.
+- `index.qmd`: article text, calculations, and figures.
+- `README.md`: project description and reproduction instructions.
 
-## Adding the article to an existing website
+## Reproduce
 
-Keep this entire folder inside `blog/posts/post3/` in the website repository. Render the website, then commit and push source and rendered files using the existing site workflow. Keep your own raw extract pair in `data/raw/` locally for regeneration.
+Install R, Quarto, and the required R packages:
 
-**Data citation:** Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. *IPUMS CPS: Version 13.0* [dataset]. Minneapolis, MN: IPUMS, 2025. https://doi.org/10.18128/D030.V13.0. Variable documentation: [LABFORCE](https://cps.ipums.org/cps-action/variables/LABFORCE), [WTFINL](https://cps.ipums.org/cps-action/variables/WTFINL).
+```r
+install.packages(c("ipumsr", "ggplot2"))
+```
+
+To regenerate the results, obtain the March 2019 and March 2024 **Basic Monthly** samples from [IPUMS CPS](https://cps.ipums.org/cps/). Include `AGE`, `SEX`, `LABFORCE`, and `WTFINL`. Save the downloaded `.dat.gz` file and its matching `.xml` file in `data/raw/`. From the `blog/posts/post3/` directory, run:
+
+```r
+source("code/01_analyze.R")
+```
+
+This regenerates the CSV files in `data/cleaned/` and `results/tables/`, as well as the three images in `results/figures/`. Render `index.qmd` in RStudio or run `quarto render index.qmd` to build the article.
+
+Alternatively, `code/00_request_extract.R` can request the same samples through the IPUMS API. Set your own `IPUMS_API_KEY` as an environment variable before running the script. The raw IPUMS extract and API key should remain outside Git. The repository includes the generated summaries and figures, so the article can be rendered without downloading the person-level records.
+
+## Method
+
+Labor-force participation is the weighted share of people who are employed or looking for work. For each group, I divide the sum of `WTFINL` weights for people in the labor force by the sum of weights for everyone with a valid labor-force status. The age groups are 16–24, 25–54, 55–64, and 65+. The analysis compares participation by age, changes by age and sex, and the difference between men's and women's rates within each age group.
+
+## Limitations
+
+The two samples contain different people, so the results describe changes between two cross-sections rather than changes experienced by the same individuals. The comparisons do not establish what caused participation to change. The raw IPUMS records require an IPUMS account and are not redistributed in this repository.
+
+## Source notice
+
+Data: Sarah Flood et al., *IPUMS CPS: Version 13.0* [dataset]. Minneapolis, MN: IPUMS, 2025. [https://doi.org/10.18128/D030.V13.0](https://doi.org/10.18128/D030.V13.0).
