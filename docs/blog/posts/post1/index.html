@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-09-13">
 
-<title>Blog – Yuhe Tian</title>
+<title>The Monty Hall Problem – Yuhe Tian</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -132,7 +102,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -142,7 +112,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Yuhe Tian</span>
     </a>
   </div>
@@ -153,19 +123,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../bio.html"> 
+    <a class="nav-link" href="../../../bio.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resume.html"> 
+    <a class="nav-link" href="../../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -185,14 +155,24 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">The Monty Hall Problem</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Probability</div>
+    <div class="quarto-category">Statistics</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 13, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -202,125 +182,115 @@ window.Quarto = {
 </header>
 
 
+<p><img src="figure.png" class="img-fluid" width="500"></p>
+<section id="two-doors-but-not-equal-chances" class="level2">
+<h2 class="anchored" data-anchor-id="two-doors-but-not-equal-chances">Two Doors, but Not Equal Chances</h2>
+<p>Imagine you are on a game show. There are three closed doors: one hides a car, and the other two hide goats. You choose one door, hoping to win the car. Before revealing your choice, the host opens another door and shows you a goat. You now have a decision: keep your original choice or switch to the remaining closed door.</p>
+<p>At first, switching seems pointless. There are only two doors left, so shouldn’t each have a 50% chance of hiding the car?</p>
+<p>Surprisingly, no. Keeping your original choice gives you a one-third chance of winning. Switching gives you a two-thirds chance. This is the Monty Hall problem, a classic example of how information can challenge our intuition.</p>
+</section>
+<section id="the-hosts-rules-matter" class="level2">
+<h2 class="anchored" data-anchor-id="the-hosts-rules-matter">The Host’s Rules Matter</h2>
+<p>To understand the result, we need to specify the rules:</p>
+<ul>
+<li>The car is equally likely to be behind any of the three doors.</li>
+<li>The host knows where the car is.</li>
+<li>The host always opens a door you did not choose and reveals a goat.</li>
+<li>The host always offers you the opportunity to switch.</li>
+</ul>
+<p>These rules matter because the host is not opening a door randomly. The host deliberately avoids revealing the car. If the host followed different rules, the probabilities could change.</p>
+</section>
+<section id="when-does-switching-win" class="level2">
+<h2 class="anchored" data-anchor-id="when-does-switching-win">When Does Switching Win?</h2>
+<p>The easiest way to understand the problem is to focus on your initial choice.</p>
+<p>When you first choose a door, your probability of selecting the car is:</p>
+<p><span class="math display">\[
+P(\text{initial choice is the car}) = \frac{1}{3}.
+\]</span></p>
+<p>Your probability of selecting a goat is:</p>
+<p><span class="math display">\[
+P(\text{initial choice is a goat}) = \frac{2}{3}.
+\]</span></p>
+<p>Now consider what switching does.</p>
+<p>If you initially chose the car, the host reveals one of the goats. Switching takes you away from the car, so you lose.</p>
+<p>If you initially chose a goat, the host must reveal the other goat. The only remaining unchosen door therefore hides the car. Switching wins.</p>
+<p>In other words, switching wins exactly when your original choice was wrong.</p>
+<p><span class="math display">\[
+P(\text{winning by switching})
+=
+P(\text{initial choice is a goat})
+=
+\frac{2}{3}.
+\]</span></p>
+<p>Suppose you initially choose Door 1. The three equally likely possibilities are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Car’s location</th>
+<th style="text-align: left;">Host opens</th>
+<th style="text-align: left;">Staying</th>
+<th style="text-align: left;">Switching</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Door 1</td>
+<td style="text-align: left;">Door 2 or Door 3</td>
+<td style="text-align: left;">Win</td>
+<td style="text-align: left;">Lose</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Door 2</td>
+<td style="text-align: left;">Door 3</td>
+<td style="text-align: left;">Lose</td>
+<td style="text-align: left;">Win</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Door 3</td>
+<td style="text-align: left;">Door 2</td>
+<td style="text-align: left;">Lose</td>
+<td style="text-align: left;">Win</td>
+</tr>
+</tbody>
+</table>
+<p>Staying wins in one case. Switching wins in two.</p>
+</section>
+<section id="why-does-it-feel-like-fifty-fifty" class="level2">
+<h2 class="anchored" data-anchor-id="why-does-it-feel-like-fifty-fifty">Why Does It Feel Like Fifty-Fifty?</h2>
+<p>The mistake is assuming that two remaining possibilities must be equally likely.</p>
+<p>However, the two doors have different histories. Your original door was selected without any information. The other door survived a deliberate selection process by someone who knew where the car was.</p>
+<p>Opening a goat door does not restart the game. Under the stated rules, a goat is guaranteed to be revealed whether your initial choice is right or wrong. Staying therefore still wins only when you selected the car at the beginning.</p>
+</section>
+<section id="imagine-one-hundred-doors" class="level2">
+<h2 class="anchored" data-anchor-id="imagine-one-hundred-doors">Imagine One Hundred Doors</h2>
+<p>Now imagine 100 doors, with one car and 99 goats. You choose one door. The host then opens 98 other doors, revealing only goats, and offers you the chance to switch to the single remaining unchosen door.</p>
+<p>Your initial choice had only a 1% chance of being correct. If it was wrong, which happens 99% of the time, the host’s rules force the car to be behind the remaining alternative.</p>
+<p>Switching now feels much more attractive. The three-door version follows exactly the same logic.</p>
+</section>
+<section id="takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
+<p>The Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.</p>
+<p>Under the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds.</p>
+<style>
+main p,
+main li,
+main td,
+main th {
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  line-height: 1.7;
+}
+
+main h2 {
+  letter-spacing: 0.5px;
+  word-spacing: 1.5px;
+}
+</style>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R0lTJTJDSW5jb21lJTJDUG92ZXJ0eQ==" data-listing-date-sort="1791216000000" data-listing-file-modified-sort="1791334442872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="734">
-<div class="thumbnail"><a href="../blog/posts/post5/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts\post5\results\figures\01_income_map.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post5/index.html" class="no-external">One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia</a>
-</h3>
-<div class="delink listing-description"><a href="../blog/posts/post5/index.html" class="no-external">
-Philadelphia’s median household income is $61,953, and 21.4% of residents whose poverty status is determined live below the poverty threshold. These citywide estimates offer…<strong></strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post5/index.html" class="no-external">
-<div class="listing-date">
-Oct 6, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="aW5mbGF0aW9uJTJDdW5lbXBsb3ltZW50JTJDZGF0YSUyMHZpc3VhbGl6YXRpb24=" data-listing-date-sort="1790524800000" data-listing-file-modified-sort="1790621830500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="745">
-<div class="thumbnail"><a href="../blog/posts/post4/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts\post4\results\figures\01_timeline.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post4/index.html" class="no-external">Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026</a>
-</h3>
-<div class="delink listing-description"><a href="../blog/posts/post4/index.html" class="no-external">
-Inflation makes everyday purchases more expensive; unemployment means people who want work cannot find it. A familiar economic idea suggests that the two can sometimes move…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post4/index.html" class="no-external">
-<div class="listing-date">
-Sep 28, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bGFib3IlMjBtYXJrZXQlMkNkYXRhJTIwdmlzdWFsaXphdGlvbiUyQ0lQVU1TJTIwQ1BT" data-listing-date-sort="1790438400000" data-listing-file-modified-sort="1790446509562" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
-<div class="thumbnail"><a href="../blog/posts/post3/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts\post3\results\figures\01_age_rates.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post3/index.html" class="no-external">Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024</a>
-</h3>
-<div class="delink listing-description"><a href="../blog/posts/post3/index.html" class="no-external">
-In the aftermath of pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post3/index.html" class="no-external">
-<div class="listing-date">
-Sep 27, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="b3BpbmlvbiUyQ2xhYm9yJTIwbWFya2V0JTJDY29zdCUyMG9mJTIwbGl2aW5n" data-listing-date-sort="1789833600000" data-listing-file-modified-sort="1789937745227" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2424">
-<div class="thumbnail"><a href="../blog/posts/post2/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts\post2\results\figures\fig-top-ten-1.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post2/index.html" class="no-external">Where Does the Minimum Wage Go Furthest?</a>
-</h3>
-<div class="delink listing-description"><a href="../blog/posts/post2/index.html" class="no-external">
-If two jobs offer different hourly wages, the higher offer initially looks better. But rent, groceries, and other expenses vary across places. For workers considering jobs…<strong></strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post2/index.html" class="no-external">
-<div class="listing-date">
-Sep 20, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="UHJvYmFiaWxpdHklMkNTdGF0aXN0aWNz" data-listing-date-sort="1789228800000" data-listing-file-modified-sort="1789318174161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="623">
-<div class="thumbnail"><a href="../blog/posts/post1/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts\post1\figure.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post1/index.html" class="no-external">The Monty Hall Problem</a>
-</h3>
-<div class="delink listing-description"><a href="../blog/posts/post1/index.html" class="no-external">
-Imagine you are on a game show. There are three closed doors: one hides a car, and the other two hide goats. You choose one door, hoping to win the car. Before revealing…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post1/index.html" class="no-external">
-<div class="listing-date">
-Sep 13, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -725,7 +695,7 @@ Sep 13, 2026
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
+<p><img src="../../..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
 </div>   
     <div class="nav-footer-center">
 <p>© 2026 Yuhe Tian</p>

@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -313,5 +313,103 @@
     "title": "Did Inflation and Unemployment Move Together? A U.S. View, 2015-2026",
     "section": "Data Sources",
     "text": "Data Sources\n\nConsumer Price Index for All Urban Consumers: All Items (CPIAUCSL). U.S. Bureau of Labor Statistics; monthly, seasonally adjusted. Retrieved through FRED, Federal Reserve Bank of St. Louis, September 28, 2026.\nUnemployment Rate (UNRATE). U.S. Bureau of Labor Statistics; monthly, seasonally adjusted. Retrieved through FRED, Federal Reserve Bank of St. Louis, September 28, 2026.\n\n\n\nOctober 2025 data notice\n\nThe 2025 federal government shutdown interrupted data collection. BLS explains the October 2025 CPI gap and the missing household-survey estimates. The analysis omits this month rather than filling in values."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html",
+    "href": "blog/posts/post5/index.html",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "",
+    "text": "Philadelphia’s median household income is $61,953, and 21.4% of residents whose poverty status is determined live below the poverty threshold. These citywide estimates offer a useful starting point, but they cannot show where economic hardship is concentrated. How do income and poverty vary across Philadelphia, and what do their locations reveal? The question matters because citywide measures can conceal very different local needs."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#what-does-a-citywide-number-hide",
+    "href": "blog/posts/post5/index.html#what-does-a-citywide-number-hide",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "",
+    "text": "Philadelphia’s median household income is $61,953, and 21.4% of residents whose poverty status is determined live below the poverty threshold. These citywide estimates offer a useful starting point, but they cannot show where economic hardship is concentrated. How do income and poverty vary across Philadelphia, and what do their locations reveal? The question matters because citywide measures can conceal very different local needs."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#reading-the-evidence",
+    "href": "blog/posts/post5/index.html#reading-the-evidence",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "Reading the evidence",
+    "text": "Reading the evidence\nThe analysis combines the American Community Survey’s 2020–2024 five-year estimates with 2024 census-tract boundaries. Census tracts are small statistical areas, not exact neighborhood boundaries. Income is median household income in 2024 inflation-adjusted dollars. Poverty is the number of people below the poverty threshold divided by the population for whom poverty status is determined, multiplied by 100. The income measure describes households; the poverty measure describes people.\nThe maps cover 408 tracts. Income is available for 375, poverty for 390, and both measures for 375. Gray areas have unavailable estimates, not zero income or zero poverty. Fixed dollar and percentage categories make the legends interpretable. Labels help with orientation and do not define neighborhood boundaries."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#income-follows-a-geography",
+    "href": "blog/posts/post5/index.html#income-follows-a-geography",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "1. Income follows a geography",
+    "text": "1. Income follows a geography\n\n\n\nMedian household income across Philadelphia census tracts; darker blue indicates higher income.\n\n\nHigher-income tracts cluster around Center City and parts of the northwest, while many lower-income tracts lie across North and West Philadelphia. Neither side is uniform: nearby tracts can occupy different income categories. Among tracts with available estimates, the 10th and 90th percentiles are approximately $33,308 and $114,565. These are percentiles of tract medians, not percentiles of individual household incomes.\nThis geography suggests that economic conditions extend across groups of neighboring areas rather than being evenly distributed throughout the city. It also warns against treating a broad neighborhood label as a complete description of everyone living there."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#poverty-reveals-concentrated-hardship",
+    "href": "blog/posts/post5/index.html#poverty-reveals-concentrated-hardship",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "2. Poverty reveals concentrated hardship",
+    "text": "2. Poverty reveals concentrated hardship\n\n\n\nShare of residents below the poverty threshold across Philadelphia census tracts; darker red indicates higher poverty.\n\n\nThe poverty map shows a broad concentration of high rates across North Philadelphia and several parts of West Philadelphia. Many tracts around Center City and the northwest have lower rates, although important exceptions remain. Of the tracts with available poverty estimates, 96 have rates of at least 30%, while 96 have rates below 10%.\nSuch clustering matters for decisions about service locations and outreach: neighboring communities may face overlapping needs. However, a rate measures the share experiencing poverty, not the number of people needing assistance. Large polygons also do not necessarily contain more residents. Resource allocation should therefore combine these maps with population counts, service access, and local knowledge."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#related-measures-different-meanings",
+    "href": "blog/posts/post5/index.html#related-measures-different-meanings",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "3. Related measures, different meanings",
+    "text": "3. Related measures, different meanings\n\n\n\nTract median household income versus poverty rate; dashed lines show direct Philadelphia county estimates.\n\n\nThe scatterplot connects the two maps. Across the 375 tracts with both estimates, their correlation is -0.73: higher-income tracts generally have lower poverty. The remaining spread shows why income alone is an incomplete guide to hardship. A household median summarizes the middle of a distribution; poverty counts people below thresholds that vary with family circumstances. Each point receives equal weight, so this is a relationship between tracts, not a person-level relationship."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#takeaway-and-limits",
+    "href": "blog/posts/post5/index.html#takeaway-and-limits",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "Takeaway and limits",
+    "text": "Takeaway and limits\nPhiladelphia’s economic inequality has a visible spatial dimension: hardship is concentrated in some parts of the city, while higher-income areas form other clusters. These maps can guide further investigation and targeted outreach. They do not establish causes or justify judging individuals by where they live. ACS estimates have sampling uncertainty; saved margins of error accompany the underlying data, and apparent differences are not tested for statistical significance here. Five-year estimates summarize a period rather than conditions on one date. The central lesson is to look beneath citywide numbers while respecting uncertainty and variation within each tract."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#data-sources",
+    "href": "blog/posts/post5/index.html#data-sources",
+    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nACS 2024 five-year table B19013, U.S. Census Bureau: median household income in 2024 dollars.\nACS 2024 five-year table B17001, U.S. Census Bureau: poverty-status counts.\nCensus Reporter API: programmatic access to the ACS tables and TIGER 2024 tract geometry. Raw responses retrieved October 6, 2026 are included with the replication code."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#two-doors-but-not-equal-chances",
+    "href": "blog/posts/post1/index.html#two-doors-but-not-equal-chances",
+    "title": "The Monty Hall Problem",
+    "section": "Two Doors, but Not Equal Chances",
+    "text": "Two Doors, but Not Equal Chances\nImagine you are on a game show. There are three closed doors: one hides a car, and the other two hide goats. You choose one door, hoping to win the car. Before revealing your choice, the host opens another door and shows you a goat. You now have a decision: keep your original choice or switch to the remaining closed door.\nAt first, switching seems pointless. There are only two doors left, so shouldn’t each have a 50% chance of hiding the car?\nSurprisingly, no. Keeping your original choice gives you a one-third chance of winning. Switching gives you a two-thirds chance. This is the Monty Hall problem, a classic example of how information can challenge our intuition."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#the-hosts-rules-matter",
+    "href": "blog/posts/post1/index.html#the-hosts-rules-matter",
+    "title": "The Monty Hall Problem",
+    "section": "The Host’s Rules Matter",
+    "text": "The Host’s Rules Matter\nTo understand the result, we need to specify the rules:\n\nThe car is equally likely to be behind any of the three doors.\nThe host knows where the car is.\nThe host always opens a door you did not choose and reveals a goat.\nThe host always offers you the opportunity to switch.\n\nThese rules matter because the host is not opening a door randomly. The host deliberately avoids revealing the car. If the host followed different rules, the probabilities could change."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#when-does-switching-win",
+    "href": "blog/posts/post1/index.html#when-does-switching-win",
+    "title": "The Monty Hall Problem",
+    "section": "When Does Switching Win?",
+    "text": "When Does Switching Win?\nThe easiest way to understand the problem is to focus on your initial choice.\nWhen you first choose a door, your probability of selecting the car is:\n\\[\nP(\\text{initial choice is the car}) = \\frac{1}{3}.\n\\]\nYour probability of selecting a goat is:\n\\[\nP(\\text{initial choice is a goat}) = \\frac{2}{3}.\n\\]\nNow consider what switching does.\nIf you initially chose the car, the host reveals one of the goats. Switching takes you away from the car, so you lose.\nIf you initially chose a goat, the host must reveal the other goat. The only remaining unchosen door therefore hides the car. Switching wins.\nIn other words, switching wins exactly when your original choice was wrong.\n\\[\nP(\\text{winning by switching})\n=\nP(\\text{initial choice is a goat})\n=\n\\frac{2}{3}.\n\\]\nSuppose you initially choose Door 1. The three equally likely possibilities are:\n\n\n\nCar’s location\nHost opens\nStaying\nSwitching\n\n\n\n\nDoor 1\nDoor 2 or Door 3\nWin\nLose\n\n\nDoor 2\nDoor 3\nLose\nWin\n\n\nDoor 3\nDoor 2\nLose\nWin\n\n\n\nStaying wins in one case. Switching wins in two."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#why-does-it-feel-like-fifty-fifty",
+    "href": "blog/posts/post1/index.html#why-does-it-feel-like-fifty-fifty",
+    "title": "The Monty Hall Problem",
+    "section": "Why Does It Feel Like Fifty-Fifty?",
+    "text": "Why Does It Feel Like Fifty-Fifty?\nThe mistake is assuming that two remaining possibilities must be equally likely.\nHowever, the two doors have different histories. Your original door was selected without any information. The other door survived a deliberate selection process by someone who knew where the car was.\nOpening a goat door does not restart the game. Under the stated rules, a goat is guaranteed to be revealed whether your initial choice is right or wrong. Staying therefore still wins only when you selected the car at the beginning."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#imagine-one-hundred-doors",
+    "href": "blog/posts/post1/index.html#imagine-one-hundred-doors",
+    "title": "The Monty Hall Problem",
+    "section": "Imagine One Hundred Doors",
+    "text": "Imagine One Hundred Doors\nNow imagine 100 doors, with one car and 99 goats. You choose one door. The host then opens 98 other doors, revealing only goats, and offers you the chance to switch to the single remaining unchosen door.\nYour initial choice had only a 1% chance of being correct. If it was wrong, which happens 99% of the time, the host’s rules force the car to be behind the remaining alternative.\nSwitching now feels much more attractive. The three-door version follows exactly the same logic."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#takeaway",
+    "href": "blog/posts/post1/index.html#takeaway",
+    "title": "The Monty Hall Problem",
+    "section": "Takeaway",
+    "text": "Takeaway\nThe Monty Hall problem teaches us that probability depends on how information is produced, not simply on how many options remain. Two closed doors do not automatically mean equal chances.\nUnder the standard rules, switching wins whenever the initial choice is wrong. That is why switching doubles your chance of winning, from one-third to two-thirds."
   }
 ]

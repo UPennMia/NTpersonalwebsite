@@ -1,0 +1,16 @@
+"metric","value"
+"tracts",408
+"income_available",375
+"poverty_available",390
+"complete_tracts",375
+"income_missing",33
+"poverty_missing",18
+"income_p10",33308.2
+"income_p90",114564.6
+"poverty_ge30",96
+"poverty_lt10",96
+"correlation",-0.729490871205871
+"city_income",61953
+"city_poverty",21.3567228918173
+"adjacent_income_gap_median",14081
+"adjacent_poverty_gap_median",7.68984376950441
