@@ -1,4 +1,4 @@
-# Blog 5: Where Are Philadelphia's High- and Low-Income Areas?
+# Blog 5: How Do Income and Poverty Vary Across Philadelphia?
 
 ## Research question
 
