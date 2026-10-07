@@ -1,91 +1,60 @@
-# Blog 5: Mapping Income and Poverty in Philadelphia
+# Blog 5: Where Are Philadelphia's High- and Low-Income Areas?
 
-## Question
-Where are high- and low-income census tracts concentrated within Philadelphia, and how does their geography compare with poverty?
+## Research question
 
-## Project organization
-Place this entire folder at `blog/posts/post5/` in the existing Quarto blog repository. Keep the existing site-level `_quarto.yml`. Do not put this README in `data/raw/`, and do not move individual images away from their relative paths.
+Where are high- and low-income areas concentrated in Philadelphia, and how does their distribution compare with poverty?
 
-```text
-post5/
-  index.qmd
-  README.md
-  code/
-    00_setup.R
-    00_download_data.R
-    01_analyze.R
-  data/
-    raw/                  # Original ACS JSON and TIGER GeoJSON responses
-    cleaned/              # Joined tract CSV and spatial GeoJSON
-  results/
-    figures/              # Two maps and one scatterplot
-    tables/               # Programmatically generated statistics
+## Sources
+
+- U.S. Census Bureau, ACS 2020–2024 five-year estimates: [B19013](https://api.census.gov/data/2024/acs/acs5/groups/B19013.html) (median household income) and [B17001](https://api.census.gov/data/2024/acs/acs5/groups/B17001.html) (poverty-status counts).
+- Census Reporter: [ACS data](https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B17001&geo_ids=140%7C05000US42101,05000US42101) and [TIGER 2024 tract boundaries](https://api.censusreporter.org/1.0/geo/show/tiger2024?geo_ids=140%7C05000US42101).
+
+Data period: 2020–2024. Boundary year: 2024. Retrieval date (UTC): 2026-10-06. The original API responses are saved in data/raw/.
+
+## Files
+
+- code/00_setup.R: installs the required R packages.
+- code/00_download_data.R: downloads the ACS estimates and tract boundaries and saves the original responses.
+- code/01_analyze.R: cleans and joins the data, calculates statistics, and saves figures and tables.
+- data/raw/: original ACS JSON and TIGER GeoJSON files.
+- data/cleaned/: cleaned tract observations and the joined spatial data.
+- results/figures/: two maps and one scatterplot generated when index.qmd is rendered.
+- results/tables/: city reference estimates, key statistics, and differences between neighboring tracts.
+- index.qmd: article text, calculations, and figures.
+- README.md: project description and reproduction instructions.
+
+## Reproduce
+
+Install R, RStudio, and Quarto.
+
+Set the working directory to this post folder (blog/posts/post5/) and install the required R packages:
+
+```r
+source("code/00_setup.R")
 ```
 
-`index.qmd` contains the complete English article. Its hidden setup chunk runs the analysis and reads key facts; numerical statements update automatically. Published readers see prose and figures, not R code.
+This installs sf, ggplot2, jsonlite, and knitr if they are missing. Package installation requires internet access.
 
-## Requirements
-R (tested with 4.3.3), Quarto (tested with 1.8.27), and packages `sf`, `ggplot2`, `jsonlite`, `knitr`. `scales` is installed as a ggplot2 dependency. RStudio is convenient but optional. No API key is required. The initial package installation requires internet; subsequent replication from the saved snapshots works offline.
-
-For Windows/macOS, install a current R release and use CRAN binary packages. On Linux, `sf` can require system libraries for GDAL, GEOS, PROJ, and units. On Ubuntu/Debian, install `libgdal-dev libgeos-dev libproj-dev libudunits2-dev` before installing sf from source.
-
-## Replicate in RStudio
-1. Unzip and put `post5` inside the existing `blog/posts/` directory.
-2. Open the existing blog project. In RStudio's Files pane, enter `posts/post5` and choose **More → Set As Working Directory**. Verify that `file.exists("index.qmd")` returns TRUE.
-3. Run once in the Console:
-   ```r
-   source("code/00_setup.R")
-   ```
-4. Recreate everything from the committed raw snapshots:
-   ```r
-   source("code/01_analyze.R")
-   ```
-5. Open `index.qmd` and click **Render**. Rendering reruns the analysis with no network downloads. At site level, the Quarto execution directory must be the document directory (the default). If your existing `_quarto.yml` specifies `execute-dir: project`, change that value to `file` under `project` before rendering this post.
-
-The root of the post folder is the working directory for the R scripts. Do not run them with `code/` as the working directory. No hard-coded personal machine paths are needed.
-
-## Command-line replication
-From `blog/posts/post5/`:
+Open index.qmd in RStudio and click Render. Rendering runs code/01_analyze.R, reads the saved raw data, and regenerates the cleaned data, statistics, and three figures. Subsequent renders do not require downloading the data again. From a terminal in this post folder, the equivalent command is:
 
 ```bash
-Rscript code/00_setup.R
-Rscript code/01_analyze.R
 quarto render index.qmd
 ```
 
-The setup script is only needed the first time. To build the existing site, run `quarto render` from the blog root. Do not replace the existing site configuration with a new standalone project.
+To run the analysis without rendering the article:
 
-## Data and exact download URLs
-- Original producer: U.S. Census Bureau, American Community Survey 2020–2024 five-year estimates, fixed release `acs2024_5yr`.
-- Access provider: Census Reporter, which serves Census estimates, margins of error, metadata, and TIGER boundaries.
-- [ACS response](https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B19013,B17001&geo_ids=140%7C05000US42101,05000US42101): B19013 and B17001 for Philadelphia County and its census tracts.
-- [Geometry response](https://api.censusreporter.org/1.0/geo/show/tiger2024?geo_ids=140%7C05000US42101): TIGER 2024 census-tract boundaries.
-- [B19013 definitions](https://api.census.gov/data/2024/acs/acs5/groups/B19013.html) and [B17001 definitions](https://api.census.gov/data/2024/acs/acs5/groups/B17001.html).
-- [API documentation](https://github.com/censusreporter/census-api/blob/master/API.md).
+```r
+source("code/01_analyze.R")
+```
 
-Snapshots were retrieved October 6, 2026. Philadelphia city and county are coterminous; county FIPS 42101 provides the reference estimates. `2013_population_estimate`, an incidental field in the geometry response, is never used. Boundaries and ACS are explicitly pinned to 2024, not the API's changing `latest` endpoint.
+To refresh the data, run source("code/00_download_data.R") before rendering. For replication of the reported results, use the included snapshots. In a Quarto website, execution should use the document directory (the default); if project.execute-dir is set to project in _quarto.yml, change it to file.
 
-## Variables and cleaning
-| Cleaned field | Census column / calculation | Unit |
-|---|---|---|
-| income | B19013_001E (Reporter B19013001) | Median household income, 2024 dollars |
-| income_moe | B19013_001M | 90% margin of error, dollars |
-| poverty_universe | B17001_001E | People with poverty status determined |
-| below_poverty | B17001_002E | People below poverty threshold |
-| poverty_pct | 100 × below_poverty / poverty_universe | Percent |
-| universe_moe, below_poverty_moe | Corresponding B17001 margins of error | People |
+## Method
 
-Null or negative sentinel estimates become NA. Zero denominators produce NA poverty rates. Each map retains every tract polygon; unavailable values are gray. The scatterplot uses complete pairs only. Margins of error are preserved, but no margin of error for the derived poverty percentage or formal significance test is calculated. Income and poverty have different statistical universes.
+Median household income is B19013_001E, expressed in 2024 inflation-adjusted dollars. Poverty rate = B17001_002E / B17001_001E × 100, where the denominator is the population for whom poverty status is determined. Estimates and boundaries are joined by census-tract GEOID and projected to EPSG:26918 for mapping.
 
-The data join uses full GEOIDs, checks uniqueness and exact matching, repairs invalid polygons, and transforms to EPSG:26918 (UTM zone 18N, meters). Geographic labels are approximate orientation anchors, not neighborhood polygons. North is up. Fixed map categories are not quantiles; income and poverty use different sequential palettes.
+Missing or negative sentinel estimates are treated as NA; zero poverty denominators also produce NA. All 408 tracts appear on the maps, with unavailable estimates shown in gray. Income is available for 375 tracts and poverty for 390. The scatterplot and unweighted correlation use the 375 tracts with both estimates. City reference values come directly from the Philadelphia County estimates, not averages of tract medians. Map labels indicate approximate locations, not neighborhood boundaries.
 
-The direct county income median and poverty rate are used for city reference lines; tract medians are never averaged to estimate city income. Tract percentiles and Pearson correlation are unweighted geographic summaries, not estimates for the distribution of individual residents. `adjacent_tract_contrasts.csv` gives supplementary absolute differences for boundary-touching tract pairs, each pair once; it is not a formal spatial autocorrelation test.
+## Limitations
 
-## Expected output from the included snapshots
-408 tract polygons; income available for 375; poverty available for 390; 375 complete pairs. County median household income: $61,953. County poverty rate: about 21.36%. Tract-level income/poverty correlation: about -0.7295. Three PNGs are recreated in `results/figures/`; tables and joined data are regenerated without manual copying.
-
-## Refresh (optional)
-From the post directory, run `source("code/00_download_data.R")`, then `source("code/01_analyze.R")`, then render. The download script preserves old responses as `.previous` files and uses fixed release URLs. A later revision or removal of these endpoints may affect refreshed data; the committed snapshots remain the replication inputs. For exact replication, skip refresh.
-
-## Submission and interpretation
-Publish the existing Quarto blog using its normal workflow, then submit BOTH the published post URL and the GitHub repository URL. Commit this whole post folder, including raw data and generated figures, so reviewers can inspect results and rerun them. Check the published page shows all three figures. These are descriptive maps: they establish neither causal effects nor neighborhood-level judgments about individual residents.
+Five-year ACS estimates summarize 2020–2024 rather than conditions on a single date. Tract estimates have sampling uncertainty; margins of error are retained, but differences are not tested for statistical significance. Income measures households, while poverty measures people. Tract patterns do not describe every resident or identify causal effects. Larger map areas do not necessarily contain more people. Refreshing the data requires internet access, and changes to the API may require updating the download script.

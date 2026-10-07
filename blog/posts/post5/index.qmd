@@ -1,5 +1,5 @@
 ---
-title: "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia"
+title: "How Do Income and Poverty Vary Across Philadelphia?"
 date: 2026-10-06
 categories:
   - GIS
@@ -75,4 +75,4 @@ Philadelphia's economic inequality has a visible spatial dimension: hardship is 
 
 - [ACS 2024 five-year table B19013](https://api.census.gov/data/2024/acs/acs5/groups/B19013.html), U.S. Census Bureau: median household income in 2024 dollars.
 - [ACS 2024 five-year table B17001](https://api.census.gov/data/2024/acs/acs5/groups/B17001.html), U.S. Census Bureau: poverty-status counts.
-- [Census Reporter API](https://github.com/censusreporter/census-api/blob/master/API.md): programmatic access to the ACS tables and TIGER 2024 tract geometry. Raw responses retrieved October 6, 2026 are included with the replication code.
+- [Census Reporter API](https://github.com/censusreporter/census-api/blob/master/API.md): access to Census Bureau income and poverty estimates and TIGER 2024 census-tract boundaries. Data retrieved October 6, 2026.
