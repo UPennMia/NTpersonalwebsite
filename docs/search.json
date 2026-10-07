@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "How Do Income and Poverty Vary Across Philadelphia?\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -317,58 +317,58 @@
   {
     "objectID": "blog/posts/post5/index.html",
     "href": "blog/posts/post5/index.html",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "",
     "text": "Philadelphia’s median household income is $61,953, and 21.4% of residents whose poverty status is determined live below the poverty threshold. These citywide estimates offer a useful starting point, but they cannot show where economic hardship is concentrated. How do income and poverty vary across Philadelphia, and what do their locations reveal? The question matters because citywide measures can conceal very different local needs."
   },
   {
     "objectID": "blog/posts/post5/index.html#what-does-a-citywide-number-hide",
     "href": "blog/posts/post5/index.html#what-does-a-citywide-number-hide",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "",
     "text": "Philadelphia’s median household income is $61,953, and 21.4% of residents whose poverty status is determined live below the poverty threshold. These citywide estimates offer a useful starting point, but they cannot show where economic hardship is concentrated. How do income and poverty vary across Philadelphia, and what do their locations reveal? The question matters because citywide measures can conceal very different local needs."
   },
   {
     "objectID": "blog/posts/post5/index.html#reading-the-evidence",
     "href": "blog/posts/post5/index.html#reading-the-evidence",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "Reading the evidence",
     "text": "Reading the evidence\nThe analysis combines the American Community Survey’s 2020–2024 five-year estimates with 2024 census-tract boundaries. Census tracts are small statistical areas, not exact neighborhood boundaries. Income is median household income in 2024 inflation-adjusted dollars. Poverty is the number of people below the poverty threshold divided by the population for whom poverty status is determined, multiplied by 100. The income measure describes households; the poverty measure describes people.\nThe maps cover 408 tracts. Income is available for 375, poverty for 390, and both measures for 375. Gray areas have unavailable estimates, not zero income or zero poverty. Fixed dollar and percentage categories make the legends interpretable. Labels help with orientation and do not define neighborhood boundaries."
   },
   {
     "objectID": "blog/posts/post5/index.html#income-follows-a-geography",
     "href": "blog/posts/post5/index.html#income-follows-a-geography",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "1. Income follows a geography",
     "text": "1. Income follows a geography\n\n\n\nMedian household income across Philadelphia census tracts; darker blue indicates higher income.\n\n\nHigher-income tracts cluster around Center City and parts of the northwest, while many lower-income tracts lie across North and West Philadelphia. Neither side is uniform: nearby tracts can occupy different income categories. Among tracts with available estimates, the 10th and 90th percentiles are approximately $33,308 and $114,565. These are percentiles of tract medians, not percentiles of individual household incomes.\nThis geography suggests that economic conditions extend across groups of neighboring areas rather than being evenly distributed throughout the city. It also warns against treating a broad neighborhood label as a complete description of everyone living there."
   },
   {
     "objectID": "blog/posts/post5/index.html#poverty-reveals-concentrated-hardship",
     "href": "blog/posts/post5/index.html#poverty-reveals-concentrated-hardship",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "2. Poverty reveals concentrated hardship",
     "text": "2. Poverty reveals concentrated hardship\n\n\n\nShare of residents below the poverty threshold across Philadelphia census tracts; darker red indicates higher poverty.\n\n\nThe poverty map shows a broad concentration of high rates across North Philadelphia and several parts of West Philadelphia. Many tracts around Center City and the northwest have lower rates, although important exceptions remain. Of the tracts with available poverty estimates, 96 have rates of at least 30%, while 96 have rates below 10%.\nSuch clustering matters for decisions about service locations and outreach: neighboring communities may face overlapping needs. However, a rate measures the share experiencing poverty, not the number of people needing assistance. Large polygons also do not necessarily contain more residents. Resource allocation should therefore combine these maps with population counts, service access, and local knowledge."
   },
   {
     "objectID": "blog/posts/post5/index.html#related-measures-different-meanings",
     "href": "blog/posts/post5/index.html#related-measures-different-meanings",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "3. Related measures, different meanings",
     "text": "3. Related measures, different meanings\n\n\n\nTract median household income versus poverty rate; dashed lines show direct Philadelphia county estimates.\n\n\nThe scatterplot connects the two maps. Across the 375 tracts with both estimates, their correlation is -0.73: higher-income tracts generally have lower poverty. The remaining spread shows why income alone is an incomplete guide to hardship. A household median summarizes the middle of a distribution; poverty counts people below thresholds that vary with family circumstances. Each point receives equal weight, so this is a relationship between tracts, not a person-level relationship."
   },
   {
     "objectID": "blog/posts/post5/index.html#takeaway-and-limits",
     "href": "blog/posts/post5/index.html#takeaway-and-limits",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "Takeaway and limits",
     "text": "Takeaway and limits\nPhiladelphia’s economic inequality has a visible spatial dimension: hardship is concentrated in some parts of the city, while higher-income areas form other clusters. These maps can guide further investigation and targeted outreach. They do not establish causes or justify judging individuals by where they live. ACS estimates have sampling uncertainty; saved margins of error accompany the underlying data, and apparent differences are not tested for statistical significance here. Five-year estimates summarize a period rather than conditions on one date. The central lesson is to look beneath citywide numbers while respecting uncertainty and variation within each tract."
   },
   {
     "objectID": "blog/posts/post5/index.html#data-sources",
     "href": "blog/posts/post5/index.html#data-sources",
-    "title": "One City, Unequal Economic Conditions: Mapping Income and Poverty in Philadelphia",
+    "title": "How Do Income and Poverty Vary Across Philadelphia?",
     "section": "Data Sources",
-    "text": "Data Sources\n\nACS 2024 five-year table B19013, U.S. Census Bureau: median household income in 2024 dollars.\nACS 2024 five-year table B17001, U.S. Census Bureau: poverty-status counts.\nCensus Reporter API: programmatic access to the ACS tables and TIGER 2024 tract geometry. Raw responses retrieved October 6, 2026 are included with the replication code."
+    "text": "Data Sources\n\nACS 2024 five-year table B19013, U.S. Census Bureau: median household income in 2024 dollars.\nACS 2024 five-year table B17001, U.S. Census Bureau: poverty-status counts.\nCensus Reporter API: access to Census Bureau income and poverty estimates and TIGER 2024 census-tract boundaries. Data retrieved October 6, 2026."
   },
   {
     "objectID": "blog/posts/post1/index.html#two-doors-but-not-equal-chances",
