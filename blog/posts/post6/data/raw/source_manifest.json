@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-10-16",
+  "archives": {
+    "mothers": {
+      "url": "https://nlsinfo.org/cohort-data/nlsy79_all_1979-2022.zip",
+      "sha256": "efb3bbd17ed602abf100be44802778ef88fad68aa80913cd07dce778ebda72d7",
+      "bytes": 450128335
+    },
+    "children": {
+      "url": "https://nlsinfo.org/cohort-data/nlscya_all_1979-2020.zip",
+      "sha256": "3c9834bcab972edf41413ce950590c4a39a76f9f034584c1adcae38163785c27",
+      "bytes": 168185033
+    }
+  },
+  "cpi_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&cosd=1990-01-01&coed=2021-12-01",
+  "cpi_series": "CPIAUCNS: BLS CPI-U, all items, not seasonally adjusted",
+  "note": "Selected official columns, all original rows and negative codes retained. No simulated records.",
+  "files": {
+    "children_selected.csv": "8f2080a43f659665715ed4bcfe75a6f389c5dcd28f03a372adb9fbe54906d0ee",
+    "cpi_monthly.csv": "9ae0297c4aa53cbbc820efa21d5e5347bb330f80410879ab2447fa04e2493747",
+    "mothers_selected.csv": "c5e41532659c959a5bbae10a2c7deebd2ac1f53e54561952f10db93fa000d03a",
+    "selected_codebook.txt": "940385b65d799a5ef342fe15490dbe53bbd4c6e6a6440a6222de8e365a40417e",
+    "variable_map.csv": "fe3cb34ef77e063ec344bb63c7caa797b5d25dc881aa040c38563de2236349f8"
+  }
+}

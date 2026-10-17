@@ -1,0 +1,16 @@
+{
+  "official_child_rows": 11551,
+  "children_with_valid_demographics": 11549,
+  "matched_children": 11549,
+  "n_pairs": 1177,
+  "n_mothers": 896,
+  "duplicate_maternal_income_years_removed": 0,
+  "duplicate_child_income_years_removed": 1,
+  "child_birth_min": 1972,
+  "child_birth_max": 1986,
+  "retrieved_utc": "2026-10-16",
+  "bootstrap_reps": 2000,
+  "seed": 20261016,
+  "two_years_each": 1934,
+  "excluded_for_nonpositive_log_income": 757
+}

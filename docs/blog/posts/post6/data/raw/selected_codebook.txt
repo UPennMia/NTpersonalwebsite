@@ -1,0 +1,1888 @@
+
+mothers / id / XRND
+R00001.00    [CASEID]                                       Survey Year: 1979
+  PRIMARY VARIABLE
+
+             IDENTIFICATION CODE
+ 
+ORIGINAL QUESTION NAME: CASEID
+ 
+NOTE: THIS NUMBER WAS ASSIGNED ACCORDING TO THE RECORD NUMBER OF EACH RESPONDENT
+ON THE TAPE. THE FIRST RESPONDENT WAS ASSIGNED ID#1, THE SECOND WAS ASSIGNED 
+ID#2, ETC.
+ 
+ACTUAL NUMBER
+ 
+UNIVERSE: All
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:          12686        Mean:              6343.5
+ 
+Lead In: None.
+Default Next Question: R00001.49
+
+--------------------------------------------------------------------------------
+mothers / birth_year / XRND
+R00005.00    [Q1-3_A~Y]                                     Survey Year: 1979
+  PRIMARY VARIABLE
+
+             DATE OF BIRTH - YEAR
+ 
+ORIGINAL QUESTION NAME: S01Q01A
+ 
+SEE R(3.)
+ 
+ACTUAL YEAR
+ 
+UNIVERSE: All
+ 
+    1680          57
+    1677          58
+    1722          59
+    1662          60
+    1530          61
+    1600          62
+    1550          63
+    1265          64
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:             57        Max:             64        Mean:               60.34
+ 
+Lead In: R00003.00[Default]
+Default Next Question: R00006.00
+
+--------------------------------------------------------------------------------
+mothers / sex / XRND
+R02148.00    [SAMPLE_SEX]                                   Survey Year: 1979
+  PRIMARY VARIABLE
+
+             SEX OF R
+ 
+UNIVERSE: Entire sample
+ 
+    6403       1 MALE
+    6283       2 FEMALE
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                 1.5
+ 
+
+
+NOTE: AUGUST 26, 1980  DENNIS GREY
+MARCH 1, 1986  NORC
+ 
+DESCRIPTION:
+IF (R(1736.)>0 & R(1736.)<=4) ! (R(1736.)>=9 & R(1736.)<=11) THEN SEX=1;
+IF R(1736.)>=15 & R(1736.)<=17 THEN SEX=1;
+IF (R(1736.)>=5 & R(1736.)<=8) ! (R(1736.)>=12 & R(1736.)<=14) THEN SEX=
+IF R(1736.)>=18 & R(1736.)<=20 THEN SEX=2;
+R(2148.)=SEX;
+SEX CODE CHANGED ON 42 CASES
+ 
+Lead In: R02147.00[Default]
+Default Next Question: R02149.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 1993
+R42951.01    [Q13-5_TRUNC_REVISED]                          Survey Year: 1993
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR 
+             (TRUNCATED) (REVISED)
+ 
+ORIGINAL QUESTION NAME: Q11-5
+ 
+During 1992, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+UNIVERSE: All
+ 
+    1717           0
+     178           1 TO 999
+     144        1000 TO 1999
+     122        2000 TO 2999
+     107        3000 TO 3999
+     104        4000 TO 4999
+     151        5000 TO 5999
+     138        6000 TO 6999
+     136        7000 TO 7999
+     167        8000 TO 8999
+     134        9000 TO 9999
+     945       10000 TO 14999
+     997       15000 TO 19999
+     939       20000 TO 24999
+    2202       25000 TO 49999
+     415       50000 TO 9999999: 50000+
+  -------
+    8596
+ 
+Refusal(-1)          140
+Don't Know(-2)       267
+Invalid Skip(-3)       6
+TOTAL =========>    9009   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    3675
+ 
+Min:              0        Max:         100948        Mean:            18430.38
+ 
+
+
+NOTE: Revised topcode for R42951.00. Top 2% of values are replaced with the 
+group average.
+ 
+Lead In: None.
+Default Next Question: R42952.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 1993
+R42948.00    [Q13-2]                                        Survey Year: 1993
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1992?
+ 
+ORIGINAL QUESTION NAME: Q11-2
+ 
+Now I would like to ask you some questions about your income in 1992.
+During 1992, did you receive any income from service in the military?
+ 
+UNIVERSE: All
+ 
+     295       1 YES
+    8714       0 NO
+  -------
+    9009
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    9009   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    3675
+ 
+Min:              0        Max:              1        Mean:                 .03
+ 
+Lead In: R42937.06[Default]
+Default Next Question: R42949.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 1993
+R42949.00    [Q13-3]                                        Survey Year: 1993
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST CALENDAR YEAR
+ 
+ORIGINAL QUESTION NAME: Q11-3
+ 
+And how much total income did you receive during 1992 from the military before 
+taxes and other deductions? Please INCLUDE money received from special pays, 
+allowances, and bonuses.   ACTUAL DOLLARS
+ 
+UNIVERSE: R received income from military in past calendar year
+ 
+       6           0
+      14           1 TO 999
+       5        1000 TO 1999
+      36        2000 TO 2999
+      17        3000 TO 3999
+       7        4000 TO 4999
+       6        5000 TO 5999
+       7        6000 TO 6999
+       5        7000 TO 7999
+       2        8000 TO 8999
+       2        9000 TO 9999
+      18       10000 TO 14999
+      33       15000 TO 19999
+      38       20000 TO 24999
+      84       25000 TO 49999
+      12       50000 TO 9999999: 50000+
+  -------
+     292
+ 
+Refusal(-1)            1
+Don't Know(-2)         2
+TOTAL =========>     295   VALID SKIP(-4)    8716     NON-INTERVIEW(-5)    3675
+ 
+Min:              0        Max:          70000        Mean:            18450.83
+ 
+Lead In: R42948.00[Default]
+Default Next Question: R42951.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 1994
+R49828.01    [Q13-5_TRUNC_REVISED]                          Survey Year: 1994
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC) 
+             (REVISED)
+ 
+During 1993, how much did you receive from wages, salary, commissions, or
+tips from all (other) jobs, before deductions for taxes or anything else?
+ 
+NOTE: 
+NOTE: Revised topcode.  Top 2% of values are replaced with the group average.
+ 
+    1618           0
+     166           1 TO 999
+     147        1000 TO 1999
+     118        2000 TO 2999
+     104        3000 TO 3999
+      97        4000 TO 4999
+     145        5000 TO 5999
+     132        6000 TO 6999
+     130        7000 TO 7999
+     146        8000 TO 8999
+     110        9000 TO 9999
+     891       10000 TO 14999
+     973       15000 TO 19999
+     888       20000 TO 24999
+    2314       25000 TO 49999
+     493       50000 TO 99999999: 50000+
+  -------
+    8472
+ 
+Refusal(-1)          139
+Don't Know(-2)       267
+Invalid Skip(-3)      11
+TOTAL =========>    8889   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    3795
+ 
+Min:              0        Max:         101653        Mean:            19533.68
+ 
+Lead In: None.
+Default Next Question: R49829.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 1994
+R49825.00    [Q13-2]                                        Survey Year: 1994
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1993?
+ 
+Now I would like to ask you some questions about your income in 1993.  During 
+1993, did you receive any income from service in the military?
+ 
+     237       1 YES   (Go To R49826.00)
+    8651       0 NO
+  -------
+    8888
+ 
+Refusal(-1)            1
+Don't Know(-2)         0
+TOTAL =========>    8889   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    3795
+ 
+Min:              0        Max:              1        Mean:                 .03
+ 
+Lead In: R49821.00[Default]
+Default Next Question: R49828.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 1994
+R49826.00    [Q13-3]                                        Survey Year: 1994
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST CALENDAR YEAR
+ 
+And how much total income did you receive during 1993 from the military
+before taxes and other deductions?  Please INCLUDE money received from
+special pays, allowances, and bonuses.
+ 
+       2           0
+       2           1 TO 999
+      10        1000 TO 1999
+      24        2000 TO 2999
+      19        3000 TO 3999
+       7        4000 TO 4999
+       6        5000 TO 5999
+       2        6000 TO 6999
+       4        7000 TO 7999
+       2        8000 TO 8999
+       1        9000 TO 9999
+       7       10000 TO 14999
+      28       15000 TO 19999
+      30       20000 TO 24999
+      75       25000 TO 49999
+       9       50000 TO 99999999: 50000+
+  -------
+     228
+ 
+Refusal(-1)            4
+Don't Know(-2)         5
+TOTAL =========>     237   VALID SKIP(-4)    8654     NON-INTERVIEW(-5)    3795
+ 
+Min:              0        Max:         100000        Mean:             19020.7
+ 
+Lead In: R49825.00[1:1]
+Default Next Question: R49828.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 1996
+R56262.01    [Q13-5_TRUNC_REVISED]                          Survey Year: 1996
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC) 
+             (REVISED)
+ 
+During 1995, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+NOTE: TRUNCATED VALUES ARE APPLIED TO THE TOP APPROXIMATELY 2 PERCENT OF 
+RESPONDENTS WITH VALID NON-MISSING RESPONSES. THE LOWEST VALUE FOR THE TOP 2 
+PERCENT OF CASES IS USED AS THE TRUNCATION LEVEL ($83,500 FOR THIS VARIABLE). 
+VALUES FOR ALL CASES AT OR OVER THAT LEVEL ARE AVERAGED. THAT AVERAGE IS THEN 
+ASSIGNED TO EACH OF THE TOP 2 PERCENT OF CASES. OVERSEAS RESPONDENTS WHOSE 
+DOLLAR INCOME COULD NOT BE DETERMINED ARE CODED -3.
+ 
+NOTE: Revised topcode.  Top 2% of values are replaced with the group average.
+ 
+    1379           0
+     135           1 TO 999
+     116        1000 TO 1999
+     117        2000 TO 2999
+     104        3000 TO 3999
+     107        4000 TO 4999
+     138        5000 TO 5999
+      93        6000 TO 6999
+     124        7000 TO 7999
+     135        8000 TO 8999
+      98        9000 TO 9999
+     807       10000 TO 14999
+     880       15000 TO 19999
+     857       20000 TO 24999
+    2403       25000 TO 49999
+     773       50000 TO 99999999: 50000+
+  -------
+    8266
+ 
+Refusal(-1)          122
+Don't Know(-2)       243
+Invalid Skip(-3)       2
+TOTAL =========>    8633   VALID SKIP(-4)       3     NON-INTERVIEW(-5)    4050
+ 
+Min:              0        Max:         138775        Mean:            22815.51
+ 
+Lead In: None.
+Default Next Question: R56263.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 1996
+R56259.00    [Q13-2]                                        Survey Year: 1996
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1995?
+ 
+Now I would like to ask you some questions about your income in 1995.
+ 
+During 1995, did you receive any income from service in the military?
+ 
+     218       1 YES   (Go To R56260.00)
+    8413       0 NO
+  -------
+    8631
+ 
+Refusal(-1)            2
+Don't Know(-2)         0
+TOTAL =========>    8633   VALID SKIP(-4)       3     NON-INTERVIEW(-5)    4050
+ 
+Min:              0        Max:              1        Mean:                 .03
+ 
+Lead In: R56254.00[Default] R56255.00[Default] R56256.06[Default]
+Default Next Question: R56262.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 1996
+R56260.00    [Q13-3]                                        Survey Year: 1996
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST CALENDAR YEAR
+ 
+And how much total income did you receive during 1995 from the military before 
+taxes and other deductions? Please INCLUDE money received from special pays, 
+allowances, and bonuses.
+ 
+       6           0
+       7           1 TO 999
+       9        1000 TO 1999
+      15        2000 TO 2999
+      22        3000 TO 3999
+       4        4000 TO 4999
+       7        5000 TO 5999
+       5        6000 TO 6999
+       4        7000 TO 7999
+       3        8000 TO 8999
+       2        9000 TO 9999
+       6       10000 TO 14999
+      10       15000 TO 19999
+      20       20000 TO 24999
+      81       25000 TO 49999
+       8       50000 TO 99999999: 50000+
+  -------
+     209
+ 
+Refusal(-1)            1
+Don't Know(-2)         8
+TOTAL =========>     218   VALID SKIP(-4)    8418     NON-INTERVIEW(-5)    4050
+ 
+Min:              0        Max:         100000        Mean:            20063.31
+ 
+Lead In: R56259.00[1:1]
+Default Next Question: R56262.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 1998
+R63646.01    [Q13-5_TRUNC_REVISED]                          Survey Year: 1998
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC) 
+             (REVISED)
+ 
+During 1997, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+NOTE:  Revised topcode.  Top 2% of values are replaced with the group average.
+ 
+    1355           0
+     113           1 TO 999
+      90        1000 TO 1999
+     102        2000 TO 2999
+     107        3000 TO 3999
+      77        4000 TO 4999
+     103        5000 TO 5999
+      88        6000 TO 6999
+      74        7000 TO 7999
+     108        8000 TO 8999
+      70        9000 TO 9999
+     685       10000 TO 14999
+     744       15000 TO 19999
+     769       20000 TO 24999
+    2445       25000 TO 49999
+     994       50000 TO 99999999: 50000+
+  -------
+    7924
+ 
+Refusal(-1)          143
+Don't Know(-2)       321
+Invalid Skip(-3)       2
+TOTAL =========>    8390   VALID SKIP(-4)       9     NON-INTERVIEW(-5)    4287
+ 
+Min:              0        Max:         147970        Mean:            25415.79
+ 
+Lead In: None.
+Default Next Question: R63647.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 1998
+R63644.00    [Q13-2]                                        Survey Year: 1998
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1997?
+ 
+Now I would like to ask you some questions about your income in 1997.  During 
+1997, did you receive any income from service in the military?
+ 
+     206       1 YES   (Go To R63645.00)
+    8181       0 NO
+  -------
+    8387
+ 
+Refusal(-1)            3
+Don't Know(-2)         0
+TOTAL =========>    8390   VALID SKIP(-4)       9     NON-INTERVIEW(-5)    4287
+ 
+Min:              0        Max:              1        Mean:                 .02
+ 
+Lead In: R63518.00[Default] R63527.00[Default] R63528.06[Default]
+Default Next Question: R63646.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 1998
+R63645.00    [Q13-3]                                        Survey Year: 1998
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST CALENDAR YEAR
+ 
+And how much total income did you receive during 1997 from the military before 
+taxes and other deductions? Please INCLUDE money received from special pays, 
+allowances, and bonuses.
+ 
+      12           0
+       2           1 TO 999
+       6        1000 TO 1999
+       8        2000 TO 2999
+      21        3000 TO 3999
+      10        4000 TO 4999
+       4        5000 TO 5999
+       6        6000 TO 6999
+       3        7000 TO 7999
+       3        8000 TO 8999
+       2        9000 TO 9999
+      12       10000 TO 14999
+       6       15000 TO 19999
+      14       20000 TO 24999
+      77       25000 TO 49999
+      15       50000 TO 99999999: 50000+
+  -------
+     201
+ 
+Refusal(-1)            1
+Don't Know(-2)         4
+TOTAL =========>     206   VALID SKIP(-4)    8193     NON-INTERVIEW(-5)    4287
+ 
+Min:              0        Max:         100000        Mean:            22009.53
+ 
+Lead In: R63644.00[1:1]
+Default Next Question: R63646.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 2000
+R69097.01    [Q13-5_TRUNC_REVISED]                          Survey Year: 2000
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR- GROSS 
+             FROM ALL SOURCES
+ 
+During 1999, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+UNIVERSE: All
+ 
+NOTE:  Revised topcode.  Top 2% of values are replaced with the group average.
+ 
+    1173           0
+      77           1 TO 999
+      68        1000 TO 1999
+      82        2000 TO 2999
+      70        3000 TO 3999
+      57        4000 TO 4999
+      69        5000 TO 5999
+      77        6000 TO 6999
+      57        7000 TO 7999
+      74        8000 TO 8999
+      73        9000 TO 9999
+     576       10000 TO 14999
+     633       15000 TO 19999
+     691       20000 TO 24999
+    2488       25000 TO 49999
+    1309       50000 TO 99999999: 50000+
+  -------
+    7574
+ 
+Refusal(-1)          154
+Don't Know(-2)       302
+Invalid Skip(-3)       2
+TOTAL =========>    8032   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    4654
+ 
+Min:              0        Max:         216200        Mean:             30527.4
+ 
+Lead In: None.
+Default Next Question: R69098.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 2000
+R69095.00    [Q13-2]                                        Survey Year: 2000
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1999?
+ 
+During 1999, did you receive any income from service in the military?
+ 
+UNIVERSE: All
+ 
+     174       1 YES   (Go To R69096.00)
+    7849       0 NO
+  -------
+    8023
+ 
+Refusal(-1)            9
+Don't Know(-2)         0
+TOTAL =========>    8032   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    4654
+ 
+Min:              0        Max:              1        Mean:                 .02
+ 
+Lead In: R68962.00[Default] R68973.00[Default] R68974.06[Default]
+Default Next Question: R69097.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 2000
+R69096.00    [Q13-3]                                        Survey Year: 2000
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST CALENDAR YEAR
+ 
+And how much total income did you receive during 1999 from the military before 
+taxes and other deductions? Please include money received from special pays, 
+allowances, and bonuses.
+ 
+UNIVERSE: R had miltary income in prior calendar year to the start of current 
+round data collection
+ 
+       7           0
+       3           1 TO 999
+       2        1000 TO 1999
+       7        2000 TO 2999
+      15        3000 TO 3999
+      11        4000 TO 4999
+       8        5000 TO 5999
+       3        6000 TO 6999
+       4        7000 TO 7999
+       2        8000 TO 8999
+       0        9000 TO 9999
+      20       10000 TO 14999
+       7       15000 TO 19999
+       6       20000 TO 24999
+      54       25000 TO 49999
+      17       50000 TO 99999999: 50000+
+  -------
+     166
+ 
+Refusal(-1)            2
+Don't Know(-2)         6
+TOTAL =========>     174   VALID SKIP(-4)    7858     NON-INTERVIEW(-5)    4654
+ 
+Min:              0        Max:         100000        Mean:            22490.77
+ 
+Lead In: R69095.00[1:1]
+Default Next Question: R69097.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 2002
+R76078.00    [Q13-5_TRUNC]                                  Survey Year: 2002
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)
+ 
+During 2001, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+NOTE:  TRUNCATED VALUES ARE APPLIED TO THE TOP APPROXIMATELY 2 PERCENT OF 
+RESPONDENTS WITH VALID NON-MISSING RESPONSES.  THE LOWEST VALUE FOR THE TOP 2 
+PERCENT OF CASES IS USED AS THE TRUNCATION LEVEL ($130,000 FOR THIS VARIABLE).  
+VALUES FOR ALL CASES AT OR OVER THAT LEVEL ARE AVERAGED.  THAT AVERAGE IS THEN 
+ASSIGNED TO EACH OF THE TOP 2 PERCENT OF CASES.  OVERSEAS RESPONDENTS WHOSE 
+DOLLAR INCOME COULD NOT BE DETERMINED ARE CODED -3.
+ 
+    1185           0
+      86           1 TO 999
+      67        1000 TO 1999
+      48        2000 TO 2999
+      76        3000 TO 3999
+      45        4000 TO 4999
+      76        5000 TO 5999
+      77        6000 TO 6999
+      54        7000 TO 7999
+      78        8000 TO 8999
+      43        9000 TO 9999
+     456       10000 TO 14999
+     548       15000 TO 19999
+     578       20000 TO 24999
+    2426       25000 TO 49999
+    1447       50000 TO 99999999: 50000+
+  -------
+    7290
+ 
+Refusal(-1)          124   (Go To R76079.00)
+Don't Know(-2)       306   (Go To R76079.00)
+Invalid Skip(-3)       3
+TOTAL =========>    7723   VALID SKIP(-4)       1     NON-INTERVIEW(-5)    4962
+ 
+Min:              0        Max:         236000        Mean:            33093.67
+ 
+Lead In: R76069.00[Default] R76074.00[Default] R76075.00[Default] 
+         R76072.00[Default] R76077.00[Default] R76071.00[Default]
+Default Next Question: R76086.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 2002
+R76069.00    [Q13-2]                                        Survey Year: 2002
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 2001?
+ 
+During 2001, did you receive any income from service in the military?
+ 
+UNIVERSE: All
+ 
+     167       1 Yes   (Go To R76071.00)
+    7551       0 No
+  -------
+    7718
+ 
+Refusal(-1)            5
+Don't Know(-2)         0
+TOTAL =========>    7723   VALID SKIP(-4)       1     NON-INTERVIEW(-5)    4962
+ 
+Min:              0        Max:              1        Mean:                 .02
+ 
+Lead In: R76068.00[Default]
+Default Next Question: R76078.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 2002
+R76071.00    [Q13-3_TRUNC]                                  Survey Year: 2002
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST CALENDAR YEAR
+ 
+And how much total income did you receive during 2001 from the military before 
+taxes and other deductions? Please include money received from special pays, 
+allowances, and bonuses.
+ 
+       8           0
+       2           1 TO 999
+       5        1000 TO 1999
+       3        2000 TO 2999
+       7        3000 TO 3999
+       8        4000 TO 4999
+      14        5000 TO 5999
+       7        6000 TO 6999
+       3        7000 TO 7999
+       5        8000 TO 8999
+       0        9000 TO 9999
+      25       10000 TO 14999
+       9       15000 TO 19999
+       5       20000 TO 24999
+      37       25000 TO 49999
+      26       50000 TO 99999999: 50000+
+  -------
+     164
+ 
+Refusal(-1)            1   (Go To R76072.00)
+Don't Know(-2)         2   (Go To R76072.00)
+TOTAL =========>     167   VALID SKIP(-4)    7557     NON-INTERVIEW(-5)    4962
+ 
+Min:              0        Max:         140000        Mean:            24393.91
+ 
+Lead In: R76069.00[1:1]
+Default Next Question: R76078.00
+
+--------------------------------------------------------------------------------
+mothers / wages / 2004
+R83163.00    [Q13-5_TRUNC]                                  Survey Year: 2004
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)
+ 
+During 2003, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+    1228           0
+      72           1 TO 999
+      37        1000 TO 1999
+      62        2000 TO 2999
+      64        3000 TO 3999
+      44        4000 TO 4999
+      63        5000 TO 5999
+      58        6000 TO 6999
+      66        7000 TO 7999
+      68        8000 TO 8999
+      54        9000 TO 9999
+     418       10000 TO 14999
+     490       15000 TO 19999
+     550       20000 TO 24999
+    2320       25000 TO 49999
+    1675       50000 TO 999999999: 50000+
+  -------
+    7269
+ 
+Refusal(-1)          161   (Go To R83166.00)
+Don't Know(-2)       221   (Go To R83164.00)
+TOTAL =========>    7651   VALID SKIP(-4)      10     NON-INTERVIEW(-5)    5025
+ 
+Min:              0        Max:         265933        Mean:            35344.22
+ 
+Lead In: None.
+Default Next Question: R83169.00
+
+--------------------------------------------------------------------------------
+mothers / military_receipt / 2004
+R83156.00    [Q13-2]                                        Survey Year: 2004
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 2003?
+ 
+During 2003, did you receive any income from service in the military?
+ 
+UNIVERSE: All
+ 
+     139       1 Yes
+    7503       0 No
+  -------
+    7642
+ 
+Refusal(-1)            7
+Don't Know(-2)         2
+TOTAL =========>    7651   VALID SKIP(-4)      10     NON-INTERVIEW(-5)    5025
+ 
+Min:              0        Max:              1        Mean:                 .02
+ 
+Lead In: R83058.00[Default] R83070.00[Default] R83076.00[Default] 
+         R83079.00[Default] R83081.00[Default] R83082.00[Default] 
+         R83083.00[Default] R83084.00[Default]
+Default Next Question: R83169.00
+
+--------------------------------------------------------------------------------
+mothers / military_amount / 2004
+R83158.00    [Q13-3_TRUNC]                                  Survey Year: 2004
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN PAST YEAR
+ 
+And how much total income did you receive during 2003 from the military before 
+taxes and other deductions? Please include money received from special pays, 
+allowances, and bonuses.
+ 
+       8           0
+       1           1 TO 999
+       4        1000 TO 1999
+       4        2000 TO 2999
+       6        3000 TO 3999
+       3        4000 TO 4999
+       5        5000 TO 5999
+       3        6000 TO 6999
+       3        7000 TO 7999
+       4        8000 TO 8999
+       0        9000 TO 9999
+      22       10000 TO 14999
+      13       15000 TO 19999
+       9       20000 TO 24999
+      26       25000 TO 49999
+      25       50000 TO 999999999: 50000+
+  -------
+     136
+ 
+Refusal(-1)            1   (Go To R83161.00)
+Don't Know(-2)         2   (Go To R83159.00)
+TOTAL =========>     139   VALID SKIP(-4)    7522     NON-INTERVIEW(-5)    5025
+ 
+Min:              0        Max:         115667        Mean:            26280.48
+ 
+Lead In: None.
+Default Next Question: R83169.00
+
+--------------------------------------------------------------------------------
+children / id / XRND
+C00001.00    [CPUBID]                                       Survey Year: XRND
+  PRIMARY VARIABLE
+
+             ID CODE OF CHILD
+ 
+PUBLIC IDENTIFICATION CODE OF CHILD
+ 
+UNIVERSE: All biological children of NLSY79 mothers, regardless of age.
+ 
+   11551           1 TO 9999999: See Min & Max values below for range as of this
+                          release
+  -------
+   11551
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11551      MISSING(-7)       0
+ 
+Min:            201        Max:        1267501        Mean:           600544.28
+ 
+Lead In: None.
+Default Next Question: C00002.00
+
+--------------------------------------------------------------------------------
+children / mother_id / XRND
+C00002.00    [MPUBID]                                       Survey Year: XRND
+  PRIMARY VARIABLE
+
+             ID CODE OF MOTHER OF CHILD
+ 
+PUBLIC IDENTIFICATION CODE OF MOTHER OF CHILD
+ 
+UNIVERSE: All biological children of NLSY79 mothers, regardless of age.
+ 
+NOTE: SEE YOUTH REFERENCE NUMBER R(    1.)
+ 
+   11551           1 TO 12686: NLSY79 Public ID
+  -------
+   11551
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11551      MISSING(-7)       0
+ 
+Min:              2        Max:          12675        Mean:             6005.42
+ 
+Lead In: C00001.00[Default]
+Default Next Question: C00003.00
+
+--------------------------------------------------------------------------------
+children / birth_year / XRND
+C00057.00    [CYRB]                                         Survey Year: XRND
+  PRIMARY VARIABLE
+
+             DATE OF BIRTH OF CHILD - YEAR
+ 
+DATE OF BIRTH OF CHILD - YEAR
+ 
+    1223        1970 TO 1978: < before 1979
+     528        1979
+     607        1980
+     714        1981
+     703        1982
+     715        1983
+     657        1984
+     676        1985
+     618        1986
+     621        1987
+     585        1988
+     629        1989
+     495        1990
+     424        1991
+     402        1992
+     348        1993
+     303        1994
+     245        1995
+     229        1996
+     216        1997
+     156        1998
+     129        1999
+     100        2000
+      81        2001
+      48        2002
+      34        2003
+      24        2004
+      15        2005
+      11        2006
+       4        2007
+       3        2008
+       3        2009
+       2        2010
+       2        2011
+       1        2014
+  -------
+   11551
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11551      MISSING(-7)       0
+ 
+Min:           1970        Max:           2014        Mean:              1986.1
+ 
+Lead In: C00055.00[Default]
+Default Next Question: C00057.01
+
+--------------------------------------------------------------------------------
+children / sex / XRND
+C00054.00    [CSEX]                                         Survey Year: XRND
+  PRIMARY VARIABLE
+
+             SEX OF CHILD
+ 
+SEX OF CHILD
+ 
+    5898       1 MALE
+    5651       2 FEMALE
+  -------
+   11549
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       2
+TOTAL =========>   11551      MISSING(-7)       0
+ 
+Min:              1        Max:              2        Mean:                1.49
+ 
+Lead In: C00053.00[Default]
+Default Next Question: C00055.00
+
+--------------------------------------------------------------------------------
+children / wages / 1994
+Y03092.00    [Q15-5]                                        Survey Year: 1994
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN 1993
+ 
+During 1993, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+     609           0
+     124           1 TO 999
+      61        1000 TO 1999
+      37        2000 TO 2999
+      16        3000 TO 3999
+      10        4000 TO 4999
+      11        5000 TO 5999
+       5        6000 TO 6999
+       8        7000 TO 7999
+       5        8000 TO 8999
+       8       10000 TO 14999
+       4       15000 TO 19999
+       2       25000 TO 49999
+  -------
+     900
+ 
+Refusal(-1)            5
+Don't Know(-2)        71
+TOTAL =========>     976      MISSING(-7)   10575
+ 
+Min:              0        Max:          32000        Mean:              777.74
+ 
+Lead In: Y03090.00[Default] Y03091.00[Default]
+Default Next Question: Y03093.00
+
+--------------------------------------------------------------------------------
+children / military_receipt / 1994
+Y03090.00    [Q15-2]                                        Survey Year: 1994
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1993
+ 
+Now I would like to ask you some questions about your income in 1993.
+ 
+During 1993, did you receive any income from service in the military?
+ 
+       2       1 Yes   (Go To Y03091.00)
+     973       0 No
+  -------
+     975
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+TOTAL =========>     976      MISSING(-7)   10575
+ 
+Min:              0        Max:              1        Mean:                   0
+ 
+Lead In: Y03089.00[Default]  Y03086.00[1:1]
+Default Next Question: Y03092.00
+
+--------------------------------------------------------------------------------
+children / military_amount / 1994
+Y03091.00    [Q15-3]                                        Survey Year: 1994
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN 1993
+ 
+And how much total income did you receive during 1993 from the military before 
+taxes and other deductions?  Please INCLUDE money received from special pays, 
+allowances, and bonuses.
+ 
+       1        3000 TO 3999
+  -------
+       1
+ 
+Refusal(-1)            1
+Don't Know(-2)         0
+TOTAL =========>       2      MISSING(-7)   11549
+ 
+Min:           3500        Max:           3500        Mean:                3500
+ 
+Lead In: Y03090.00[1:1]
+Default Next Question: Y03092.00
+
+--------------------------------------------------------------------------------
+children / wages / 1996
+Y06105.00    [Q15-5]                                        Survey Year: 1996
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN 1995
+ 
+During 1995, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+     878           0
+     236           1 TO 999
+      94        1000 TO 1999
+      68        2000 TO 2999
+      51        3000 TO 3999
+      27        4000 TO 4999
+      27        5000 TO 5999
+      11        6000 TO 6999
+      10        7000 TO 7999
+      17        8000 TO 8999
+      14        9000 TO 9999
+      39       10000 TO 14999
+      16       15000 TO 19999
+       5       20000 TO 24999
+       6       25000 TO 49999
+       1       50000 TO 99999999: 50000+
+  -------
+    1500
+ 
+Refusal(-1)            2
+Don't Know(-2)       167
+TOTAL =========>    1669      MISSING(-7)    9882
+ 
+Min:              0        Max:         250000        Mean:             1609.42
+ 
+Lead In: Y06103.00[Default] Y06104.00[Default]
+Default Next Question: Y06106.00
+
+--------------------------------------------------------------------------------
+children / military_receipt / 1996
+Y06103.00    [Q15-2]                                        Survey Year: 1996
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1995
+ 
+Now I would like to ask you some questions about your income in 1995.
+ 
+During 1995, did you receive any income from service in the military?
+ 
+       8       1 Yes   (Go To Y06104.00)
+    1660       0 No
+  -------
+    1668
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+TOTAL =========>    1669      MISSING(-7)    9882
+ 
+Min:              0        Max:              1        Mean:                   0
+ 
+Lead In: Y06102.00[Default]  Y06099.00[1:1]
+Default Next Question: Y06105.00
+
+--------------------------------------------------------------------------------
+children / military_amount / 1996
+Y06104.00    [Q15-3]                                        Survey Year: 1996
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN 1995
+ 
+And how much total income did you receive during 1995 from the military before 
+taxes and other deductions?  Please INCLUDE money received from special pays, 
+allowances, and bonuses.
+ 
+       1        1000 TO 1999
+       2        3000 TO 3999
+       1        4000 TO 4999
+       1        9000 TO 9999
+       2       10000 TO 14999
+  -------
+       7
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+TOTAL =========>       8      MISSING(-7)   11543
+ 
+Min:           1800        Max:          12000        Mean:             6585.71
+ 
+Lead In: Y06103.00[1:1]
+Default Next Question: Y06105.00
+
+--------------------------------------------------------------------------------
+children / wages / 1998
+Y09048.00    [Q15-5]                                        Survey Year: 1998
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES AND SALARY IN 1997
+ 
+During 1997, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs, before deductions for taxes or anything else?
+ 
+UNIVERSE: All YAs
+ 
+    1117           0
+     278           1 TO 999
+     139        1000 TO 1999
+      84        2000 TO 2999
+      62        3000 TO 3999
+      46        4000 TO 4999
+      30        5000 TO 5999
+      25        6000 TO 6999
+      26        7000 TO 7999
+      10        8000 TO 8999
+       9        9000 TO 9999
+      39       10000 TO 14999
+      20       15000 TO 19999
+       6       20000 TO 24999
+       4       25000 TO 49999
+       1       50000 TO 99999999: 50000+
+  -------
+    1896
+ 
+Refusal(-1)            5
+Don't Know(-2)       238
+TOTAL =========>    2139      MISSING(-7)    9412
+ 
+Min:              0        Max:          50000        Mean:             1367.11
+ 
+Lead In: Y09046.00[Default] Y09047.00[Default]
+Default Next Question: Y09049.00
+
+--------------------------------------------------------------------------------
+children / military_receipt / 1998
+Y09046.00    [Q15-2]                                        Survey Year: 1998
+  PRIMARY VARIABLE
+
+             RECEIVED ANY INCOME FROM MILITARY SERVICE IN 1997
+ 
+Now I would like to ask you some questions about your income in 1997.
+ 
+During 1997, did you receive any income from service in the military?
+ 
+UNIVERSE: All YAs
+ 
+      19       1 Yes   (Go To Y09047.00)
+    2120       0 No
+  -------
+    2139
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    2139      MISSING(-7)    9412
+ 
+Min:              0        Max:              1        Mean:                 .01
+ 
+Lead In: Y09045.00[Default]  Y09042.00[1:1]
+Default Next Question: Y09048.00
+
+--------------------------------------------------------------------------------
+children / military_amount / 1998
+Y09047.00    [Q15-3]                                        Survey Year: 1998
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM MILITARY SERVICE IN 1997
+ 
+And how much total income did you receive during 1997 from the military before 
+taxes and other deductions?  Please INCLUDE money received from special pays, 
+allowances, and bonuses.
+ 
+UNIVERSE: YAs who received income from the military
+ 
+       1           1 TO 999
+       3        1000 TO 1999
+       1        2000 TO 2999
+       1        3000 TO 3999
+       1        4000 TO 4999
+       1        5000 TO 5999
+       1        7000 TO 7999
+       3       10000 TO 14999
+       1       15000 TO 19999
+       1       25000 TO 49999
+  -------
+      14
+ 
+Refusal(-1)            0
+Don't Know(-2)         5
+TOTAL =========>      19      MISSING(-7)   11532
+ 
+Min:             15        Max:          36000        Mean:             8158.21
+ 
+Lead In: Y09046.00[1:1]
+Default Next Question: Y09048.00
+
+--------------------------------------------------------------------------------
+children / wages / 2000
+Y11517.00    [Q15-5-TOP]                                    Survey Year: 2000
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 1999
+ 
+During 1999, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [military or civilian/--] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.   THE VALUE OF 175000 REPRESENTS THE 
+MEAN OF THE TOP VALUES.
+ 
+     983           0
+     306           1 TO 999
+     189        1000 TO 1999
+     113        2000 TO 2999
+     108        3000 TO 3999
+      75        4000 TO 4999
+      77        5000 TO 5999
+      68        6000 TO 6999
+      42        7000 TO 7999
+      40        8000 TO 8999
+      31        9000 TO 9999
+     198       10000 TO 14999
+     118       15000 TO 19999
+      88       20000 TO 24999
+     109       25000 TO 49999
+      13       50000 TO 99999999: 50000+
+  -------
+    2558
+ 
+Refusal(-1)           15
+Don't Know(-2)       451   (Go To Y11518.00)
+TOTAL =========>    3024      MISSING(-7)    8527
+ 
+Min:              0        Max:         175000        Mean:             5288.55
+ 
+Lead In: Y11515.00[Default]
+Default Next Question: Y11519.00
+
+--------------------------------------------------------------------------------
+children / wages / 2002
+Y13867.00    [Q15-5-TOP]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 2001
+ 
+During 2001, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [military or civilian/--] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.   THE VALUE OF 102333 REPRESENTS THE 
+MEAN OF THE TOP VALUES.
+ 
+     961           0
+     564           1 TO 999
+     256        1000 TO 1999
+     200        2000 TO 2999
+     141        3000 TO 3999
+      82        4000 TO 4999
+     101        5000 TO 5999
+      88        6000 TO 6999
+      65        7000 TO 7999
+      78        8000 TO 8999
+      53        9000 TO 9999
+     310       10000 TO 14999
+     218       15000 TO 19999
+     183       20000 TO 24999
+     225       25000 TO 49999
+      35       50000 TO 99999999: 50000+
+  -------
+    3560
+ 
+Refusal(-1)           13
+Don't Know(-2)       664   (Go To Y13868.00)
+TOTAL =========>    4237      MISSING(-7)    7314
+ 
+Min:              0        Max:         102333        Mean:             7002.22
+ 
+Lead In: Y13865.00[Default]
+Default Next Question: Y13869.00
+
+--------------------------------------------------------------------------------
+children / wages / 2004
+Y16384.00    [Q15-5-TOP]                                    Survey Year: 2004
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 2003
+ 
+During 2003, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [-military or civilian-] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.   THE VALUE OF 174300 REPRESENTS THE 
+MEAN OF THE TOP VALUES.
+ 
+    1091           0
+     566           1 TO 999
+     277        1000 TO 1999
+     208        2000 TO 2999
+     146        3000 TO 3999
+     127        4000 TO 4999
+     123        5000 TO 5999
+      84        6000 TO 6999
+      62        7000 TO 7999
+      91        8000 TO 8999
+      70        9000 TO 9999
+     358       10000 TO 14999
+     257       15000 TO 19999
+     256       20000 TO 24999
+     437       25000 TO 49999
+      74       50000 TO 99999999: 50000+
+  -------
+    4227
+ 
+Refusal(-1)           22
+Don't Know(-2)       771
+TOTAL =========>    5020      MISSING(-7)    6531
+ 
+Min:              0        Max:         174300        Mean:             9057.38
+ 
+Lead In: Y16382.00[Default]
+Default Next Question: Y16385.00
+
+--------------------------------------------------------------------------------
+children / wages / 2006
+Y19087.00    [Q15-5-TOP]                                    Survey Year: 2006
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 2005
+ 
+During 2005, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [-military or civilian-] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 165071 REPRESENTS THE MEAN
+OF THE TOP VALUES.
+ 
+    1246           0
+     493           1 TO 999
+     226        1000 TO 1999
+     218        2000 TO 2999
+     166        3000 TO 3999
+     121        4000 TO 4999
+     129        5000 TO 5999
+      96        6000 TO 6999
+      82        7000 TO 7999
+      99        8000 TO 8999
+      62        9000 TO 9999
+     432       10000 TO 14999
+     343       15000 TO 19999
+     306       20000 TO 24999
+     726       25000 TO 49999
+     145       50000 TO 99999999: 50000+
+  -------
+    4890
+ 
+Refusal(-1)           30
+Don't Know(-2)       919
+TOTAL =========>    5839      MISSING(-7)    5712
+ 
+Min:              0        Max:         165071        Mean:            11603.88
+ 
+Lead In: Y19085.00[Default]
+Default Next Question: Y19088.00
+
+--------------------------------------------------------------------------------
+children / wages / 2008
+Y22241.00    [Q15-5-TOP]                                    Survey Year: 2008
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 2007
+ 
+During 2007, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [-military or civilian-] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 119116 REPRESENTS THE MEAN
+OF THE TOP VALUES OF Q15-5 and Q15-9.
+ 
+    1217           0
+     425           1 TO 999
+     225        1000 TO 1999
+     224        2000 TO 2999
+     171        3000 TO 3999
+     125        4000 TO 4999
+     162        5000 TO 5999
+     113        6000 TO 6999
+     115        7000 TO 7999
+      97        8000 TO 8999
+      75        9000 TO 9999
+     439       10000 TO 14999
+     381       15000 TO 19999
+     376       20000 TO 24999
+    1025       25000 TO 49999
+     260       50000 TO 99999999: 50000+
+  -------
+    5430
+ 
+Refusal(-1)           40
+Don't Know(-2)       833   (Go To Y22242.00)
+TOTAL =========>    6303      MISSING(-7)    5248
+ 
+Min:              0        Max:         119116        Mean:            14211.57
+ 
+Lead In: Y22239.00[Default]
+Default Next Question: Y22243.00
+
+--------------------------------------------------------------------------------
+children / wages / 2010
+Y25739.00    [Q15-5-TOP]                                    Survey Year: 2010
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 2009
+ 
+During 2009, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [-military or civilian-] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 142588 REPRESENTS THE MEAN
+OF THE TOP VALUES.
+ 
+    1392           0
+     369           1 TO 999
+     226        1000 TO 1999
+     187        2000 TO 2999
+     164        3000 TO 3999
+     114        4000 TO 4999
+     135        5000 TO 5999
+      87        6000 TO 6999
+     102        7000 TO 7999
+      84        8000 TO 8999
+      60        9000 TO 9999
+     463       10000 TO 14999
+     378       15000 TO 19999
+     348       20000 TO 24999
+     965       25000 TO 49999
+     289       50000 TO 99999999: 50000+
+  -------
+    5363
+ 
+Refusal(-1)           35
+Don't Know(-2)       696   (Go To Y25740.00)
+TOTAL =========>    6094      MISSING(-7)    5457
+ 
+Min:              0        Max:         142588        Mean:            14215.39
+ 
+Lead In: Y25737.00[Default]
+Default Next Question: Y25741.00
+
+--------------------------------------------------------------------------------
+children / wages / 2012
+Y29216.00    [Q15-5-TOP]                                    Survey Year: 2012
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             (TOP-CODED) IN 2011
+ 
+During 2011, how much did you receive from wages, salary, commissions, or tips 
+from all (other) jobs [-military or civilian-] before deductions for taxes or 
+anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 153150 REPRESENTS THE MEAN
+OF THE TOP VALUES.
+ 
+    1285           0
+     260           1 TO 999
+     141        1000 TO 1999
+     166        2000 TO 2999
+     140        3000 TO 3999
+      93        4000 TO 4999
+     121        5000 TO 5999
+      85        6000 TO 6999
+      64        7000 TO 7999
+      89        8000 TO 8999
+      53        9000 TO 9999
+     463       10000 TO 14999
+     358       15000 TO 19999
+     378       20000 TO 24999
+    1073       25000 TO 49999
+     408       50000 TO 99999999: 50000+
+  -------
+    5177
+ 
+Refusal(-1)           44
+Don't Know(-2)       582   (Go To Y29217.00)
+TOTAL =========>    5803      MISSING(-7)    5748
+ 
+Min:              0        Max:         153150        Mean:            17233.77
+ 
+Lead In: Y29214.00[Default]
+Default Next Question: Y29218.00
+
+--------------------------------------------------------------------------------
+children / wages / 2014
+Y32914.00    [Q15-5-TOP]                                    Survey Year: 2014
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             IN REFERENCE YEAR
+ 
+During [(calendar year before year of interview)], how much did you receive from
+wages, salary, commissions, or tips from all (other) jobs [-military or 
+civilian-] before deductions for taxes or anything else?
+ 
+UNIVERSE: All YAs
+ 
+NOTE: THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 131715 REPRESENTS THE MEAN
+OF THE TOP VALUES.
+ 
+    1028           0
+     213           1 TO 999
+     121        1000 TO 1999
+     129        2000 TO 2999
+     114        3000 TO 3999
+      86        4000 TO 4999
+     129        5000 TO 5999
+      69        6000 TO 6999
+      70        7000 TO 7999
+      74        8000 TO 8999
+      52        9000 TO 9999
+     417       10000 TO 14999
+     358       15000 TO 19999
+     390       20000 TO 24999
+    1260       25000 TO 49999
+     592       50000 TO 99999999: 50000+
+  -------
+    5102
+ 
+Refusal(-1)           62
+Don't Know(-2)       561   (Go To Y32915.00)
+TOTAL =========>    5725      MISSING(-7)    5826
+ 
+Min:              0        Max:         131715        Mean:            21225.16
+ 
+Lead In: Y32912.00[Default]
+Default Next Question: Y32916.00
+
+--------------------------------------------------------------------------------
+children / interview_year / 2014
+Y29905.02    [CURDATE~Y]                                    Survey Year: 2014
+  PRIMARY VARIABLE
+
+             DATE OF CAPI INTERVIEW-YEAR
+ 
+DATE("SHORT")
+ 
+COMMENT: SAVE CURRECT DATE AS DATE OF INTERVIEW
+ 
+    2850        2014
+    2884        2015
+  -------
+    5734
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    5734      MISSING(-7)    5817
+ 
+Min:           2014        Max:           2015        Mean:              2014.5
+ 
+Earliest (NonMissing): OCTOBER/2014
+Latest   (NonMissing): NOVEMBER/2015
+ 
+Lead In: Y29905.01[Default]
+Default Next Question: Y29906.00
+
+--------------------------------------------------------------------------------
+children / wages / 2016
+Y36317.00    [Q15-5-TOP]                                    Survey Year: 2016
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             IN REFERENCE YEAR
+ 
+During [(calendar year before year of interview)], how much did you receive from
+wages, salary, commissions, or tips from all (other) jobs [-military or 
+civilian-] before deductions for taxes or anything else?
+ 
+UNIVERSE: YAs 14 and older
+ 
+NOTE: 
+ 
+THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 153088 REPRESENTS THE MEAN OF 
+THE TOP VALUES.
+ 
+     728           0
+     129           1 TO 999
+     114        1000 TO 1999
+     117        2000 TO 2999
+     100        3000 TO 3999
+      63        4000 TO 4999
+      93        5000 TO 5999
+      61        6000 TO 6999
+      54        7000 TO 7999
+      68        8000 TO 8999
+      43        9000 TO 9999
+     329       10000 TO 14999
+     314       15000 TO 19999
+     374       20000 TO 24999
+    1383       25000 TO 49999
+     861       50000 TO 99999999: 50000+
+  -------
+    4831
+ 
+Refusal(-1)           56
+Don't Know(-2)       413
+TOTAL =========>    5300      MISSING(-7)    6251
+ 
+Min:              0        Max:         153088        Mean:            27799.85
+ 
+Lead In: Y36315.00[Default]
+Default Next Question: Y36319.00
+
+--------------------------------------------------------------------------------
+children / interview_year / 2016
+Y33609.02    [CURDATE~Y]                                    Survey Year: 2016
+  PRIMARY VARIABLE
+
+             DATE OF CAPI INTERVIEW-YEAR
+ 
+DATE("SHORT")
+ 
+COMMENT: SAVE CURRECT DATE AS DATE OF INTERVIEW
+ 
+    1473        2016
+    3877        2017
+       1        2018
+  -------
+    5351
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    5351      MISSING(-7)    6200
+ 
+Min:           2016        Max:           2018        Mean:             2016.72
+ 
+Earliest (NonMissing): OCTOBER/2016
+Latest   (NonMissing): JANUARY/2018
+ 
+Lead In: Y33609.01[Default]
+Default Next Question: Y33610.00
+
+--------------------------------------------------------------------------------
+children / wages / 2018
+Y42400.00    [Q15-5-TOP]                                    Survey Year: 2018
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             IN REFERENCE YEAR
+ 
+During [(calendar year before year of interview)], how much did you receive from
+wages, salary, commissions, or tips from all (other) jobs [-military or 
+civilian-] before deductions for taxes or anything else?
+ 
+UNIVERSE: YAs 14 and older
+ 
+NOTE: 
+ 
+THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 162326 REPRESENTS THE MEAN OF 
+THE TOP VALUES.
+ 
+     573           0
+     106           1 TO 999
+      81        1000 TO 1999
+      86        2000 TO 2999
+      65        3000 TO 3999
+      45        4000 TO 4999
+      88        5000 TO 5999
+      40        6000 TO 6999
+      42        7000 TO 7999
+      43        8000 TO 8999
+      25        9000 TO 9999
+     248       10000 TO 14999
+     234       15000 TO 19999
+     303       20000 TO 24999
+    1351       25000 TO 49999
+    1065       50000 TO 99999999: 50000+
+  -------
+    4395
+ 
+Refusal(-1)           78
+Don't Know(-2)       413
+TOTAL =========>    4886      MISSING(-7)    6665
+ 
+Min:              0        Max:         162326        Mean:            32923.95
+ 
+Lead In: Y42397.00[Default] Y42398.00[Default]
+Default Next Question: Y42401.00
+
+--------------------------------------------------------------------------------
+children / interview_year / 2018
+Y40008.02    [CURDATE~Y]                                    Survey Year: 2018
+  PRIMARY VARIABLE
+
+             DATE OF CAPI INTERVIEW-YEAR
+ 
+DATE("SHORT")
+ 
+COMMENT: SAVE CURRECT DATE AS DATE OF INTERVIEW
+ 
+    2639        2018
+    2326        2019
+  -------
+    4965
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    4965      MISSING(-7)    6586
+ 
+Min:           2018        Max:           2019        Mean:             2018.47
+ 
+Earliest (NonMissing): OCTOBER/2018
+Latest   (NonMissing): NOVEMBER/2019
+ 
+Lead In: Y40008.01[Default]
+Default Next Question: Y40009.00
+
+--------------------------------------------------------------------------------
+children / wages / 2020
+Y45612.00    [Q15-5-TOP]                                    Survey Year: 2020
+  PRIMARY VARIABLE
+
+             TOTAL INCOME FROM WAGES, SALARY, COMMISSIONS, OR TIPS FROM ALL JOBS
+             IN REFERENCE YEAR
+ 
+During [(calendar year before year of interview)], how much did you receive from
+wages, salary, commissions, or tips from all (other) jobs [-military or 
+civilian-] before deductions for taxes or anything else?
+ 
+UNIVERSE: YAs 14 and older
+ 
+NOTE: 
+ 
+THIS VARIABLE HAS BEEN TOP-CODED.  THE VALUE OF 204398 REPRESENTS THE MEAN OF 
+THE TOP VALUES.
+ 
+     547           0
+      73           1 TO 999
+      60        1000 TO 1999
+      57        2000 TO 2999
+      50        3000 TO 3999
+      26        4000 TO 4999
+      57        5000 TO 5999
+      35        6000 TO 6999
+      30        7000 TO 7999
+      31        8000 TO 8999
+      23        9000 TO 9999
+     196       10000 TO 14999
+     204       15000 TO 19999
+     263       20000 TO 24999
+    1198       25000 TO 49999
+    1152       50000 TO 99999999: 50000+
+  -------
+    4002
+ 
+Refusal(-1)           55
+Don't Know(-2)       253
+TOTAL =========>    4310      MISSING(-7)    7241
+ 
+Min:              0        Max:         204398        Mean:            37408.16
+ 
+Lead In: Y45609.00[Default] Y45610.00[Default]
+Default Next Question: Y45614.00
+
+--------------------------------------------------------------------------------
+children / interview_year / 2020
+Y43104.02    [CURDATE~Y]                                    Survey Year: 2020
+  PRIMARY VARIABLE
+
+             DATE OF CAPI INTERVIEW-YEAR
+ 
+DATE("SHORT")
+ 
+COMMENT: SAVE CURRECT DATE AS DATE OF INTERVIEW
+ 
+    2376        2020
+    1978        2021
+  -------
+    4354
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    4354      MISSING(-7)    7197
+ 
+Min:           2020        Max:           2021        Mean:             2020.45
+ 
+Earliest (NonMissing): SEPTEMBER/2020
+Latest   (NonMissing): DECEMBER/2021
+ 
+Lead In: Y43104.01[Default]
+Default Next Question: Y43105.00

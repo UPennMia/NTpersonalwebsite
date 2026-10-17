@@ -1,0 +1,7 @@
+PASS: raw snapshot checksums match source manifest.
+PASS: unique demographic IDs; one row per child after JOIN.
+PASS: one record per generation/person/income year.
+PASS: CPI has twelve months per year and covers every eligible income year.
+PASS: all four regressions use the same positive-log-income balanced sample.
+PASS: 1177 children linked to 896 mothers.
+PASS: 2000 paired mother-cluster bootstrap draws, seed 20261016.

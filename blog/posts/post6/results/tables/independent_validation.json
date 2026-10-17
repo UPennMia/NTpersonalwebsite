@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "raw checksums",
+    "original-ID mother\u2013child links",
+    "SQL aggregation versus independent pandas calculations",
+    "single-year selection including zero years",
+    "OLS and mother-cluster standard errors versus NumPy calculations",
+    "common sample across specifications",
+    "paired bootstrap interval calculations"
+  ],
+  "n_pairs": 1177,
+  "n_mothers": 896
+}

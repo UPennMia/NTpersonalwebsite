@@ -1,0 +1,13 @@
+{
+  "quarto_version": "1.4.557",
+  "standalone_render_without_python": "PASS",
+  "website_render_without_python": "PASS",
+  "python_paths_during_test": "set to nonexistent executables",
+  "custom_lua_filter": false,
+  "visible_python_blocks": 8,
+  "checked_output_blocks": 4,
+  "unresolved_article_placeholders": false,
+  "relative_download_links": "all present",
+  "computational_rebuild": "Python 02_render.py and independent 03_validate.py both PASS",
+  "tutorial_execution": "all eight blocks match full backend sample and estimates"
+}

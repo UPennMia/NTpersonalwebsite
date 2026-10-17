@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "visible_python_blocks_executed": 5,
+  "visible_code_lines": 49,
+  "sample_matches_complete_backend": true,
+  "coefficients_standard_errors_intervals_match": true,
+  "n_children": 1177,
+  "n_mothers": 896
+}
