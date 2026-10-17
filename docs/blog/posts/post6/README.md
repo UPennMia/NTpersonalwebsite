@@ -15,7 +15,7 @@ Exact variable references, question wording, download URLs, and SHA-256 checksum
 
 ## Files
 
-- `index.qmd`: tutorial with five visible Python blocks, a comparison table, a figure, and interpretation. Edit the article here.
+- `index.qmd`: article source, including the SQL-in-Python tutorial, comparison tables, figure, and interpretation.
 - `code/01_analyze.py` and the three `.sql` files: source cleaning, matching, income construction, regressions, bootstrap comparisons, and figures.
 - `code/render.lua` and `code/02_render.py`: automatically rebuild the analysis during Quarto rendering and check the displayed tutorial against it.
 - `code/04_tutorial.py`: the five displayed blocks combined into a runnable script; regenerated from the article during rendering.
@@ -28,29 +28,35 @@ Exact variable references, question wording, download URLs, and SHA-256 checksum
 
 ## Reproduce
 
-Use Python 3.9 and Quarto 1.4 or later. In RStudio's Terminal, change to this post folder and install the dependencies once:
+Install Python 3.9 and Quarto 1.4 or later. Set the working directory to this post folder (`blog/posts/post6/`). In a terminal, install the required Python packages:
 
 ```bash
 python -m pip install -r code/requirements.txt
 ```
 
-Place the entire `post6` folder beside the earlier posts in `blog/posts/`. Open `index.qmd` in RStudio and click Render, or run:
+Open `index.qmd` in RStudio and click Render, or run:
 
 ```bash
 quarto render index.qmd
 ```
 
-Rendering runs Python automatically: it verifies the saved raw data, rebuilds the analysis, executes the five displayed blocks in order, checks their sample and estimates against the full analysis, and inserts the calculated results into the page. The supplied data are sufficient; no source download is needed. The filter checks the standard Windows Anaconda installation first, then the system Python. To choose another interpreter, set the `BLOG6_PYTHON` environment variable to its executable path before rendering.
+Rendering runs the Python analysis, reads the saved raw data, and regenerates the cleaned data, estimates, tables, and figures. It also checks that the tutorial code produces the same sample and regression results as the full analysis. Use the included raw-data snapshots to reproduce the reported results; no additional data download is required.
 
-For an independent numerical check, run:
+To run the analysis without rendering the article:
+
+```bash
+python code/01_analyze.py
+```
+
+To check the numerical results independently:
 
 ```bash
 python code/03_validate.py
 ```
 
-After rendering once, the visible tutorial can also be run separately with `python code/04_tutorial.py`. On systems where the command is named `python3`, use that in place of `python`. Keep the existing website configuration and publishing workflow, render the website, then commit and push the changed post files. Submit the published Blog6 URL and GitHub repository URL.
+The article's code blocks are also available in `code/04_tutorial.py` and can be run after the analysis. On systems using the command `python3`, substitute it for `python`. If Quarto selects a different Python environment, set `BLOG6_PYTHON` to the executable path of the environment containing the required packages before rendering. Within a Quarto website, execution should use the document directory, the default setting.
 
-`python code/00_download_data.py --refresh` optionally reconstructs the extracts from the full official downloads (approximately 620 MB). This is unnecessary for ordinary reproduction. Refreshing may change the snapshots if the provider revises its release.
+To refresh the source extracts, run `python code/00_download_data.py --refresh` before the analysis. This optional step downloads approximately 620 MB from the official sources. Refreshed data may differ if the providers revise their releases.
 
 ## Method
 
@@ -64,7 +70,7 @@ Mother income is observed at ages 35–39, and child income separately at 20–2
 
 The common sample requires at least two nonmissing, nonnegative income years in every window, plus strictly positive single-year values and means for all logged measures. Arithmetic means include zero years; logs are taken after averaging. Of 11,551 official child records, 11,549 have the required demographic fields and match a mother. Of these, 1,934 meet the coverage rule; 757 are then excluded because one or more log-income measures are nonpositive. The remaining 1,177 children of 896 mothers, born 1972–1986, enter every main specification.
 
-Each unweighted OLS regression includes an intercept and log maternal income. Both generations use single-year income, or both use multi-year means. Mother-cluster robust standard errors use a finite-sample correction and t critical values with 895 degrees of freedom. Differences between specifications use 2,000 paired percentile bootstrap replications, resampling mothers with all their children, seed 20261016. The constructed four-family lifecycle benchmark is constructed with a lifetime slope of 0.4 and an early-career loading of 0.5. It demonstrates a slope of 0.2 for both a single early year and an early three-year mean. These illustrative families are not survey records and do not enter the real-data analysis. Software versions used for each run are recorded in `results/tables/environment.json`.
+Each unweighted OLS regression includes an intercept and log maternal income. Both generations use single-year income, or both use multi-year means. Mother-cluster robust standard errors use a finite-sample correction and t critical values with 895 degrees of freedom. Differences between specifications use 2,000 paired percentile bootstrap replications, resampling mothers with all their children, seed 20261016. The four-family lifecycle benchmark uses a lifetime slope of 0.4 and an early-career loading of 0.5. It demonstrates a slope of 0.2 for both a single early year and an early three-year mean. These illustrative families are not survey records and do not enter the real-data analysis. Software versions used for each run are recorded in `results/tables/environment.json`.
 
 ## Limitations
 
