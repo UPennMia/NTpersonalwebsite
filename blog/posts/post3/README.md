@@ -30,7 +30,7 @@ Install R, Quarto, and the required R packages:
 install.packages(c("ipumsr", "ggplot2"))
 ```
 
-To regenerate the results, obtain the March 2019 and March 2024 **Basic Monthly** samples from [IPUMS CPS](https://cps.ipums.org/cps/). Include `AGE`, `SEX`, `LABFORCE`, and `WTFINL`. Save the downloaded `.dat.gz` file and its matching `.xml` file in `data/raw/`. From the `blog/posts/post3/` directory, run:
+To regenerate the results, obtain the March 2019 and March 2024 **Basic Monthly** samples from [IPUMS CPS](https://cps.ipums.org/cps/). Include `AGE`, `SEX`, `LABFORCE`, and `WTFINL`. Save the downloaded `.dat.gz` file and its matching `.xml` file in `data/raw/`. From the directory containing this README, run:
 
 ```r
 source("code/01_analyze.R")
@@ -42,11 +42,11 @@ Alternatively, `code/00_request_extract.R` can request the same samples through 
 
 ## Method
 
-Labor-force participation is the weighted share of people who are employed or looking for work. For each group, I divide the sum of `WTFINL` weights for people in the labor force by the sum of weights for everyone with a valid labor-force status. The age groups are 16–24, 25–54, 55–64, and 65+. The analysis compares participation by age, changes by age and sex, and the difference between men's and women's rates within each age group.
+Labor-force participation is the weighted share of people who are employed or looking for work. For each group, I divide the sum of `WTFINL` weights for people in the labor force by the sum of weights for everyone with a valid labor-force status. The age groups are 16–24, 25–54, 55–64, and 65+. The analysis compares participation by age, changes by age and sex, and the difference between men's and women's rates within each age group.The three figures connect participation levels across age groups, changes by age and sex, and the resulting within-age gender gaps. Together, they assess whether participation changes between March 2019 and March 2024 were shared across demographic groups.
 
 ## Limitations
 
-The two samples contain different people, so the results describe changes between two cross-sections rather than changes experienced by the same individuals. The comparisons do not establish what caused participation to change. The raw IPUMS records require an IPUMS account and are not redistributed in this repository.
+The two samples contain different people, so the results describe changes between two cross-sections rather than changes experienced by the same individuals. Broad age groups may still conceal changes in age composition. The analysis does not decompose changes in the national participation rate into within-group changes and population-aging effects, or estimate sampling uncertainty. The comparisons do not establish what caused participation to change. The raw IPUMS records require an IPUMS account and are not redistributed in this repository.
 
 ## Source notice
 
