@@ -1,0 +1,18 @@
+{
+  "end": "September 2026",
+  "start": "January 2019",
+  "n_months": 93,
+  "n_complete": 92,
+  "n_missing": 1,
+  "n_baselines": 91,
+  "wage_end": 37.81,
+  "wage_2021": 26.3280988974273,
+  "price_2021": 28.0223231450357,
+  "real_2021": -1.32338189620962,
+  "real_2019": 2.45871422527868,
+  "real_2022": 3.01966269131884,
+  "trough_month": "June 2022",
+  "trough_change": -4.21574335817976,
+  "missing_labels": "October 2025",
+  "retrieved": "2026-10-19"
+}

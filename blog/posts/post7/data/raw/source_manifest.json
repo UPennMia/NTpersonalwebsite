@@ -1,0 +1,16 @@
+[
+  {
+    "file": "CPIAUCSL.csv",
+    "series": "CPIAUCSL",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL&cosd=2019-01-01",
+    "retrieved_utc": "2026-10-19T18:36:53.071743+00:00",
+    "sha256": "1a4b0956b23d028f3e799758cd7d0ee176d8b18773f840291e89a2faec11ec5c"
+  },
+  {
+    "file": "CES0500000003.csv",
+    "series": "CES0500000003",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CES0500000003&cosd=2019-01-01",
+    "retrieved_utc": "2026-10-19T18:36:53.071815+00:00",
+    "sha256": "2eff2011456027a080b7cec8121800caf4cbe18a0a61a6ce79fb9476d561a888"
+  }
+]

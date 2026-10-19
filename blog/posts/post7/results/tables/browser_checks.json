@@ -1,0 +1,62 @@
+[
+  {
+    "check": "Both charts load with all network requests blocked",
+    "passed": true
+  },
+  {
+    "check": "Default summary and selector agree",
+    "passed": true
+  },
+  {
+    "check": "August 2023 selection updates both charts and summary",
+    "passed": true
+  },
+  {
+    "check": "All 91 baseline choices render correctly",
+    "passed": true
+  },
+  {
+    "check": "Preset buttons update the baseline",
+    "passed": true
+  },
+  {
+    "check": "Date-window linking works inside the embedded document",
+    "passed": true
+  },
+  {
+    "check": "Missing CPI remains a null gap",
+    "passed": true
+  },
+  {
+    "check": "No JavaScript errors",
+    "passed": true
+  },
+  {
+    "check": "Loading message disappears after success",
+    "passed": true
+  },
+  {
+    "check": "No desktop horizontal overflow",
+    "passed": true
+  },
+  {
+    "check": "No mobile horizontal overflow",
+    "passed": true
+  },
+  {
+    "check": "Standalone dashboard also works offline",
+    "passed": true
+  },
+  {
+    "check": "Quarto website uses bundled library and updates August 2023 correctly",
+    "passed": true
+  },
+  {
+    "check": "Deleted sessionInfo.txt before successful rebuild and 110 calculation checks",
+    "passed": true
+  },
+  {
+    "check": "Analysis runs without loading the plotly R namespace",
+    "passed": true
+  }
+]

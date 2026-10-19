@@ -1,0 +1,13 @@
+{
+  "narrative_words": 654,
+  "r_version": "4.3.3",
+  "quarto_version": "1.7.34",
+  "calculation_checks_passed": 110,
+  "browser_checks_passed": 15,
+  "embedding": "one self-contained Plotly document, encoded inline in an isolated frame",
+  "website_compilation_tested": true,
+  "bundled_plotly_version": "2.11.1",
+  "bundled_plotly_sha256": "f33191858012cf263ca873b819c5e7405538183fe3d0e1a6d7b3e577867bcc37",
+  "plotly_R_package_required": false,
+  "sessionInfo_deletion_test_passed": true
+}

@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Matching Mothers and Children with SQL in Python\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHow Do Income and Poverty Vary Across Philadelphia?\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Have Wages Caught Up With Prices?\n\n\n\n\n\n\n\n\nOct 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMatching Mothers and Children with SQL in Python\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHow Do Income and Poverty Vary Across Philadelphia?\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -523,5 +523,54 @@
     "title": "Matching Mothers and Children with SQL in Python",
     "section": "Takeaway",
     "text": "Takeaway\nFamily identifiers establish the links; SQL aggregation determines what income is compared. These unweighted results describe a selected positive-income sample, not national mobility. Topcoding, attrition, and period shocks remain relevant. From 2010, respondents over 30 generally enter a four-year interview cycle, so observation counts differ across windows. A credible comparison needs consistent definitions, the same sample, and an explicit account of when income is measured."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html",
+    "href": "blog/posts/post7/index.html",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "",
+    "text": "InflationWagesInteractive Visualization"
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#a-bigger-paycheck-is-not-the-whole-story",
+    "href": "blog/posts/post7/index.html#a-bigger-paycheck-is-not-the-whole-story",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "A bigger paycheck is not the whole story",
+    "text": "A bigger paycheck is not the whole story\nWhen pay and prices both rise, a larger number on a paycheck does not necessarily mean greater purchasing power. The useful question is whether hourly earnings have increased faster than the cost of a common basket of goods and services. I compare U.S. private-sector average hourly earnings with the Consumer Price Index (CPI), using monthly data from January 2019 through September 2026.\nBoth series come from the Bureau of Labor Statistics through FRED and are seasonally adjusted. Earnings are measured in dollars per hour; CPI is an index of consumer prices. Plotting their raw levels on the same axis would be meaningless. Instead, I set both series equal to 100 in a selected starting month. Their subsequent paths then show comparable cumulative percentage changes."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#did-hourly-pay-keep-pace",
+    "href": "blog/posts/post7/index.html#did-hourly-pay-keep-pace",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "Did hourly pay keep pace?",
+    "text": "Did hourly pay keep pace?\nThe default starting point is January 2021. Change it using the dropdown or the three preset buttons. Hover to see the underlying values and indexed levels. Drag the handles on the date slider to inspect a shorter period; the lower chart follows the same dates. Zooming changes the visible window, not the comparison’s starting month.\n\n\n\n\nThe upper panel compares indexed hourly pay and consumer prices. Both equal 100 in the selected starting month. In the lower panel, green bars show purchasing-power gains and red bars show losses. Click an upper-panel legend entry to hide or restore a line. Missing observations remain gaps.\n\nFrom January 2021 to September 2026, hourly earnings rose 26.3%, while prices rose 28.0%. Earnings increased substantially in dollars, but their increase was smaller than the rise in consumer prices. This is why nominal pay growth alone cannot answer whether workers have caught up.\nThe comparison concerns the price level, not the current inflation rate. Slower inflation means prices are rising less quickly; it does not by itself return them to their earlier level. Pay can therefore grow faster than prices recently while still failing to recover an earlier purchasing-power loss."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#translate-the-gap-into-purchasing-power",
+    "href": "blog/posts/post7/index.html#translate-the-gap-into-purchasing-power",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "Translate the gap into purchasing power",
+    "text": "Translate the gap into purchasing power\nThe lower chart calculates the percentage change in hourly earnings after adjusting for CPI. It divides the pay-growth factor by the price-growth factor, then subtracts one. For example, a 20% pay increase with a 25% price increase gives 1.20 / 1.25 − 1 = −4%, rather than simply subtracting the two growth rates.\nUsing January 2021 as the reference, purchasing power was 1.3% lower by September 2026. The lowest observed point in this comparison was June 2022, at -4.2%. The distinction between recovering from a trough and recovering the original level becomes visible when the bars approach zero."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#why-the-starting-month-matters",
+    "href": "blog/posts/post7/index.html#why-the-starting-month-matters",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "Why the starting month matters",
+    "text": "Why the starting month matters\nNow click December 2019, then June 2022. Relative to December 2019, the final purchasing-power change is +2.5%; relative to June 2022, it is +3.0%. The underlying observations have not changed. Each starting point asks a different question: a longer comparison beginning before the pandemic, the period beginning in January 2021, or the recovery since mid-2022.\nThis is the main value of the interaction. A single fixed-baseline graph can make one period’s experience look universal. Switching the reference month shows why two apparently conflicting claims about wages can both describe the same data accurately."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#scope-and-limitations",
+    "href": "blog/posts/post7/index.html#scope-and-limitations",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "Scope and limitations",
+    "text": "Scope and limitations\nAverage hourly earnings do not follow the same individuals over time. Changes in the mix of low- and high-paid workers can move the average, especially around the pandemic. The series excludes government employees and does not measure household income, employment chances, hours worked, benefits, or taxes. CPI represents an average urban consumption basket; a particular household may face a different price increase.\nI preserve missing observations rather than interpolate them. In the saved data, CPI is unavailable for October 2025, so purchasing power cannot be calculated for that month. Recent estimates and seasonal adjustments may also be revised.\nThe takeaway is to compare pay with prices over the same explicitly stated period. In this sample, the answer to “have wages caught up?” depends on where the comparison begins. A larger nominal wage and an improvement since a recent low are useful facts, but neither alone establishes that purchasing power has returned to an earlier level."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#data-sources",
+    "href": "blog/posts/post7/index.html#data-sources",
+    "title": "Have Wages Caught Up With Prices?",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nAverage Hourly Earnings of All Employees, Total Private (CES0500000003), U.S. Bureau of Labor Statistics via FRED: dollars per hour, monthly, seasonally adjusted.\nConsumer Price Index for All Urban Consumers: All Items (CPIAUCSL), U.S. Bureau of Labor Statistics via FRED: index 1982–1984 = 100, monthly, seasonally adjusted.\nOfficial CSV snapshots retrieved 2026-10-19. The analysis ends at the latest month with both observations in those snapshots; original files and retrieval information are retained with the project."
   }
 ]

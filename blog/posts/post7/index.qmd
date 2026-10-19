@@ -1,0 +1,90 @@
+---
+title: "Have Wages Caught Up With Prices?"
+date: 2026-10-19
+categories:
+  - Inflation
+  - Wages
+  - Interactive Visualization
+format:
+  html:
+    toc: false
+    embed-resources: true
+    title-block-categories: false
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+---
+
+<style>
+main.content {font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.8;}
+h1.title {font-size:2.2rem;line-height:1.25;}
+main.content h2 {font-size:1.5rem;margin-top:2rem;margin-bottom:.8rem;}
+main.content p {text-align:justify;text-justify:inter-word;margin-bottom:1.1rem;}
+main.content .chart-note {font-size:.9rem;line-height:1.6;color:#536174;}
+main.content th {background:transparent!important;}
+.blog7-controls button {padding:4px 9px;background:#f1f5f9;border:1px solid #b8c3ce;border-radius:4px;cursor:pointer;color:#263447;}
+.blog7-controls button:hover {background:#e2e8f0;}
+.blog7-tags {display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.4rem;}
+.blog7-tags span {font-size:.7rem;text-transform:uppercase;border:1px solid #aab3bd;border-radius:3px;padding:2px 7px;color:#627080;}
+@media(max-width:600px) {main.content {font-size:16px;}h1.title {font-size:1.9rem;}}
+</style>
+
+```{r}
+#| label: prepare-analysis
+source("code/01_analyze.R", local = knitr::knit_global())
+```
+
+<div class="blog7-tags"><span>Inflation</span><span>Wages</span><span>Interactive Visualization</span></div>
+
+## A bigger paycheck is not the whole story
+
+When pay and prices both rise, a larger number on a paycheck does not necessarily mean greater purchasing power. The useful question is whether hourly earnings have increased faster than the cost of a common basket of goods and services. I compare U.S. private-sector average hourly earnings with the Consumer Price Index (CPI), using monthly data from `r fact("start")` through `r fact("end")`.
+
+Both series come from the Bureau of Labor Statistics through FRED and are seasonally adjusted. Earnings are measured in dollars per hour; CPI is an index of consumer prices. Plotting their raw levels on the same axis would be meaningless. Instead, I set both series equal to **100 in a selected starting month**. Their subsequent paths then show comparable cumulative percentage changes.
+
+## Did hourly pay keep pace?
+
+The default starting point is January 2021. Change it using the dropdown or the three preset buttons. Hover to see the underlying values and indexed levels. Drag the handles on the date slider to inspect a shorter period; the lower chart follows the same dates. **Zooming changes the visible window, not the comparison's starting month.**
+
+```{r}
+#| label: indexed-comparison
+#| results: asis
+cat(dashboard_embed)
+```
+
+::: {.chart-note}
+The upper panel compares indexed hourly pay and consumer prices. Both equal 100 in the selected starting month. In the lower panel, green bars show purchasing-power gains and red bars show losses. Click an upper-panel legend entry to hide or restore a line. Missing observations remain gaps.
+:::
+
+From January 2021 to `r fact("end")`, hourly earnings rose **`r fmt(fact("wage_2021"))`%**, while prices rose **`r fmt(fact("price_2021"))`%**. Earnings increased substantially in dollars, but their increase was smaller than the rise in consumer prices. This is why nominal pay growth alone cannot answer whether workers have caught up.
+
+The comparison concerns the **price level**, not the current inflation rate. Slower inflation means prices are rising less quickly; it does not by itself return them to their earlier level. Pay can therefore grow faster than prices recently while still failing to recover an earlier purchasing-power loss.
+
+## Translate the gap into purchasing power
+
+The lower chart calculates the percentage change in hourly earnings after adjusting for CPI. It divides the pay-growth factor by the price-growth factor, then subtracts one. For example, a 20% pay increase with a 25% price increase gives **1.20 / 1.25 − 1 = −4%**, rather than simply subtracting the two growth rates.
+
+Using January 2021 as the reference, purchasing power was **`r fmt(abs(fact("real_2021")))`% `r if (fact("real_2021") < 0) "lower" else "higher"`** by `r fact("end")`. The lowest observed point in this comparison was `r fact("trough_month")`, at **`r signed(fact("trough_change"))`%**. The distinction between recovering from a trough and recovering the original level becomes visible when the bars approach zero.
+
+## Why the starting month matters
+
+Now click **December 2019**, then **June 2022**. Relative to December 2019, the final purchasing-power change is **`r signed(fact("real_2019"))`%**; relative to June 2022, it is **`r signed(fact("real_2022"))`%**. The underlying observations have not changed. Each starting point asks a different question: a longer comparison beginning before the pandemic, the period beginning in January 2021, or the recovery since mid-2022.
+
+This is the main value of the interaction. A single fixed-baseline graph can make one period's experience look universal. Switching the reference month shows why two apparently conflicting claims about wages can both describe the same data accurately.
+
+## Scope and limitations
+
+Average hourly earnings do not follow the same individuals over time. Changes in the mix of low- and high-paid workers can move the average, especially around the pandemic. The series excludes government employees and does not measure household income, employment chances, hours worked, benefits, or taxes. CPI represents an average urban consumption basket; a particular household may face a different price increase.
+
+I preserve missing observations rather than interpolate them. In the saved data, CPI is unavailable for **`r fact("missing_labels")`**, so purchasing power cannot be calculated for that month. Recent estimates and seasonal adjustments may also be revised.
+
+The takeaway is to compare pay with prices over the **same explicitly stated period**. In this sample, the answer to “have wages caught up?” depends on where the comparison begins. A larger nominal wage and an improvement since a recent low are useful facts, but neither alone establishes that purchasing power has returned to an earlier level.
+
+## Data Sources
+
+- [Average Hourly Earnings of All Employees, Total Private (CES0500000003)](https://fred.stlouisfed.org/series/CES0500000003), U.S. Bureau of Labor Statistics via FRED: dollars per hour, monthly, seasonally adjusted.
+- [Consumer Price Index for All Urban Consumers: All Items (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL), U.S. Bureau of Labor Statistics via FRED: index 1982–1984 = 100, monthly, seasonally adjusted.
+- Official CSV snapshots retrieved `r fact("retrieved")`. The analysis ends at the latest month with both observations in those snapshots; original files and retrieval information are retained with the project.
