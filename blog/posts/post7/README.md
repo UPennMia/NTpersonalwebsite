@@ -18,7 +18,7 @@ The saved snapshots cover January 2019–September 2026 and were retrieved Octob
 - `code/00_download_data.R`: optionally refreshes the two official CSV snapshots.
 - `code/01_analyze.R`: verifies, cleans and joins the series; calculates baseline comparisons and article statistics.
 - `code/02_visualize.R`: builds a self-contained Plotly dashboard with two panels, starting-month controls and linked date-window behavior.
-- `code/lib/plotly-2.11.1.min.js`: bundled Plotly JavaScript (license retained), verified by SHA-256. The chart does not load a library from the installed R package or a CDN.
+- `code/lib/plotly-2.11.1.min.js`: Plotly JavaScript used to render the interactive charts; the original license is retained.
 - `code/03_validate.R`: independently checks the calculations against the raw observations.
 - `data/raw/`: original FRED CSVs and source manifest.
 - `data/cleaned/`: monthly earnings and CPI, retaining missing observations.
@@ -26,34 +26,42 @@ The saved snapshots cover January 2019–September 2026 and were retrieved Octob
 - `results/tables/`: starting-month comparisons, monthly purchasing-power calculations, missing-data record, article statistics, interactive data and verification records.
 - `results/sessionInfo.txt`: actual R and package versions used for the analysis.
 
-## Reproduce
+## Reproduce the analysis
 
-Use the existing blog project in RStudio with R 4.3 or later and the Quarto CLI. Put this `post7` folder beside the earlier posts in `blog/posts/`. Set the working directory to `blog/posts/post7/` and install the required packages once in the R Console:
+Requirements: R 4.3 or later and Quarto. The R dependencies are `jsonlite`, `digest`, `base64enc`, `htmltools`, `knitr` and `rmarkdown`.
 
-```r
-source("code/00_setup.R")
-```
-
-The required packages are `jsonlite`, `digest`, `base64enc`, `htmltools`, `knitr` and `rmarkdown`. Initial installation requires internet access.
-
-Open `index.qmd` in RStudio and click **Render**. The equivalent Terminal command from this post folder is:
+After cloning or downloading the repository, open a terminal in the directory containing this README and `index.qmd`. Run:
 
 ```bash
+Rscript code/00_setup.R
 quarto render index.qmd
 ```
 
-Rendering reads the included snapshots, regenerates the cleaned data, statistics and interactive figures, and inserts calculated values into the article. Reproduction does not require downloading data again. The rendered article embeds Plotly and the interactive data, so it works without a server or internet connection. Code remains hidden in the published article.
+The setup script installs any missing packages and requires internet access for installation. Rendering uses the included data snapshots to regenerate the cleaned dataset, tables and interactive dashboard, then produces the article as `index.html`. In a Quarto website project, the rendered article is saved under the configured output directory.
 
-To run the analysis and independent calculation checks without rendering:
+Generated outputs include:
 
-```r
-source("code/01_analyze.R")
-source("code/03_validate.R")
+- `data/cleaned/monthly_wages_prices.csv`: the monthly dataset used in the analysis.
+- `results/tables/`: baseline comparisons, monthly purchasing-power calculations and article statistics.
+- `results/figures/01_wages_prices.html`: the interactive dashboard, which can also be opened directly in a browser.
+
+Run the analysis and calculation checks:
+
+```bash
+Rscript code/01_analyze.R
+Rscript code/03_validate.R
 ```
 
-For a deliberate data refresh, run `source("code/00_download_data.R")` before rendering. Use the included snapshots to reproduce the reported version because later revisions may change the results.
+The validation script checks the reported statistics, baseline comparisons and missing observations against the raw data. A successful run prints `110 checks passed.` and saves the check results to `results/tables/validation.csv`. `results/sessionInfo.txt` records the R and package versions for each analysis run.
 
-Keep the existing website configuration. Execution should use the document directory; if `_quarto.yml` overrides `project.execute-dir`, set it to `file`. Render and publish through the existing workflow, then submit the published article URL and GitHub repository URL.
+The included snapshots reproduce the reported results. To retrieve updated observations instead, run:
+
+```bash
+Rscript code/00_download_data.R
+quarto render index.qmd
+```
+
+Updated observations and revisions to earlier data may change the results. The rendered dashboard contains its data and Plotly library and can be viewed offline.
 
 ## Method
 
@@ -68,7 +76,7 @@ For a starting month b and observation month t:
 
 The purchasing-power change is a ratio of growth factors, not the difference between two percentage changes. The example in the article illustrates that distinction. Missing CPI produces a gap in the price line and purchasing-power bars, while available nominal earnings remain visible.
 
-Changing the starting month recalculates both figures and their endpoint summary. The upper date slider changes the visible date window in both charts; it does not change their baseline. Legend clicks hide or restore the two upper series. The lower bars are green above zero and red below zero. The complete dashboard is also saved as `results/figures/01_wages_prices.html`. It includes both panels and all JavaScript and data. The article embeds that complete document, so chart loading does not depend on copied htmlwidgets folders or external script URLs.
+Changing the starting month recalculates both figures and their endpoint summary. The upper date slider changes the visible date window in both charts; it does not change their baseline. Legend clicks hide or restore the two upper series. The lower bars are green above zero and red below zero. The complete dashboard is also saved as `results/figures/01_wages_prices.html`. It includes both panels, JavaScript and data.
 
 ## Limitations
 
