@@ -200,14 +200,14 @@
     "href": "blog/posts/post3/index.html",
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "",
-    "text": "In the aftermath of pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger, prime-age, and older adults. Participation means having a job or actively seeking one; it is broader than employment. This post compares two March snapshots of the U.S. civilian population, then asks whether the changes look the same for women and men. The central finding is that the prime-age gain was concentrated among women, while participation among adults 65 and older was slightly lower."
+    "text": "In the aftermath of the pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger, prime-age, and older adults. Participation means having a job or actively seeking one; it is broader than employment. This post compares two March snapshots of the U.S. civilian population, then asks whether the changes look the same for women and men. The central finding is that the prime-age gain was concentrated among women, while participation among adults 65 and older was slightly lower.\nLabor-force participation helps us understand the economy’s available labor supply. Unlike the unemployment rate, it also captures whether people remain in the labor force at all: someone who stops looking for work is no longer counted as unemployed. Comparing participation across age and sex therefore helps assess whether the recovery was broadly shared or concentrated in particular groups."
   },
   {
     "objectID": "blog/posts/post3/index.html#a-changing-labor-market",
     "href": "blog/posts/post3/index.html#a-changing-labor-market",
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "",
-    "text": "In the aftermath of pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger, prime-age, and older adults. Participation means having a job or actively seeking one; it is broader than employment. This post compares two March snapshots of the U.S. civilian population, then asks whether the changes look the same for women and men. The central finding is that the prime-age gain was concentrated among women, while participation among adults 65 and older was slightly lower."
+    "text": "In the aftermath of the pandemic, was labor-force participation in 2024 back where it had been in 2019? A single national rate can hide different experiences among younger, prime-age, and older adults. Participation means having a job or actively seeking one; it is broader than employment. This post compares two March snapshots of the U.S. civilian population, then asks whether the changes look the same for women and men. The central finding is that the prime-age gain was concentrated among women, while participation among adults 65 and older was slightly lower.\nLabor-force participation helps us understand the economy’s available labor supply. Unlike the unemployment rate, it also captures whether people remain in the labor force at all: someone who stops looking for work is no longer counted as unemployed. Comparing participation across age and sex therefore helps assess whether the recovery was broadly shared or concentrated in particular groups."
   },
   {
     "objectID": "blog/posts/post3/index.html#data-and-method",
@@ -221,21 +221,21 @@
     "href": "blog/posts/post3/index.html#participation-across-ages",
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "1. Participation across ages",
-    "text": "1. Participation across ages\n\n\n\nWeighted labor-force participation by age, March 2019 and March 2024\n\n\nIn March 2019, participation among adults ages 25–54 was 82.6%; in March 2024 it was 83.7%. The rates for ages 16–24 and 55–64 also rose, but the rate for ages 65+ moved from 20.5% to 19.9%. The lower participation level for older adults largely reflects the different life stage of retirement; the small change between dates is a separate question. The age pattern cautions against treating every group as if it moved with a single national average."
+    "text": "1. Participation across ages\nTo assess whether participation had recovered across age groups, the first figure compares each group’s rate in March 2019 and March 2024.\n\n\n\nWeighted labor-force participation by age, March 2019 and March 2024\n\n\nIn March 2019, participation among adults ages 25–54 was 82.6%; in March 2024 it was 83.7%. The rates for ages 16–24 and 55–64 also rose, but the rate for ages 65+ moved from 20.5% to 19.9%. The lower participation level for older adults largely reflects the different life stage of retirement; the small change between dates is a separate question. The age pattern cautions against treating every group as if it moved with a single national average."
   },
   {
     "objectID": "blog/posts/post3/index.html#where-did-rates-move",
     "href": "blog/posts/post3/index.html#where-did-rates-move",
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "2. Where did rates move?",
-    "text": "2. Where did rates move?\n\n\n\nChange in weighted labor-force participation, percentage points, by age and sex\n\n\nThis chart subtracts each group’s 2019 rate from its 2024 rate. Positive bars indicate higher participation in 2024; negative bars indicate lower participation. The largest absolute change among the eight age-by-sex groups was for women ages 25–54, at +2.7 percentage points. Prime-age men’s rate, by contrast, fell by 0.5 points. Both sexes ages 65+ show small declines. The prime-age increase in the first chart therefore masks substantially different changes for women and men. These are percentage-point changes, not percent growth."
+    "text": "2. Where did rates move?\nThe first figure shows participation levels; the second separates the changes by age and sex to identify whose participation rose or fell.\n\n\n\nChange in weighted labor-force participation, percentage points, by age and sex\n\n\nThis chart subtracts each group’s 2019 rate from its 2024 rate. Positive bars indicate higher participation in 2024; negative bars indicate lower participation. The largest absolute change among the eight age-by-sex groups was for women ages 25–54, at +2.7 percentage points. Prime-age men’s rate, by contrast, fell by 0.5 points. Both sexes ages 65+ show small declines. The prime-age increase in the first chart therefore masks substantially different changes for women and men. These are percentage-point changes, not percent growth."
   },
   {
     "objectID": "blog/posts/post3/index.html#the-gender-gap-within-each-age-group",
     "href": "blog/posts/post3/index.html#the-gender-gap-within-each-age-group",
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "3. The gender gap within each age group",
-    "text": "3. The gender gap within each age group\n\n\n\nMen’s minus women’s weighted participation rates by age, March 2019 and March 2024\n\n\nHere the gap equals the men’s rate minus the women’s rate within the same age group. A positive value therefore means higher participation among men. For ages 25–54, the gap narrowed from 14.3 points in 2019 to 11.1 points in 2024, a reduction of 3.2 points. The gap changed much less for ages 16–24 and 65+. The second chart explains the main narrowing: prime-age women’s participation rose while men’s edged down. This is a descriptive difference within age groups, not an estimate of unequal pay."
+    "text": "3. The gender gap within each age group\nThe third figure connects these changes to the gender gap, asking whether women and men moved closer together within each age group.\n\n\n\nMen’s minus women’s weighted participation rates by age, March 2019 and March 2024\n\n\nHere the gap equals the men’s rate minus the women’s rate within the same age group. A positive value therefore means higher participation among men. For ages 25–54, the gap narrowed from 14.3 points in 2019 to 11.1 points in 2024, a reduction of 3.2 points. The gap changed much less for ages 16–24 and 65+. The second chart explains the main narrowing: prime-age women’s participation rose while men’s edged down. This is a descriptive difference within age groups, not an estimate of unequal pay."
   },
   {
     "objectID": "blog/posts/post3/index.html#what-the-three-views-tell-us",
@@ -249,7 +249,7 @@
     "href": "blog/posts/post3/index.html#data-sources",
     "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
     "section": "Data Sources",
-    "text": "Data Sources\n\nIPUMS Current Population Survey (CPS): March 2019 and March 2024 Basic Monthly samples, accessed through IPUMS CPS.\n\n\n\nIPUMS citation details\n\nSarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. IPUMS CPS: Version 13.0 [dataset]. Minneapolis, MN: IPUMS, 2025. https://doi.org/10.18128/D030.V13.0."
+    "text": "Data Sources\n\nIPUMS Current Population Survey (CPS): March 2019 and March 2024 Basic Monthly samples, accessed through IPUMS CPS.\nHow Women and Aging Affect Trends in Labor Force Growth, U.S. Bureau of Labor Statistics: background on population aging and labor-force participation.\n\n\n\nIPUMS citation details\n\nSarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. IPUMS CPS: Version 13.0 [dataset]. Minneapolis, MN: IPUMS, 2025. https://doi.org/10.18128/D030.V13.0."
   },
   {
     "objectID": "blog/posts/post4/index.html",
@@ -572,5 +572,12 @@
     "title": "Have Wages Caught Up With Prices?",
     "section": "Data Sources",
     "text": "Data Sources\n\nAverage Hourly Earnings of All Employees, Total Private (CES0500000003), U.S. Bureau of Labor Statistics via FRED: dollars per hour, monthly, seasonally adjusted.\nConsumer Price Index for All Urban Consumers: All Items (CPIAUCSL), U.S. Bureau of Labor Statistics via FRED: index 1982–1984 = 100, monthly, seasonally adjusted.\nOfficial CSV snapshots retrieved 2026-10-19. The analysis ends at the latest month with both observations in those snapshots; original files and retrieval information are retained with the project."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#what-else-could-explain-the-patterns",
+    "href": "blog/posts/post3/index.html#what-else-could-explain-the-patterns",
+    "title": "Where Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024",
+    "section": "What else could explain the patterns?",
+    "text": "What else could explain the patterns?\nPopulation aging matters because the national participation rate depends on both participation within age groups and each group’s share of the population. If more people move into older groups with lower participation, the national rate can fall even when each group’s rate is unchanged. This differs from the within-group changes shown here. Age grouping helps distinguish these issues, but broad categories can still conceal changes in age composition, especially within the 65+ group. These charts do not quantify aging’s contribution to the national rate.\nSchool enrollment, retirement, health, caregiving responsibilities, and changing job opportunities could also influence participation. For example, greater flexibility at work might make participation easier for some caregivers, while health limitations might discourage others. These are possible mechanisms, not explanations established by the two March snapshots. The observed gender-gap changes do not identify which mechanism mattered, and small differences may also reflect sampling variation."
   }
 ]
