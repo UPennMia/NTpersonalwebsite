@@ -1,0 +1,2 @@
+"n_per_group","buyers_control","buyers_coupon","redeemers","margin","mean_control","mean_coupon","difference","ci_lower","ci_upper","simulation_truth","coverage","coverage_mcse","p_value","p_mcse","critical_abs","null_rejection_fraction","gross_increment","expected_coupon_cost","model_break_even_margin"
+2000,31,76,11,0.1,0.048453,0.09484,0.046387,0.0135185625,0.0797335125,0.0351811,0.952,0.00477995815881269,0.00665986680266395,0.000363744772521468,0.033507,0.0499,0.757811,0.0406,0.0535753637780396

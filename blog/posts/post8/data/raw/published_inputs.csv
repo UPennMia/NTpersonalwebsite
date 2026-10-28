@@ -1,0 +1,8 @@
+"quantity","value","unit","source","location","provenance"
+"control_purchase_rate",0.0168,"fraction","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","Table 2","Transcribed rounded published aggregates; not raw customer records"
+"coupon_purchase_rate",0.0365,"fraction","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","Table 2","Transcribed rounded published aggregates; not raw customer records"
+"coupon_redemption_rate",0.0058,"fraction","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","Table 2","Transcribed rounded published aggregates; not raw customer records"
+"coupon_value",7,"USD","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","printed p20","Transcribed rounded published aggregates; not raw customer records"
+"control_buyer_receipt",31.26,"USD net of discount","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","printed p24","Transcribed rounded published aggregates; not raw customer records"
+"nonredeemer_buyer_receipt",34.47,"USD net of discount","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","printed p24","Transcribed rounded published aggregates; not raw customer records"
+"redeemer_buyer_receipt",31.75,"USD net of discount","https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2020/06/MSI_Report_19-106-1.pdf","printed p24","Transcribed rounded published aggregates; not raw customer records"
