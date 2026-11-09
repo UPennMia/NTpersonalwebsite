@@ -18,7 +18,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Do Coupons Actually Increase Profit?\n\n\n\n\n\n\n\n\nOct 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHave Wages Caught Up With Prices?\n\n\n\n\n\n\n\n\nOct 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMatching Mothers and Children with SQL in Python\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHow Do Income and Poverty Vary Across Philadelphia?\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "An Attempt to Improve Stock Return Predictions with Gradient Boosting\n\n\n\n\n\n\n\n\nNov 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDo Coupons Actually Increase Profit?\n\n\n\n\n\n\n\n\nOct 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHave Wages Caught Up With Prices?\n\n\n\n\n\n\n\n\nOct 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMatching Mothers and Children with SQL in Python\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHow Do Income and Poverty Vary Across Philadelphia?\n\n\n\n\n\n\n\n\nOct 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nDid Inflation and Unemployment Move Together? A U.S. View, 2015-2026\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Did Labor-Force Participation Change? Age and Gender in the U.S., 2019–2024\n\n\n\n\n\n\n\n\nSep 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhere Does the Minimum Wage Go Furthest?\n\n\n\n\n\n\n\n\nSep 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Monty Hall Problem\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -649,5 +649,61 @@
     "title": "Do Coupons Actually Increase Profit?",
     "section": "Would the offer pay for itself?",
     "text": "Would the offer pay for itself?\nAdjust the contribution margin and campaign cost below to see whether the coupon pays for itself. The tool shows the estimated profit change and its 95% bootstrap interval. Purchase behavior stays fixed as costs change.\n\nPre-coupon contribution margin: 2%5%10%20%30%40% Campaign cost per recipient ($): \n\n\n\n\nPurchase behavior stays fixed; costs and margins are scenarios, not estimated retailer costs.\n\n\nAt a 10% contribution margin and zero campaign cost, the coupon pays for itself in the model, generating about 3.5 cents in expected extra profit per recipient. This leaves up to 3.5 cents per recipient to cover campaign costs; spending more would eliminate the expected gain. For example, at a campaign cost of 5 cents per recipient, the offer would lose about 1.5 cents per recipient on average, despite increasing purchases. The retailer should compare its own campaign cost with this threshold before expanding the offer.\nUse the retailer’s own margin and campaign cost to assess the offer. A positive estimate indicates an expected gain; an interval that crosses zero means the simulated trial does not clearly establish profitability. These calculations cover immediate purchases, excluding future sales."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html",
+    "href": "blog/posts/post9/index.html",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "",
+    "text": "Stock Return PredictionGradient BoostingPortfolio Backtesting"
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#what-happened-in-class",
+    "href": "blog/posts/post9/index.html#what-happened-in-class",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "What happened in class?",
+    "text": "What happened in class?\nAcross the 45 teams with results for both portfolios, the intuition-based portfolios averaged $101,179, while the portfolios based on historical measures averaged $103,087. The portfolio based on historical measures finished ahead for 30 teams. The mean within-team difference was $1,909, with a 95% paired t confidence interval from −$380 to $4,197 (two-sided p = 0.100). The interval includes zero, so the results are consistent with a modest loss or a gain from using historical measures. Both portfolios were evaluated over the same period. Because teams faced the same market conditions and may have held some of the same stocks, their portfolio differences may be correlated across teams, which could weaken the independence assumption behind the paired test.\n\n\n\nFigure 1. Within-team differences in final portfolio value across 45 teams.\n\n\nPredicting returns is difficult because prices can already reflect publicly available information, and new information can move them before a model has time to react. A pattern that looked useful in one market can also fade. Adding trees gives a model more ways to pick up both genuine patterns and noise."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#rebuilding-the-instructors-forecast",
+    "href": "blog/posts/post9/index.html#rebuilding-the-instructors-forecast",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "Rebuilding the instructor’s forecast",
+    "text": "Rebuilding the instructor’s forecast\nThe instructor’s XGBoost model adds trees that learn from earlier prediction errors. Its inputs include lagged price changes, volatility, market-adjusted returns and the raw price and volume columns passed through the original recipe. I ported its settings and features to Python using the same XGBoost engine. The price snapshot covers the 95 stocks listed in the script plus SPY. At each signal close, the target is the return from the next close to the close 20 sessions after the signal.\nI tested whether the model would generalize better if it learned from comparable signals across stocks. I removed raw price and volume levels, expressed momentum as later price divided by earlier price minus one, and added relative volume and stock and market trends. I selected tree depth, tree count and learning rate on 2023 data after training on 2022. Validation chose 50 trees at depth 1 and learning rate 0.02. I then refit both specifications using data through 2023 and tested them from 2024 onward. At each split I excluded training labels whose holding periods reached into the next evaluation period."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#forecast-accuracy",
+    "href": "blog/posts/post9/index.html#forecast-accuracy",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "Forecast accuracy",
+    "text": "Forecast accuracy\nTable 1. Performance on 65,645 held-out stock-day forecasts\n\n\n\n\n\n\n\n\n\n\nModel\nRMSE\nMAE\nR² vs. historical mean\nMean daily rank correlation\n\n\n\n\nHistorical mean\n8.84%\n6.39%\n0.000\n—\n\n\nOriginal XGBoost model\n9.34%\n6.81%\n-0.115\n0.032\n\n\nTuned XGBoost\n8.87%\n6.41%\n-0.007\n0.030\n\n\n\nTuning lowered RMSE from 9.34% to 8.87%, but the historical mean still had the lowest error at 8.84%. The mean daily rank correlations were both close to zero, and the tuned model ranked stocks slightly worse than the original. A forecast can get closer to the average realized return without getting better at picking winners. These daily forecasts also share overlapping holding periods, so the scores summarize this sample."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#would-the-forecasts-have-made-money",
+    "href": "blog/posts/post9/index.html#would-the-forecasts-have-made-money",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "Would the forecasts have made money?",
+    "text": "Would the forecasts have made money?\nEvery 19 trading sessions, each model selected its ten highest forecasts and weighted positive forecasts proportionally, falling back to equal weights if all ten were nonpositive. I compared the strategies with SPY and an equal-weight portfolio of the available stocks. All strategies used the same 37 nonoverlapping holding periods ending October 22, 2026 and paid 10 basis points per dollar traded.\nTable 2. Held-out portfolio performance after costs\n\n\n\n\n\n\n\n\n\n\nStrategy\nAnnualized return\nAnnualized volatility\nMax drawdown\nEnding value\n\n\n\n\nSPY\n20.47%\n12.94%\n-12.20%\n$16,813\n\n\nEqual weight\n20.43%\n11.78%\n-10.72%\n$16,797\n\n\nOriginal XGBoost model\n25.62%\n20.81%\n-13.50%\n$18,894\n\n\nTuned XGBoost\n24.24%\n20.62%\n-10.66%\n$18,321\n\n\n\n\n\n\nFigure 2. Growth of $10,000 after trading costs over the held-out period.\n\n\nBoth model portfolios earned higher returns than SPY in this sample, with substantially higher volatility. The original portfolio finished ahead of the tuned portfolio, even though its predictions had larger errors. At 25 basis points per dollar traded, the original and tuned strategies returned 22.27% and 21.32% annually, respectively, compared with 20.41% for SPY and 20.22% for equal weight. Higher costs narrowed the advantage. The short evaluation period and fixed list of large companies limit what these results tell us about other market conditions.\nI would judge a forecast and a portfolio separately. In this test, tuning improved return estimates relative to the original model, while the historical mean still forecast returns better and the original stock-selection rule earned more."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#how-we-picked-stocks-in-the-classroom-experiment",
+    "href": "blog/posts/post9/index.html#how-we-picked-stocks-in-the-classroom-experiment",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "How We Picked Stocks in the Classroom Experiment",
+    "text": "How We Picked Stocks in the Classroom Experiment\nIn our class stock-market game, each team started two portfolios with $100,000 apiece. Teams picked the first portfolio by intuition and used historical measures to help choose the second. The Sharpe ratio measures excess return per unit of volatility. Jensen’s alpha asks how much return remains after accounting for market exposure. Correlations show whether stocks tend to move together. The game asked whether using those measures would improve performance over roughly two months. The same team built both portfolios, so the natural comparison is the difference within each team."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#rebuilding-the-original-forecasting-model",
+    "href": "blog/posts/post9/index.html#rebuilding-the-original-forecasting-model",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "Rebuilding the Original Forecasting Model",
+    "text": "Rebuilding the Original Forecasting Model\nThe original XGBoost model adds trees that learn from earlier prediction errors. Its inputs include lagged price changes, volatility, market-adjusted returns and the raw price and volume columns used in the original model. I reproduced the model’s settings and features in Python using the same XGBoost engine. The dataset covers 95 stocks plus SPY. At each signal close, the model predicts the return from the next trading day’s close to the close 20 trading sessions after the signal.\nI tested whether the model would generalize better if it learned from comparable signals across stocks. I removed raw price and volume levels, expressed momentum as later price divided by earlier price minus one, and added relative volume and stock and market trends. I selected tree depth, tree count and learning rate on 2023 data after training on 2022. Validation chose 50 trees at depth 1 and learning rate 0.02. I then refit both specifications using data through 2023 and tested them from 2024 onward. At each split I excluded training labels whose holding periods reached into the next evaluation period."
+  },
+  {
+    "objectID": "blog/posts/post9/index.html#sources",
+    "href": "blog/posts/post9/index.html#sources",
+    "title": "An Attempt to Improve Stock Return Predictions with Gradient Boosting",
+    "section": "Sources",
+    "text": "Sources\n\nUniversity of Pennsylvania course materials. UPenn XGBoost Stock Prediction, the original R script used as the basis for the forecasting model.\nYahoo Finance. Historical daily prices for the 95 stocks in the study and SPY. Yahoo Finance"
   }
 ]
